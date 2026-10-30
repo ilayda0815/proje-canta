@@ -293,53 +293,75 @@ window.NOVA_PAK_CATALOG = {
       slug: 'cantalar',
       index: '08',
       title: 'Çantalar',
-      subtitle: 'Nova Pak Amiral Gemisi Üretim',
+      subtitle: 'Özel Üretim Serisi',
       heroImage: 'assets/images/cantalar.png',
-      description: 'Laptop, evrak, sırt, kanvas tote ve büzgülü bez çantalarda kurumsal renklerinize ve logonuza özel elit üretim.',
+      description: 'Geri dönüştürülmüş ham bez, netbag file, deri desenli ve deri saplı kanvas tote, büzgülü bez torba ve sırt çantalarında logonuza özel elit üretim.',
       products: [
         {
           id: 'NP-CN-801',
-          name: 'Nova Voyager Deri Tokalı 15.6" Kurumsal Sırt Çantası',
+          name: 'Nova Botanical Özel Desen Baskılı Kanvas Tote & Büzgülü Set',
+          image: 'assets/images/hero-floating.png',
+          price: 185.00,
+          minOrder: 100,
+          stock: 3800,
+          stockStatus: 'in_stock',
+          badge: 'İmza Serisi',
+          specs: ['320gr Kanvas & Gabardin', 'Tam Yüzey Desen Baskı', 'Deri Kordon & Omuz Askısı']
+        },
+        {
+          id: 'NP-CN-802',
+          name: 'Nova EcoRecycle Geri Dönüştürülmüş & Deri Saplı Ham Bez Çanta',
+          image: 'assets/images/hero-recycled-bags.png',
+          price: 145.00,
+          minOrder: 100,
+          stock: 4500,
+          stockStatus: 'in_stock',
+          badge: '%100 Geri Dönüşüm',
+          specs: ['%100 Re-Cotton Pamuk', 'Deri Kulp & Köşe Detaylı', '3B Kabartma & Eko-Baskı']
+        },
+        {
+          id: 'NP-CN-803',
+          name: 'Nova NetBag Bakır Halkalı Organik Örgü File & Bez Çanta',
+          image: 'assets/images/hero-netbag-drawstring.png',
+          price: 165.00,
+          minOrder: 100,
+          stock: 2900,
+          stockStatus: 'in_stock',
+          badge: 'Netbag Serisi',
+          specs: ['Esnek Organik Pamuk File', 'Bakır Halka Kulplar', 'İç Desenli Kese Kombinli']
+        },
+        {
+          id: 'NP-CN-804',
+          name: 'Nova Drawstring Halat Kordonlu Büzgülü Bez Sırt & Torba Çanta',
+          image: 'assets/images/hero-netbag-drawstring.png',
+          price: 140.00,
+          minOrder: 100,
+          stock: 3600,
+          stockStatus: 'in_stock',
+          badge: 'Büzgülü Seri',
+          specs: ['Kalın Örgü Pamuk Halat', 'Bakır Kuşgözü Takviyeli', 'Etkinlik & Fuar Sırt Torbası']
+        },
+        {
+          id: 'NP-CN-805',
+          name: 'Nova LeatherTouch Deri Saplı & Deri Tabanlı Kanvas Çanta (380gr)',
+          image: 'assets/images/hero-leather-bags.png',
+          price: 390.00,
+          minOrder: 50,
+          stock: 1850,
+          stockStatus: 'in_stock',
+          badge: 'Deri Detaylı VIP',
+          specs: ['380gr Ağır Gramajlı Kanvas', 'Deri Desenli Sap & Taban', 'Bakır Perçin ve Gofre Etiket']
+        },
+        {
+          id: 'NP-CN-806',
+          name: 'Nova Voyager Deri Tokalı 15.6" Kanvas & Oxford Sırt Çantası',
           image: 'assets/images/cantalar.png',
           price: 1290.00,
           minOrder: 30,
           stock: 850,
           stockStatus: 'in_stock',
-          badge: 'İmza Modeli',
-          specs: ['Su Geçirmez Oxford Kumaş', '15.6" Darbe Korumalı Laptop Bölmesi', 'Bakır Fermuar & Deri Toka']
-        },
-        {
-          id: 'NP-CN-802',
-          name: 'Nova Diplomat Deri Kulplu Laptop & Evrak Çantası',
-          image: 'assets/images/cantalar.png',
-          price: 1180.00,
-          minOrder: 30,
-          stock: 490,
-          stockStatus: 'in_stock',
           badge: 'Yönetici Serisi',
-          specs: ['Gece Laciverti & Antrasit Gövde', 'Bakır Deri El Tutamağı', 'Ayarlanabilir Omuz Askısı']
-        },
-        {
-          id: 'NP-CN-803',
-          name: 'Nova Canvas Luxe Deri Askılı Kurumsal Tote Çanta',
-          image: 'assets/images/cantalar.png',
-          price: 380.00,
-          minOrder: 100,
-          stock: 2200,
-          stockStatus: 'in_stock',
-          badge: 'Fuar & Kongre',
-          specs: ['380gr Ağır Gramaj Kanvas', 'Bakır Görünümlü Kulplar', 'İç Fermuarlı Cep']
-        },
-        {
-          id: 'NP-CN-804',
-          name: 'Nova Pack Elit Büzgülü Sırt & Etkinlik Çantası',
-          image: 'assets/images/cantalar.png',
-          price: 210.00,
-          minOrder: 100,
-          stock: 3100,
-          stockStatus: 'in_stock',
-          badge: 'Yüksek Stok',
-          specs: ['Leke Tutmaz Dokuma Kumaş', 'Bakır Kuşgözü & Kordon', 'Serigrafi / DTF Baskı Uyumlu']
+          specs: ['Su Geçirmez Kanvas Dokuma', '15.6" Darbe Korumalı Bölme', 'Bakır Fermuar & Deri Toka']
         }
       ]
     }

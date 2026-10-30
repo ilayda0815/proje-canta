@@ -8,11 +8,10 @@ Bu belge, **Nova Pak Çanta Promosyon** web sitesinin iki sayfalı (`index.html`
 
 ```text
 canta/
-├── index.html                  # Anasayfa (4'lü Yana Kaydırmalı Hero Slider + Popüler Kategoriler Grid)
+├── index.html                  # Anasayfa (4'lü Bez Çanta Yana Kaydırmalı Hero Slider + Popüler Kategoriler Grid)
 ├── promosyon.html              # Promosyon Sayfası (Tüm 8 Promosyon Kategorisi Koleksiyonu)
 ├── referanslarimiz.html        # Referanslarımız Sayfası (İstatistikler, Kalite Standartları ve Sektörel Referanslar)
 ├── iletisim.html               # İletişim Sayfası (WhatsApp Hızlı İletişim Merkezi, Showroom ve Telefon/E-posta Bilgileri)
-├── giris.html                  # Giriş Sayfası (Müşteri, Bayi ve Yönetici Giriş Portalı)
 ├── kategori.html               # Kategori Detay Sayfası (Alt ürünler, birim fiyatlar, canlı stok adetleri, filtreleme ve sıralama)
 ├── PROJE_NOTLARI.md            # Mimari, veri yapısı ve tasarım rehberi not defteri
 ├── css/
@@ -20,25 +19,38 @@ canta/
 │   └── style.css               # Tüm sayfaların, kartların ve sağ alt sabit WhatsApp bileşeninin stilleri
 ├── js/
 │   ├── products-data.js        # 8 kategorinin alt ürünleri, fiyatları, stok adetleri ve ürün kodları (Veri Katmanı)
-│   ├── main.js                 # Ortak menü, Hero slider, scroll-fade efekti, giriş ekranı ve sabit WhatsApp motoru
+│   ├── main.js                 # Ortak menü, Hero slider, scroll-fade efekti ve sabit WhatsApp motoru
 │   └── category-page.js        # kategori.html sayfasının dinamik ürün/fiyat/stok çizim, filtreleme ve sıralama motoru
 └── assets/
     └── images/                 # İşlenmiş ve standart isimlendirilmiş görseller
-        ├── logo-clean.png          # Arka planı temizlenmiş şeffaf logo ("NOVA PAK / Çanta Promosyon")
-        ├── hero-floating.png       # Havada süzülen Hero çanta kompozisyonu
-        ├── flash-bellekler.png     # 01. Kategori: Flash Bellekler
-        ├── yedek-bataryalar.png    # 02. Kategori: Yedek Bataryalar
-        ├── teknolojik-urunler.png  # 03. Kategori: Teknolojik Ürünler
-        ├── vip-kutulu-setler.png   # 04. Kategori: VIP Kutulu Setler
-        ├── cam-urunler.png         # 05. Kategori: Cam Ürünler
-        ├── masa-setleri.png        # 06. Kategori: Masa Setleri
-        ├── kirtasiye-urunleri.png  # 07. Kategori: Kırtasiye Ürünleri
-        └── cantalar.png            # 08. Kategori: Çantalar
+        ├── logo-clean.png              # Arka planı temizlenmiş şeffaf logo ("NOVA PAK / Çanta Promosyon")
+        ├── hero-floating.png           # Slayt 01: Özel Tasarım Bez Çanta & Kanvas Koleksiyonu
+        ├── hero-recycled-bags.png      # Slayt 02: Geri Dönüştürülmüş & Ham Bez Çantalar
+        ├── hero-leather-bags.png       # Slayt 03: Deri Desenli & Deri Saplı Kanvas Bez Çantalar
+        ├── hero-netbag-drawstring.png  # Slayt 04: Netbag File & Büzgülü Bez Çantalar
+        ├── flash-bellekler.png         # 01. Kategori: Flash Bellekler
+        ├── yedek-bataryalar.png        # 02. Kategori: Yedek Bataryalar
+        ├── teknolojik-urunler.png      # 03. Kategori: Teknolojik Ürünler
+        ├── vip-kutulu-setler.png       # 04. Kategori: VIP Kutulu Setler
+        ├── cam-urunler.png             # 05. Kategori: Cam Ürünler
+        ├── masa-setleri.png            # 06. Kategori: Masa Setleri
+        ├── kirtasiye-urunleri.png      # 07. Kategori: Kırtasiye Ürünleri
+        └── cantalar.png                # 08. Kategori: Bez Çantalar & Çanta Koleksiyonu
 ```
 
 ---
 
-## 2. Kategori, Ürün, Fiyat ve Stok Mimarisi (`kategori.html` & `js/products-data.js`)
+## 2. Güncel Renk Paleti (Design Tokens)
+
+| Kullanım | Renk | HEX |
+| :--- | :--- | :--- |
+| **Web sitesi ana arka planı** | Doğal Krem | `#F5F1E8` |
+| **Logo** | Orman Yeşili | `#244C3B` |
+| **Navigasyon** | Koyu Yeşil | `#19382D` |
+| **Butonlar** | Orman Yeşili | `#244C3B` |
+| **Hover ve küçük vurgular** | Bakır | `#B97955` |
+| **Ürün kartları** | Beyaz | `#FFFFFF` |
+| **İkincil alanlar** | Kum Beji | `#DED2C2` |
 
 - Ana sayfadaki **Asimetrik Bento Grid** kartlarından veya sağ üstteki **Kategoriler** açılır menüsünden herhangi bir kategoriye tıklandığında ilgili kategori sayfası açılır:
   - Örn: `kategori.html?cat=flash-bellekler`, `kategori.html?cat=cantalar` vb.

@@ -85,6 +85,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const stepPercent = 100 / totalSlides;
       track.style.transform = `translate3d(-${currentSlide * stepPercent}%, 0, 0)`;
 
+      if (heroSection) {
+        heroSection.setAttribute('data-hero-theme', String(currentSlide));
+      }
+
       slides.forEach((slide, idx) => {
         slide.classList.toggle('is-active', idx === currentSlide);
       });
@@ -172,7 +176,27 @@ document.addEventListener('DOMContentLoaded', () => {
     startAutoPlay();
   }
 
-  // 3. SAĞ KÖŞE AÇILIR KATEGORİLER MENÜSÜ ETKİLEŞİMİ
+  // 3. SAĞ KÖŞE AÇILIR KATEGORİLER MENÜSÜ ETKİLEŞİMİ & DİNAMİK KATEGORİ LİSTESİ
+  if (cornerCategories) {
+    const dropdownGrid = cornerCategories.querySelector('.corner-dropdown__grid');
+    const catalog = window.NOVA_PAK_CATALOG;
+    if (dropdownGrid && catalog && Array.isArray(catalog.categories)) {
+      dropdownGrid.innerHTML = catalog.categories
+        .map(
+          (cat) => `
+            <a href="kategori.html?cat=${cat.slug}" class="dropdown-cat-item">
+              <img src="${cat.heroImage}" alt="${cat.title}" class="dropdown-cat-item__thumb" />
+              <div class="dropdown-cat-item__info">
+                <span class="dropdown-cat-item__num">${cat.subtitle}</span>
+                <span class="dropdown-cat-item__name">${cat.title}</span>
+              </div>
+            </a>
+          `
+        )
+        .join('');
+    }
+  }
+
   if (categoriesTrigger && cornerCategories) {
     categoriesTrigger.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -238,42 +262,6 @@ document.addEventListener('DOMContentLoaded', () => {
         waFloatWrap.classList.remove('is-open');
         waPopup.setAttribute('aria-hidden', 'true');
       }
-    });
-  }
-
-  // 6. GİRİŞ SAYFASI (giris.html) SEKME VE FORM ETKİLEŞİMİ
-  const tabLogin = document.getElementById('tabLogin');
-  const tabRegister = document.getElementById('tabRegister');
-  const authHeading = document.getElementById('authHeading');
-  const loginForm = document.getElementById('loginForm');
-  const loginSubmitBtn = document.getElementById('loginSubmitBtn');
-
-  if (tabLogin && tabRegister && authHeading) {
-    tabLogin.addEventListener('click', () => {
-      tabLogin.classList.add('is-active');
-      tabRegister.classList.remove('is-active');
-      authHeading.textContent = 'Müşteri & Bayi Hesabınıza Giriş Yapın';
-    });
-
-    tabRegister.addEventListener('click', () => {
-      tabRegister.classList.add('is-active');
-      tabLogin.classList.remove('is-active');
-      authHeading.textContent = 'Yönetici Paneline Giriş Yapın';
-    });
-  }
-
-  if (loginForm && loginSubmitBtn) {
-    loginForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const orig = loginSubmitBtn.innerHTML;
-      loginSubmitBtn.innerHTML = '<span>Doğrulanıyor... ✓</span>';
-      loginSubmitBtn.style.backgroundColor = '#B97955';
-      loginSubmitBtn.style.borderColor = '#B97955';
-      setTimeout(() => {
-        loginSubmitBtn.innerHTML = orig;
-        loginSubmitBtn.style.backgroundColor = '';
-        loginSubmitBtn.style.borderColor = '';
-      }, 2400);
     });
   }
 

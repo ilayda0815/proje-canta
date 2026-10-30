@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  // 8 Kategori Hızlı Geçiş Sekmelerini Oluştur
+  // Kategori Hızlı Geçiş Sekmelerini Oluştur
   const renderTabs = () => {
     if (!catTabsBar) return;
     catTabsBar.innerHTML = catalog.categories
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const activeClass = cat.slug === activeSlug ? 'is-active' : '';
         return `
           <button type="button" class="cat-tab-pill ${activeClass}" data-slug="${cat.slug}">
-            ${cat.index} &bull; ${cat.title}
+            ${cat.title}
           </button>
         `;
       })
@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.title = `${found.title} — Fiyat & Stok | Nova Pak Çanta Promosyon`;
     if (breadcrumbCurrent) breadcrumbCurrent.textContent = found.title;
-    if (catHeroIndex) catHeroIndex.textContent = `KATEGORİ ${found.index} / 08 — ${found.subtitle}`;
+    if (catHeroIndex) catHeroIndex.textContent = `${found.subtitle}`;
     if (catHeroTitle) catHeroTitle.textContent = found.title;
     if (catHeroDesc) catHeroDesc.textContent = found.description;
     if (catHeroImg) {
