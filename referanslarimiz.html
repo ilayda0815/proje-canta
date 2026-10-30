@@ -30,8 +30,28 @@
       <div class="header-nav-group">
         <nav aria-label="Ana Menü">
           <ul class="nav-list">
-            <li><a href="index.html" class="nav-link">Anasayfa</a></li>
-            <li><a href="promosyon.html" class="nav-link">Promosyon</a></li>
+            <!-- Kurumsal Dropdown -->
+            <li class="nav-item nav-item--dropdown">
+              <a href="kurumsal.html" class="nav-link nav-link--has-dropdown">
+                <span>Kurumsal</span>
+                <svg class="nav-link__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </a>
+              <div class="nav-dropdown nav-dropdown--corporate" role="menu" aria-label="Kurumsal Alt Menüsü">
+                <div class="nav-dropdown__bridge"></div>
+                <ul class="nav-dropdown__list">
+                  <li><a href="firma-profili.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Firma Profili</span></a></li>
+                  <li><a href="yonetim-ve-ekibimiz.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Yönetim ve Ekibimiz</span></a></li>
+                  <li><a href="grup-sirketleri.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Grup Şirketleri</span></a></li>
+                  <li><a href="misyon-ve-vizyon.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Misyon ve Vizyonu</span></a></li>
+                  <li><a href="online-katalog.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Online Katalog</span></a></li>
+                  <li><a href="kalite-belgeleri.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Kalite Belgeleri ve Sosyal Uygunluk</span></a></li>
+                  <li><a href="sponsorluklar-ve-oduller.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Sponsorluklar ve Ödüller</span></a></li>
+                  <li><a href="sss.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Sıkça Sorulan Sorular</span></a></li>
+                  <li><a href="arge-ve-patent.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Ar-Ge ve Patent Çalışmaları</span></a></li>
+                </ul>
+              </div>
+            </li>
+
             <li><a href="referanslarimiz.html" class="nav-link active">Referanslarımız</a></li>
             <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
           </ul>
@@ -42,76 +62,66 @@
             <span class="corner-categories__icon" aria-hidden="true">
               <span></span><span></span><span></span><span></span>
             </span>
-            <span>Kategoriler</span>
+            <span>Ürün Serileri</span>
             <svg class="corner-categories__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </button>
 
-          <div class="corner-dropdown" role="menu" aria-label="Promosyon Kategorileri">
+          <div class="corner-dropdown" role="menu" aria-label="Ürün Kategorileri">
             <div class="corner-Dropdown-bridge"></div>
             <div class="corner-dropdown__header">
-              <span class="corner-dropdown__title">Ürün &amp; Stok Kataloğu</span>
-              <span class="corner-dropdown__badge">Özel Koleksiyon</span>
+              <span class="corner-dropdown__title">Tescilli Çanta Serilerimiz</span>
+              <span class="corner-dropdown__badge">Tekrar Kullanılır</span>
             </div>
 
             <div class="corner-dropdown__grid">
-              <a href="kategori.html?cat=flash-bellekler" class="dropdown-cat-item">
-                <img src="assets/images/flash-bellekler.png" alt="Flash Bellekler" class="dropdown-cat-item__thumb" />
+              <a href="kategori.html?cat=netbag" class="dropdown-cat-item">
+                <img src="assets/images/hero-netbag-drawstring.png" alt="Netbag" class="dropdown-cat-item__thumb" />
                 <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Dijital Prestij</span>
-                  <span class="dropdown-cat-item__name">Flash Bellekler</span>
+                  <span class="dropdown-cat-item__num">Ultrasonik &amp; File</span>
+                  <span class="dropdown-cat-item__name">Netbag</span>
                 </div>
               </a>
-              <a href="kategori.html?cat=yedek-bataryalar" class="dropdown-cat-item">
-                <img src="assets/images/yedek-bataryalar.png" alt="Yedek Bataryalar" class="dropdown-cat-item__thumb" />
+              <a href="kategori.html?cat=netstrong" class="dropdown-cat-item">
+                <img src="assets/images/hero-floating.png" alt="Netstrong" class="dropdown-cat-item__thumb" />
                 <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Kesintisiz Enerji</span>
-                  <span class="dropdown-cat-item__name">Yedek Bataryalar</span>
+                  <span class="dropdown-cat-item__num">Yüksek Mukavemet</span>
+                  <span class="dropdown-cat-item__name">Netstrong</span>
                 </div>
               </a>
-              <a href="kategori.html?cat=teknolojik-urunler" class="dropdown-cat-item">
-                <img src="assets/images/teknolojik-urunler.png" alt="Teknolojik Ürünler" class="dropdown-cat-item__thumb" />
+              <a href="kategori.html?cat=netcool" class="dropdown-cat-item">
+                <img src="assets/images/cantalar.png" alt="Netcool" class="dropdown-cat-item__thumb" />
                 <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Akıllı Donanım</span>
-                  <span class="dropdown-cat-item__name">Teknolojik Ürünler</span>
+                  <span class="dropdown-cat-item__num">Isı Yalıtımlı Termal</span>
+                  <span class="dropdown-cat-item__name">Netcool</span>
                 </div>
               </a>
-              <a href="kategori.html?cat=vip-kutulu-setler" class="dropdown-cat-item">
-                <img src="assets/images/vip-kutulu-setler.png" alt="VIP Kutulu Setler" class="dropdown-cat-item__thumb" />
+              <a href="kategori.html?cat=netgo" class="dropdown-cat-item">
+                <img src="assets/images/hero-netbag-drawstring.png" alt="Netgo" class="dropdown-cat-item__thumb" />
                 <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Prestij Serisi</span>
-                  <span class="dropdown-cat-item__name">VIP Kutulu Setler</span>
+                  <span class="dropdown-cat-item__num">Büzgülü &amp; Katlanır</span>
+                  <span class="dropdown-cat-item__name">Netgo</span>
                 </div>
               </a>
-              <a href="kategori.html?cat=cam-urunler" class="dropdown-cat-item">
-                <img src="assets/images/cam-urunler.png" alt="Cam Ürünler" class="dropdown-cat-item__thumb" />
+              <a href="kategori.html?cat=nethandle" class="dropdown-cat-item">
+                <img src="assets/images/hero-floating.png" alt="Nethandle" class="dropdown-cat-item__thumb" />
                 <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Sağlık &amp; Zarafet</span>
-                  <span class="dropdown-cat-item__name">Cam Ürünler</span>
+                  <span class="dropdown-cat-item__num">Deri &amp; Özel Saplı</span>
+                  <span class="dropdown-cat-item__name">Nethandle</span>
                 </div>
               </a>
-              <a href="kategori.html?cat=masa-setleri" class="dropdown-cat-item">
-                <img src="assets/images/masa-setleri.png" alt="Masa Setleri" class="dropdown-cat-item__thumb" />
+              <a href="kategori.html?cat=neteco" class="dropdown-cat-item">
+                <img src="assets/images/hero-recycled-bags.png" alt="Neteco" class="dropdown-cat-item__thumb" />
                 <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Yönetici Ofisi</span>
-                  <span class="dropdown-cat-item__name">Masa Setleri</span>
+                  <span class="dropdown-cat-item__num">%100 Geri Dönüşüm</span>
+                  <span class="dropdown-cat-item__name">Neteco</span>
                 </div>
               </a>
-              <a href="kategori.html?cat=kirtasiye-urunleri" class="dropdown-cat-item">
-                <img src="assets/images/kirtasiye-urunleri.png" alt="Kırtasiye Ürünleri" class="dropdown-cat-item__thumb" />
-                <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Ofis &amp; Toplantı</span>
-                  <span class="dropdown-cat-item__name">Kırtasiye Ürünleri</span>
-                </div>
-              </a>
-              <a href="kategori.html?cat=cantalar" class="dropdown-cat-item">
-                <img src="assets/images/cantalar.png" alt="Çantalar" class="dropdown-cat-item__thumb" />
-                <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Özel Üretim</span>
-                  <span class="dropdown-cat-item__name">Çantalar</span>
-                </div>
-              </a>
+            </div>
+            <div class="corner-dropdown__footer">
+              <span>Tüm kurumsal koleksiyonu incele</span>
+              <a href="promosyon.html">Tüm Ürünleri İncele &rarr;</a>
             </div>
           </div>
         </div>
@@ -266,8 +276,8 @@
         </div>
 
         <ul class="nav-list">
-          <li><a href="index.html" class="nav-link" style="color: var(--color-off-white);">Anasayfa</a></li>
-          <li><a href="promosyon.html" class="nav-link" style="color: var(--color-off-white);">Promosyon</a></li>
+          <li><a href="promosyon.html" class="nav-link" style="color: var(--color-off-white);">Ürünlerimiz</a></li>
+          <li><a href="kurumsal.html" class="nav-link" style="color: var(--color-off-white);">Kurumsal</a></li>
           <li><a href="referanslarimiz.html" class="nav-link" style="color: var(--color-off-white);">Referanslarımız</a></li>
           <li><a href="iletisim.html" class="nav-link" style="color: var(--color-off-white);">İletişim</a></li>
         </ul>

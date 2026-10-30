@@ -1,5 +1,5 @@
 /* ==========================================================================
-   NOVA PAK ÇANTA PROMOSYON - YENİ TASARIM DEĞİŞKENLERİ (DESIGN TOKENS)
+   NOVA PAK ÇANTA PROMOSYON - ELİT KURUMSAL & ALTIN ORAN TASARIM DEĞİŞKENLERİ
    ==========================================================================
    | Kullanım                  | Renk         | HEX     |
    |---------------------------|--------------|---------|
@@ -13,7 +13,7 @@
    ========================================================================== */
 
 :root {
-  /* Yeni Ana Renk Paleti */
+  /* 1. KORUNAN ANA RENK PALETİ */
   --color-cream-bg: #F5F1E8;       /* Web sitesi ana arka planı: Doğal Krem */
   --color-forest-green: #244C3B;   /* Logo & Butonlar: Orman Yeşili */
   --color-dark-green: #19382D;     /* Navigasyon & Koyu Alanlar: Koyu Yeşil */
@@ -28,36 +28,73 @@
   --color-light-gray: #DED2C2;
   --color-anthracite: #19382D;
 
-  /* Yardımcı Tonlar & Saydamlıklar */
-  --color-copper-hover: #a36644;
-  --color-copper-soft: rgba(185, 121, 85, 0.14);
-  --color-copper-border: rgba(185, 121, 85, 0.35);
-  --color-green-soft: rgba(36, 76, 59, 0.08);
-  --color-nav-glass: rgba(25, 56, 45, 0.95);
-  --color-text-muted: #465E52;
+  /* 2. BUZLU CAM (FROSTED GLASS / GLASSMORPHISM) DEĞİŞKENLERİ */
+  --glass-bg-header: rgba(245, 241, 232, 0.78);
+  --glass-bg-header-scrolled: rgba(245, 241, 232, 0.92);
+  --glass-bg-card: rgba(255, 255, 255, 0.78);
+  --glass-bg-card-hover: rgba(255, 255, 255, 0.92);
+  --glass-bg-dark: rgba(25, 56, 45, 0.82);
+  --glass-bg-copper: rgba(185, 121, 85, 0.12);
+  --glass-bg-beige: rgba(222, 210, 194, 0.55);
 
-  /* Tipografi */
+  --glass-border-light: rgba(255, 255, 255, 0.82);
+  --glass-border-copper: rgba(185, 121, 85, 0.28);
+  --glass-border-green: rgba(36, 76, 59, 0.16);
+  --glass-border-dark: rgba(255, 255, 255, 0.14);
+
+  --glass-blur-lg: blur(28px) saturate(190%);
+  --glass-blur-md: blur(18px) saturate(170%);
+  --glass-blur-sm: blur(12px);
+
+  --glass-specular: inset 0 1px 1px 0 rgba(255, 255, 255, 0.75);
+  --glass-specular-dark: inset 0 1px 1px 0 rgba(255, 255, 255, 0.18);
+
+  /* Yardımcı Tonlar & Saydamlıklar */
+  --color-copper-hover: #A36644;
+  --color-copper-soft: rgba(185, 121, 85, 0.12);
+  --color-copper-border: rgba(185, 121, 85, 0.32);
+  --color-green-soft: rgba(36, 76, 59, 0.08);
+  --color-text-muted: #566D62;
+
+  /* 3. ALTIN ORAN (PHI ~ 1.618) & MİMARİ BOŞLUK DÜZENİ */
+  --phi: 1.618;
+  --container-max-width: 1380px;
+  --header-height: 68px;
+
+  /* Fibonacci & Altın Oran Boşluk Ölçeği */
+  --space-2xs: 5px;
+  --space-xs: 8px;
+  --space-sm: 13px;
+  --space-md: 21px;
+  --space-lg: 34px;
+  --space-xl: 55px;
+  --space-2xl: 89px;
+  --space-3xl: 144px;
+
+  /* Yuvarlatmalar (Radius) */
+  --radius-xs: 8px;
+  --radius-sm: 14px;
+  --radius-md: 22px;
+  --radius-lg: 32px;
+  --radius-xl: 44px;
+  --radius-pill: 9999px;
+
+  /* 4. TİPOGRAFİ (EDİTÖRYAL & ELİT KURUMSAL) */
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 
-  /* Düzen & Boşluklar (Layout & Spacing) */
-  --container-max-width: 1340px;
-  --header-height: 92px;
-  --radius-sm: 10px;
-  --radius-md: 18px;
-  --radius-lg: 26px;
-  --radius-pill: 999px;
+  /* 5. GÖLGELER (FROSTED AMBIENT SHADOWS) */
+  --shadow-subtle: 0 10px 30px -6px rgba(25, 56, 45, 0.06);
+  --shadow-card: 0 18px 42px -10px rgba(25, 56, 45, 0.09);
+  --shadow-hover: 0 28px 60px -14px rgba(25, 56, 45, 0.16);
+  --shadow-copper: 0 14px 32px -6px rgba(185, 121, 85, 0.35);
+  --shadow-dropdown: 0 32px 70px -12px rgba(25, 56, 45, 0.22);
+  --shadow-glass: var(--glass-specular), 0 16px 38px -8px rgba(25, 56, 45, 0.08);
 
-  /* Gölgeler (Shadows) */
-  --shadow-subtle: 0 8px 24px -4px rgba(25, 56, 45, 0.07);
-  --shadow-card: 0 14px 34px -8px rgba(25, 56, 45, 0.11);
-  --shadow-hover: 0 24px 48px -12px rgba(25, 56, 45, 0.20);
-  --shadow-copper: 0 14px 30px -6px rgba(185, 121, 85, 0.38);
-  --shadow-dropdown: 0 28px 60px -10px rgba(25, 56, 45, 0.25);
-
-  /* Geçişler (Transitions) */
+  /* 6. AKICI GEÇİŞLER (TRANSITIONS) */
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
-  --transition-fast: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-smooth: 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.26s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-elastic: 0.65s cubic-bezier(0.34, 1.56, 0.64, 1);
 }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Promosyon Kategorileri | Nova Pak Çanta Promosyon</title>
+  <title>Ürünlerimiz | Nova Pak Çanta Promosyon</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
@@ -17,6 +17,7 @@
   <!-- 1. ÜST MENÜ -->
   <header id="header" class="site-header">
     <div class="container header-inner">
+      
       <a href="index.html" class="brand-logo" aria-label="Nova Pak Çanta Promosyon Anasayfa">
         <div class="brand-logo__img-wrap">
           <img src="assets/images/logo-clean.png" alt="Nova Pak Çanta Promosyon Logo" class="brand-logo__img" />
@@ -30,92 +31,110 @@
       <div class="header-nav-group">
         <nav aria-label="Ana Menü">
           <ul class="nav-list">
-            <li><a href="index.html" class="nav-link">Anasayfa</a></li>
-            <li><a href="promosyon.html" class="nav-link active">Promosyon</a></li>
+            <!-- Kurumsal Dropdown -->
+            <li class="nav-item nav-item--dropdown">
+              <a href="kurumsal.html" class="nav-link nav-link--has-dropdown">
+                <span>Kurumsal</span>
+                <svg class="nav-link__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </a>
+              <div class="nav-dropdown nav-dropdown--corporate" role="menu" aria-label="Kurumsal Alt Menüsü">
+                <div class="nav-dropdown__bridge"></div>
+                <ul class="nav-dropdown__list">
+                  <li><a href="firma-profili.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Firma Profili</span></a></li>
+                  <li><a href="yonetim-ve-ekibimiz.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Yönetim ve Ekibimiz</span></a></li>
+                  <li><a href="grup-sirketleri.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Grup Şirketleri</span></a></li>
+                  <li><a href="misyon-ve-vizyon.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Misyon ve Vizyonu</span></a></li>
+                  <li><a href="online-katalog.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Online Katalog</span></a></li>
+                  <li><a href="kalite-belgeleri.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Kalite Belgeleri ve Sosyal Uygunluk</span></a></li>
+                  <li><a href="sponsorluklar-ve-oduller.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Sponsorluklar ve Ödüller</span></a></li>
+                  <li><a href="sss.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Sıkça Sorulan Sorular</span></a></li>
+                  <li><a href="arge-ve-patent.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Ar-Ge ve Patent Çalışmaları</span></a></li>
+                </ul>
+              </div>
+            </li>
+
             <li><a href="referanslarimiz.html" class="nav-link">Referanslarımız</a></li>
             <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
           </ul>
         </nav>
 
+        <!-- Son Köşe: Açılır Kategoriler Mega Menüsü -->
         <div class="corner-categories" id="cornerCategories">
           <button type="button" class="corner-categories__trigger" id="categoriesTrigger" aria-expanded="false" aria-haspopup="true">
             <span class="corner-categories__icon" aria-hidden="true">
               <span></span><span></span><span></span><span></span>
             </span>
-            <span>Kategoriler</span>
+            <span>Ürün Serileri</span>
             <svg class="corner-categories__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </button>
 
-          <div class="corner-dropdown" role="menu" aria-label="Promosyon Kategorileri">
+          <div class="corner-dropdown" role="menu" aria-label="Ürün Kategorileri">
             <div class="corner-Dropdown-bridge"></div>
             <div class="corner-dropdown__header">
-              <span class="corner-dropdown__title">Ürün &amp; Stok Kataloğu</span>
-              <span class="corner-dropdown__badge">Özel Koleksiyon</span>
+              <span class="corner-dropdown__title">Tescilli Çanta Serilerimiz</span>
+              <span class="corner-dropdown__badge">Tekrar Kullanılır</span>
             </div>
 
             <div class="corner-dropdown__grid">
-              <a href="kategori.html?cat=flash-bellekler" class="dropdown-cat-item">
-                <img src="assets/images/flash-bellekler.png" alt="Flash Bellekler" class="dropdown-cat-item__thumb" />
+              <a href="kategori.html?cat=netbag" class="dropdown-cat-item">
+                <img src="assets/images/hero-netbag-drawstring.png" alt="Netbag" class="dropdown-cat-item__thumb" />
                 <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Dijital Prestij</span>
-                  <span class="dropdown-cat-item__name">Flash Bellekler</span>
+                  <span class="dropdown-cat-item__num">Ultrasonik &amp; File</span>
+                  <span class="dropdown-cat-item__name">Netbag</span>
                 </div>
               </a>
-              <a href="kategori.html?cat=yedek-bataryalar" class="dropdown-cat-item">
-                <img src="assets/images/yedek-bataryalar.png" alt="Yedek Bataryalar" class="dropdown-cat-item__thumb" />
+
+              <a href="kategori.html?cat=netstrong" class="dropdown-cat-item">
+                <img src="assets/images/hero-floating.png" alt="Netstrong" class="dropdown-cat-item__thumb" />
                 <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Kesintisiz Enerji</span>
-                  <span class="dropdown-cat-item__name">Yedek Bataryalar</span>
+                  <span class="dropdown-cat-item__num">Yüksek Mukavemet</span>
+                  <span class="dropdown-cat-item__name">Netstrong</span>
                 </div>
               </a>
-              <a href="kategori.html?cat=teknolojik-urunler" class="dropdown-cat-item">
-                <img src="assets/images/teknolojik-urunler.png" alt="Teknolojik Ürünler" class="dropdown-cat-item__thumb" />
+
+              <a href="kategori.html?cat=netcool" class="dropdown-cat-item">
+                <img src="assets/images/cantalar.png" alt="Netcool" class="dropdown-cat-item__thumb" />
                 <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Akıllı Donanım</span>
-                  <span class="dropdown-cat-item__name">Teknolojik Ürünler</span>
+                  <span class="dropdown-cat-item__num">Isı Yalıtımlı Termal</span>
+                  <span class="dropdown-cat-item__name">Netcool</span>
                 </div>
               </a>
-              <a href="kategori.html?cat=vip-kutulu-setler" class="dropdown-cat-item">
-                <img src="assets/images/vip-kutulu-setler.png" alt="VIP Kutulu Setler" class="dropdown-cat-item__thumb" />
+
+              <a href="kategori.html?cat=netgo" class="dropdown-cat-item">
+                <img src="assets/images/hero-netbag-drawstring.png" alt="Netgo" class="dropdown-cat-item__thumb" />
                 <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Prestij Serisi</span>
-                  <span class="dropdown-cat-item__name">VIP Kutulu Setler</span>
+                  <span class="dropdown-cat-item__num">Büzgülü &amp; Katlanır</span>
+                  <span class="dropdown-cat-item__name">Netgo</span>
                 </div>
               </a>
-              <a href="kategori.html?cat=cam-urunler" class="dropdown-cat-item">
-                <img src="assets/images/cam-urunler.png" alt="Cam Ürünler" class="dropdown-cat-item__thumb" />
+
+              <a href="kategori.html?cat=nethandle" class="dropdown-cat-item">
+                <img src="assets/images/hero-floating.png" alt="Nethandle" class="dropdown-cat-item__thumb" />
                 <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Sağlık &amp; Zarafet</span>
-                  <span class="dropdown-cat-item__name">Cam Ürünler</span>
+                  <span class="dropdown-cat-item__num">Deri &amp; Özel Saplı</span>
+                  <span class="dropdown-cat-item__name">Nethandle</span>
                 </div>
               </a>
-              <a href="kategori.html?cat=masa-setleri" class="dropdown-cat-item">
-                <img src="assets/images/masa-setleri.png" alt="Masa Setleri" class="dropdown-cat-item__thumb" />
+
+              <a href="kategori.html?cat=neteco" class="dropdown-cat-item">
+                <img src="assets/images/hero-recycled-bags.png" alt="Neteco" class="dropdown-cat-item__thumb" />
                 <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Yönetici Ofisi</span>
-                  <span class="dropdown-cat-item__name">Masa Setleri</span>
+                  <span class="dropdown-cat-item__num">%100 Geri Dönüşüm</span>
+                  <span class="dropdown-cat-item__name">Neteco</span>
                 </div>
               </a>
-              <a href="kategori.html?cat=kirtasiye-urunleri" class="dropdown-cat-item">
-                <img src="assets/images/kirtasiye-urunleri.png" alt="Kırtasiye Ürünleri" class="dropdown-cat-item__thumb" />
-                <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Ofis &amp; Toplantı</span>
-                  <span class="dropdown-cat-item__name">Kırtasiye Ürünleri</span>
-                </div>
-              </a>
-              <a href="kategori.html?cat=cantalar" class="dropdown-cat-item">
-                <img src="assets/images/cantalar.png" alt="Çantalar" class="dropdown-cat-item__thumb" />
-                <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Özel Üretim</span>
-                  <span class="dropdown-cat-item__name">Çantalar</span>
-                </div>
-              </a>
+            </div>
+
+            <div class="corner-dropdown__footer">
+              <span>Tüm kurumsal koleksiyonu incele</span>
+              <a href="promosyon.html">Tüm Ürünleri İncele &rarr;</a>
             </div>
           </div>
         </div>
       </div>
+
     </div>
   </header>
 
@@ -123,191 +142,125 @@
     <!-- SAYFA ÜST BANNER -->
     <section class="page-hero">
       <div class="container">
-        <nav class="breadcrumb" aria-label="Sayfa Konumu">
-          <a href="index.html">Anasayfa</a>
-          <span class="breadcrumb__sep">/</span>
-          <span>Promosyon</span>
-        </nav>
-
         <div class="page-hero__box">
-          <div class="section-tag" style="color: #e2a481;">2026 Ürün &amp; Stok Kataloğu</div>
-          <h1 class="page-hero__title">Tüm Promosyon <span>Koleksiyonlarımız</span></h1>
+          <div class="section-tag" style="color: var(--color-copper); margin-bottom: 12px;">Tekrar Kullanılır Doğa Dostu Çanta Çözümleri</div>
+          <h1 class="page-hero__title">Tescilli Ürün <span>Gruplarımız</span></h1>
           <p class="page-hero__desc">
-            Aşağıdaki ürün gruplarımızdan dilediğinize tıklayarak o kategoriye ait ürünleri, birim fiyatlarını ve anlık stok adetlerini inceleyebilirsiniz.
+            Netbag, Netstrong, Netcool, Netgo, Nethandle ve Neteco serilerimizden ihtiyacınıza uygun grubu seçerek teknik özellikleri, stok sayılarını ve toptan birim fiyatlarını inceleyebilirsiniz.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- ASİMETRİK BENTO GRİD -->
-    <section class="categories-section" style="padding-top: 56px;">
+    <!-- 6 TESCİLLİ SERİ VİTRİN GRİDİ -->
+    <section class="categories-section" style="padding-top: 64px;">
       <div class="container">
-        <div class="bento-grid">
-          <a href="kategori.html?cat=flash-bellekler" class="bento-card bento-card--span-7 reveal is-visible">
-            <div class="bento-card__media">
-              <img src="assets/images/flash-bellekler.png" alt="Flash Bellekler" class="bento-card__img" />
+        <div class="corp-series-grid">
+          <!-- 01: NETBAG -->
+          <a href="kategori.html?cat=netbag" class="corp-series-card reveal">
+            <div class="corp-series-card__media">
+              <span class="corp-series-card__badge">SERİ 01</span>
+              <span class="corp-series-card__tag">Ultrasonik &amp; File</span>
+              <img src="assets/images/hero-netbag-drawstring.png" alt="Netbag Serisi" class="corp-series-card__img" />
             </div>
-            <div class="bento-card__overlay"></div>
-            <div class="bento-card__top">
-              <span class="bento-card__index">NOVA PAK</span>
-              <span class="bento-card__badge">Ürünleri &amp; Fiyatları Gör</span>
-            </div>
-            <div class="bento-card__content">
-              <div class="bento-card__text">
-                <span class="bento-card__category-sub">Dijital Prestij Serisi</span>
-                <h2 class="bento-card__title">Flash Bellekler</h2>
-                <p class="bento-card__desc">Bakır ve gece laciverti gövdeli, deri anahtarlıklı ve özel kutulu yüksek hızlı USB &amp; Type-C bellek çözümleri.</p>
+            <div class="corp-series-card__body">
+              <span class="corp-series-card__sub">Klasik &amp; Fileli Bez Çanta Serisi</span>
+              <h3 class="corp-series-card__title">Netbag</h3>
+              <p class="corp-series-card__desc">Perakende zincirleri, mağazacılık ve günlük kullanım için el geçmeli, körüklü ultrasonik kaynaklı ve organik file örgülü bez çantalar.</p>
+              <div class="corp-series-card__foot">
+                <span>Ürünleri &amp; Fiyatları Gör</span>
+                <span>&rarr;</span>
               </div>
-              <span class="bento-card__action">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </span>
             </div>
           </a>
 
-          <a href="kategori.html?cat=yedek-bataryalar" class="bento-card bento-card--span-5 reveal is-visible">
-            <div class="bento-card__media">
-              <img src="assets/images/yedek-bataryalar.png" alt="Yedek Bataryalar" class="bento-card__img" />
+          <!-- 02: NETSTRONG -->
+          <a href="kategori.html?cat=netstrong" class="corp-series-card reveal">
+            <div class="corp-series-card__media">
+              <span class="corp-series-card__badge">SERİ 02</span>
+              <span class="corp-series-card__tag">25 kg+ Dayanım</span>
+              <img src="assets/images/hero-floating.png" alt="Netstrong Serisi" class="corp-series-card__img" />
             </div>
-            <div class="bento-card__overlay"></div>
-            <div class="bento-card__top">
-              <span class="bento-card__index">NOVA PAK</span>
-              <span class="bento-card__badge">Ürünleri &amp; Fiyatları Gör</span>
-            </div>
-            <div class="bento-card__content">
-              <div class="bento-card__text">
-                <span class="bento-card__category-sub">Kesintisiz Enerji</span>
-                <h2 class="bento-card__title">Yedek Bataryalar</h2>
-                <p class="bento-card__desc">Mat dokulu, bakır çerçeveli ve ışıklı logo uygulamasına uygun powerbank modelleri.</p>
+            <div class="corp-series-card__body">
+              <span class="corp-series-card__sub">Yüksek Mukavemetli Ağır Hizmet Serisi</span>
+              <h3 class="corp-series-card__title">Netstrong</h3>
+              <p class="corp-series-card__desc">OPP/Mat laminasyonlu dokuma, güçlendirilmiş taban ve ağır gramajlı kanvas dokusuyla yüksek taşıma kapasitesi sunan endüstriyel seri.</p>
+              <div class="corp-series-card__foot">
+                <span>Ürünleri &amp; Fiyatları Gör</span>
+                <span>&rarr;</span>
               </div>
-              <span class="bento-card__action">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </span>
             </div>
           </a>
 
-          <a href="kategori.html?cat=teknolojik-urunler" class="bento-card bento-card--span-4 reveal">
-            <div class="bento-card__media">
-              <img src="assets/images/teknolojik-urunler.png" alt="Teknolojik Ürünler" class="bento-card__img" />
+          <!-- 03: NETCOOL -->
+          <a href="kategori.html?cat=netcool" class="corp-series-card reveal">
+            <div class="corp-series-card__media">
+              <span class="corp-series-card__badge">SERİ 03</span>
+              <span class="corp-series-card__tag">Isı Yalıtımlı</span>
+              <img src="assets/images/cantalar.png" alt="Netcool Serisi" class="corp-series-card__img" />
             </div>
-            <div class="bento-card__overlay"></div>
-            <div class="bento-card__top">
-              <span class="bento-card__index">NOVA PAK</span>
-              <span class="bento-card__badge">Ürünleri &amp; Fiyatları Gör</span>
-            </div>
-            <div class="bento-card__content">
-              <div class="bento-card__text">
-                <span class="bento-card__category-sub">Akıllı Donanım</span>
-                <h2 class="bento-card__title">Teknolojik Ürünler</h2>
-                <p class="bento-card__desc">Kablosuz şarj standları, Bluetooth hoparlörler ve kulaklık setleri.</p>
+            <div class="corp-series-card__body">
+              <span class="corp-series-card__sub">Termal &amp; Soğutucu Çanta Serisi</span>
+              <h3 class="corp-series-card__title">Netcool</h3>
+              <p class="corp-series-card__desc">Alüminyum folyo ve PE köpük laminasyonlu iç katmanıyla soğuk/sıcak zincirini koruyan fermuarlı ve cırtlı termal gıda çantaları.</p>
+              <div class="corp-series-card__foot">
+                <span>Ürünleri &amp; Fiyatları Gör</span>
+                <span>&rarr;</span>
               </div>
-              <span class="bento-card__action">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </span>
             </div>
           </a>
 
-          <a href="kategori.html?cat=vip-kutulu-setler" class="bento-card bento-card--span-5 reveal">
-            <div class="bento-card__media">
-              <img src="assets/images/vip-kutulu-setler.png" alt="VIP Kutulu Setler" class="bento-card__img" />
+          <!-- 04: NETGO -->
+          <a href="kategori.html?cat=netgo" class="corp-series-card reveal">
+            <div class="corp-series-card__media">
+              <span class="corp-series-card__badge">SERİ 04</span>
+              <span class="corp-series-card__tag">Büzgülü &amp; Mobil</span>
+              <img src="assets/images/hero-netbag-drawstring.png" alt="Netgo Serisi" class="corp-series-card__img" />
             </div>
-            <div class="bento-card__overlay"></div>
-            <div class="bento-card__top">
-              <span class="bento-card__index">NOVA PAK</span>
-              <span class="bento-card__badge">Ürünleri &amp; Fiyatları Gör</span>
-            </div>
-            <div class="bento-card__content">
-              <div class="bento-card__text">
-                <span class="bento-card__category-sub">Prestij Koleksiyonu</span>
-                <h2 class="bento-card__title">VIP Kutulu Setler</h2>
-                <p class="bento-card__desc">Bakır şeritli özel tasarım hediye kutularında ajanda, metal kalem, kartvizitlik ve anahtarlık kombinasyonları.</p>
+            <div class="corp-series-card__body">
+              <span class="corp-series-card__sub">Pratik Katlanır &amp; Büzgülü Seri</span>
+              <h3 class="corp-series-card__title">Netgo</h3>
+              <p class="corp-series-card__desc">Halat kordonlu büzgülü sırt çantaları, cep boy katlanabilir cüzdan çantalar ve etkinlik/festival kullanımına uygun ergonomik modeller.</p>
+              <div class="corp-series-card__foot">
+                <span>Ürünleri &amp; Fiyatları Gör</span>
+                <span>&rarr;</span>
               </div>
-              <span class="bento-card__action">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </span>
             </div>
           </a>
 
-          <a href="kategori.html?cat=cam-urunler" class="bento-card bento-card--span-3 reveal">
-            <div class="bento-card__media">
-              <img src="assets/images/cam-urunler.png" alt="Cam Ürünler" class="bento-card__img" />
+          <!-- 05: NETHANDLE -->
+          <a href="kategori.html?cat=nethandle" class="corp-series-card reveal">
+            <div class="corp-series-card__media">
+              <span class="corp-series-card__badge">SERİ 05</span>
+              <span class="corp-series-card__tag">Özel Saplı</span>
+              <img src="assets/images/hero-floating.png" alt="Nethandle Serisi" class="corp-series-card__img" />
             </div>
-            <div class="bento-card__overlay"></div>
-            <div class="bento-card__top">
-              <span class="bento-card__index">NOVA PAK</span>
-              <span class="bento-card__badge">Ürünleri Gör</span>
-            </div>
-            <div class="bento-card__content">
-              <div class="bento-card__text">
-                <span class="bento-card__category-sub">Sağlık &amp; Zarafet</span>
-                <h2 class="bento-card__title">Cam Ürünler</h2>
-                <p class="bento-card__desc">Deri kılıflı ve bakır kapaklı cam mataralar, çift cidarlı kupalar.</p>
+            <div class="corp-series-card__body">
+              <span class="corp-series-card__sub">Ergonomik &amp; Deri Saplı Tasarım Serisi</span>
+              <h3 class="corp-series-card__title">Nethandle</h3>
+              <p class="corp-series-card__desc">Gerçek/vegan deri kulplu, bakır perçinli, kolon dokuma saplı veya enjeksiyon takviye kulplu üst segment butik ve yönetici çantaları.</p>
+              <div class="corp-series-card__foot">
+                <span>Ürünleri &amp; Fiyatları Gör</span>
+                <span>&rarr;</span>
               </div>
-              <span class="bento-card__action">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </span>
             </div>
           </a>
 
-          <a href="kategori.html?cat=masa-setleri" class="bento-card bento-card--span-3 reveal">
-            <div class="bento-card__media">
-              <img src="assets/images/masa-setleri.png" alt="Masa Setleri" class="bento-card__img" />
+          <!-- 06: NETECO -->
+          <a href="kategori.html?cat=neteco" class="corp-series-card reveal">
+            <div class="corp-series-card__media">
+              <span class="corp-series-card__badge">SERİ 06</span>
+              <span class="corp-series-card__tag">%100 Eko-Dönüşüm</span>
+              <img src="assets/images/hero-recycled-bags.png" alt="Neteco Serisi" class="corp-series-card__img" />
             </div>
-            <div class="bento-card__overlay"></div>
-            <div class="bento-card__top">
-              <span class="bento-card__index">NOVA PAK</span>
-              <span class="bento-card__badge">Ürünleri Gör</span>
-            </div>
-            <div class="bento-card__content">
-              <div class="bento-card__text">
-                <span class="bento-card__category-sub">Yönetici Ofisi</span>
-                <h2 class="bento-card__title">Masa Setleri</h2>
-                <p class="bento-card__desc">Deri sümen takımları, bakır kalemlikler ve masaüstü düzenleyiciler.</p>
+            <div class="corp-series-card__body">
+              <span class="corp-series-card__sub">%100 Geri Dönüştürülmüş &amp; Organik Seri</span>
+              <h3 class="corp-series-card__title">Neteco</h3>
+              <p class="corp-series-card__desc">GRS ve GOTS sertifikalı Re-Cotton geri dönüştürülmüş pamuk, doğal jüt ve rPET kumaştan üretilen sıfır atık vizyonlu çevreci çantalar.</p>
+              <div class="corp-series-card__foot">
+                <span>Ürünleri &amp; Fiyatları Gör</span>
+                <span>&rarr;</span>
               </div>
-              <span class="bento-card__action">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </span>
-            </div>
-          </a>
-
-          <a href="kategori.html?cat=kirtasiye-urunleri" class="bento-card bento-card--span-4 reveal">
-            <div class="bento-card__media">
-              <img src="assets/images/kirtasiye-urunleri.png" alt="Kırtasiye Ürünleri" class="bento-card__img" />
-            </div>
-            <div class="bento-card__overlay"></div>
-            <div class="bento-card__top">
-              <span class="bento-card__index">NOVA PAK</span>
-              <span class="bento-card__badge">Ürünleri &amp; Fiyatları Gör</span>
-            </div>
-            <div class="bento-card__content">
-              <div class="bento-card__text">
-                <span class="bento-card__category-sub">Ofis &amp; Toplantı</span>
-                <h2 class="bento-card__title">Kırtasiye Ürünleri</h2>
-                <p class="bento-card__desc">Bakır spiralli defterler, roller kalemler ve özel dokulu zarf &amp; notluk setleri.</p>
-              </div>
-              <span class="bento-card__action">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </span>
-            </div>
-          </a>
-
-          <a href="kategori.html?cat=cantalar" class="bento-card bento-card--span-5 reveal">
-            <div class="bento-card__media">
-              <img src="assets/images/cantalar.png" alt="Çantalar" class="bento-card__img" />
-            </div>
-            <div class="bento-card__overlay"></div>
-            <div class="bento-card__top">
-              <span class="bento-card__index">NOVA PAK</span>
-              <span class="bento-card__badge">Ürünleri &amp; Fiyatları Gör</span>
-            </div>
-            <div class="bento-card__content">
-              <div class="bento-card__text">
-                <span class="bento-card__category-sub">Amiral Gemisi Üretim</span>
-                <h2 class="bento-card__title">Çantalar</h2>
-                <p class="bento-card__desc">Laptop, evrak, sırt, kanvas tote ve büzgülü bez çantalarda renklerinize özel elit üretim.</p>
-              </div>
-              <span class="bento-card__action">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </span>
             </div>
           </a>
         </div>
@@ -319,7 +272,7 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-inner">
-        <div class="brand-logo">
+        <a href="index.html" class="brand-logo" aria-label="Nova Pak Anasayfa">
           <div class="brand-logo__img-wrap">
             <img src="assets/images/logo-clean.png" alt="Nova Pak Logo" class="brand-logo__img" />
           </div>
@@ -327,11 +280,11 @@
             <span class="brand-logo__title" style="color: var(--color-off-white);">NOVA <span>PAK</span></span>
             <span class="brand-logo__subtitle" style="color: var(--color-light-gray);">Çanta Promosyon</span>
           </div>
-        </div>
+        </a>
 
         <ul class="nav-list">
-          <li><a href="index.html" class="nav-link" style="color: var(--color-off-white);">Anasayfa</a></li>
-          <li><a href="promosyon.html" class="nav-link" style="color: var(--color-off-white);">Promosyon</a></li>
+          <li><a href="promosyon.html" class="nav-link" style="color: var(--color-off-white);">Ürünlerimiz</a></li>
+          <li><a href="kurumsal.html" class="nav-link" style="color: var(--color-off-white);">Kurumsal</a></li>
           <li><a href="referanslarimiz.html" class="nav-link" style="color: var(--color-off-white);">Referanslarımız</a></li>
           <li><a href="iletisim.html" class="nav-link" style="color: var(--color-off-white);">İletişim</a></li>
         </ul>
@@ -339,12 +292,12 @@
 
       <div class="footer-copy">
         <span>&copy; 2026 Nova Pak Çanta Promosyon. Tüm Hakları Saklıdır.</span>
-        <span>Nova Pak ile Gücü Taşıyın.</span>
+        <span>Tekrar Kullanılır Doğa Dostu Çanta Çözümleri &bull; Nova Pak ile Gücü Taşıyın.</span>
       </div>
     </div>
   </footer>
 
-  <!-- SAĞ ALT SABİT WHATSAPP ("BİZE ULAŞIN") -->
+  <!-- SABİT WHATSAPP SİMGESİ -->
   <div class="whatsapp-float-wrap" id="whatsappFloatWrap">
     <div class="whatsapp-popup" id="whatsappPopup" aria-hidden="true">
       <div class="whatsapp-popup__head">
@@ -359,11 +312,15 @@
       </div>
       <div class="whatsapp-popup__body">
         <div class="whatsapp-popup__msg">
-          Merhaba 👋 <strong>Promosyon kategorilerimiz</strong> hakkında fiyat ve stok bilgisi için hemen yazabilirsiniz.
+          Merhaba 👋 <strong>Nova Pak Çanta Promosyon</strong>'a hoş geldiniz. Size nasıl yardımcı olabiliriz?
         </div>
         <div class="whatsapp-popup__links">
-          <a href="https://wa.me/905000000000?text=Merhaba%20Nova%20Pak%2C%20promosyon%20kategorileriniz%20hakk%C4%B1nda%20fiyat%20ve%20stok%20bilgisi%20almak%20istiyorum." target="_blank" rel="noopener" class="whatsapp-popup__link">
+          <a href="https://wa.me/905000000000?text=Merhaba%20Nova%20Pak%2C%20%C3%BCr%C3%BCn%20fiyatlar%C4%B1%20ve%20stok%20durumu%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="whatsapp-popup__link">
             <span>💬 Fiyat &amp; Stok Bilgisi Sor</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="https://wa.me/905000000000?text=Merhaba%20Nova%20Pak%2C%20toptan%20%C3%A7anta%20ve%20promosyon%20sipari%C5%9Fi%20i%C3%A7in%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum." target="_blank" rel="noopener" class="whatsapp-popup__link">
+            <span>👜 Özel Üretim &amp; Sipariş Hattı</span>
             <span>&rarr;</span>
           </a>
         </div>

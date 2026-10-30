@@ -96,13 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
       dots.forEach((dot, idx) => {
         const isCurrent = idx === currentSlide;
         dot.classList.toggle('is-active', isCurrent);
-        // Progress bar animasyonunu yeniden başlat
-        const bar = dot.querySelector('.hero-dot__bar');
-        if (bar) {
-          bar.style.animation = 'none';
-          void bar.offsetWidth;
-          bar.style.animation = isCurrent ? `slideProgress ${AUTO_PLAY_MS}ms linear forwards` : 'none';
-        }
+        dot.setAttribute('aria-selected', String(isCurrent));
       });
     };
 
