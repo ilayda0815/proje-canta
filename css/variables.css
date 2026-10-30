@@ -1,0 +1,50 @@
+/* ==========================================================================
+   NOVA PAK ÇANTA PROMOSYON - TASARIM DEĞİŞKENLERİ (DESIGN TOKENS)
+   ========================================================================== */
+
+:root {
+  /* Ana Renk Paleti (Primary Colors) */
+  --color-navy-dark: #172B3A;      /* Gece Laciverti */
+  --color-copper: #B97955;         /* Bakır */
+  --color-off-white: #F8F7F4;      /* Kırık Beyaz */
+
+  /* Vurgu Renkleri (Accent Colors) */
+  --color-petrol-blue: #29495A;    /* Petrol Mavisi */
+  --color-light-gray: #EDF0F1;     /* Açık Gri */
+  --color-anthracite: #282D31;     /* Antrasit */
+
+  /* Yardımcı Tonlar & Saydamlıklar */
+  --color-white: #FFFFFF;
+  --color-copper-hover: #a36644;
+  --color-copper-soft: rgba(185, 121, 85, 0.12);
+  --color-copper-border: rgba(185, 121, 85, 0.32);
+  --color-navy-soft: rgba(23, 43, 58, 0.06);
+  --color-navy-glass: rgba(23, 43, 58, 0.92);
+  --color-offwhite-glass: rgba(248, 247, 244, 0.88);
+  --color-text-muted: #5A656E;
+
+  /* Tipografi */
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Düzen & Boşluklar (Layout & Spacing) */
+  --container-max-width: 1340px;
+  --header-height: 92px;
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 26px;
+  --radius-pill: 999px;
+
+  /* Gölgeler (Shadows) */
+  --shadow-subtle: 0 8px 24px -4px rgba(23, 43, 58, 0.06);
+  --shadow-card: 0 14px 34px -8px rgba(23, 43, 58, 0.09);
+  --shadow-hover: 0 24px 48px -12px rgba(23, 43, 58, 0.18);
+  --shadow-copper: 0 14px 30px -6px rgba(185, 121, 85, 0.35);
+  --shadow-dropdown: 0 28px 60px -10px rgba(23, 43, 58, 0.22);
+
+  /* Geçişler (Transitions) */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+}

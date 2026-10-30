@@ -1,0 +1,286 @@
+/**
+ * Nova Pak Çanta Promosyon — Ortak Arayüz, Yana Kaydırmalı Hero Slider,
+ * Aşağı İndikçe Şeffaflaşarak Kaybolan Hero ve Sabit WhatsApp Motoru
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+  const header = document.getElementById('header');
+  const cornerCategories = document.getElementById('cornerCategories');
+  const categoriesTrigger = document.getElementById('categoriesTrigger');
+  const navLinks = document.querySelectorAll('.site-header .nav-link');
+  const revealElements = document.querySelectorAll('.reveal');
+  const heroScrollStage = document.getElementById('heroScrollStage');
+  const heroSection = document.getElementById('anasayfa');
+
+  // 1. ÜST MENÜ SCROLL DURUMU, AKTİF SEKME & HERO AŞAĞI İNDİKÇE BİZLE GELİP ŞEFFAFLAŞMA EFEKTİ
+  let ticking = false;
+
+  const updateOnScroll = () => {
+    const scrollY = window.scrollY || window.pageYOffset;
+
+    if (header) {
+      if (scrollY > 24) {
+        header.classList.add('is-scrolled');
+      } else {
+        header.classList.remove('is-scrolled');
+      }
+    }
+
+    // Hero Aşağı İndikçe Bizle Geliyormuş Gibi (Sticky/Parallax Follow) Şeffaflaşarak Yok Olma Efekti
+    if (heroScrollStage && heroSection) {
+      const heroHeight = heroSection.offsetHeight || 760;
+      const progress = Math.min(Math.max(scrollY / (heroHeight * 0.78), 0), 1);
+
+      if (progress <= 0.005) {
+        heroScrollStage.style.transform = 'translate3d(0, 0, 0) scale(1)';
+        heroScrollStage.style.opacity = '1';
+        heroScrollStage.style.filter = 'blur(0px)';
+        heroScrollStage.style.pointerEvents = 'auto';
+      } else {
+        // Kullanıcı aşağı indikçe Hero da aşağı doğru süzülerek eşlik eder ve şeffaflaşıp kaybolur
+        const followY = scrollY * 0.46;
+        const scaleVal = 1 - progress * 0.055;
+        const opacityVal = Math.max(0, 1 - Math.pow(progress, 1.08) * 1.15);
+        const blurVal = (progress * 4.5).toFixed(2);
+
+        heroScrollStage.style.transform = `translate3d(0, ${followY.toFixed(1)}px, 0) scale(${scaleVal.toFixed(4)})`;
+        heroScrollStage.style.opacity = String(opacityVal.toFixed(3));
+        heroScrollStage.style.filter = `blur(${blurVal}px)`;
+        heroScrollStage.style.pointerEvents = opacityVal < 0.15 ? 'none' : 'auto';
+      }
+    }
+
+    // Çok sayfalı yapıda her sayfanın kendi aktif menü sekmesi HTML üzerinde tanımlıdır.
+    ticking = false;
+  };
+
+  window.addEventListener(
+    'scroll',
+    () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateOnScroll);
+        ticking = true;
+      }
+    },
+    { passive: true }
+  );
+  updateOnScroll();
+
+  // 2. HERO YANA KAYDIRMALI (SLIDER / CAROUSEL) MOTORU
+  const slider = document.getElementById('heroSlider');
+  const track = document.getElementById('heroSliderTrack');
+  const slides = track ? Array.from(track.querySelectorAll('.hero-slide')) : [];
+  const dots = Array.from(document.querySelectorAll('.hero-dot'));
+  const prevBtn = document.getElementById('heroPrevBtn');
+  const nextBtn = document.getElementById('heroNextBtn');
+
+  if (slider && track && slides.length > 0) {
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+    let autoPlayTimer = null;
+    const AUTO_PLAY_MS = 6500;
+
+    const goToSlide = (index) => {
+      currentSlide = (index + totalSlides) % totalSlides;
+      const stepPercent = 100 / totalSlides;
+      track.style.transform = `translate3d(-${currentSlide * stepPercent}%, 0, 0)`;
+
+      slides.forEach((slide, idx) => {
+        slide.classList.toggle('is-active', idx === currentSlide);
+      });
+
+      dots.forEach((dot, idx) => {
+        const isCurrent = idx === currentSlide;
+        dot.classList.toggle('is-active', isCurrent);
+        // Progress bar animasyonunu yeniden başlat
+        const bar = dot.querySelector('.hero-dot__bar');
+        if (bar) {
+          bar.style.animation = 'none';
+          void bar.offsetWidth;
+          bar.style.animation = isCurrent ? `slideProgress ${AUTO_PLAY_MS}ms linear forwards` : 'none';
+        }
+      });
+    };
+
+    const startAutoPlay = () => {
+      stopAutoPlay();
+      autoPlayTimer = setInterval(() => {
+        goToSlide(currentSlide + 1);
+      }, AUTO_PLAY_MS);
+    };
+
+    const stopAutoPlay = () => {
+      if (autoPlayTimer) {
+        clearInterval(autoPlayTimer);
+        autoPlayTimer = null;
+      }
+    };
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        goToSlide(currentSlide - 1);
+        startAutoPlay();
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        goToSlide(currentSlide + 1);
+        startAutoPlay();
+      });
+    }
+
+    dots.forEach((dot) => {
+      dot.addEventListener('click', () => {
+        const target = Number(dot.getAttribute('data-slide-to'));
+        goToSlide(target);
+        startAutoPlay();
+      });
+    });
+
+    // Dokunmatik (Swipe) Kaydırma Desteği
+    let touchStartX = 0;
+    let touchEndX = 0;
+    slider.addEventListener(
+      'touchstart',
+      (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      },
+      { passive: true }
+    );
+    slider.addEventListener(
+      'touchend',
+      (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        const diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > 45) {
+          if (diff > 0) {
+            goToSlide(currentSlide + 1);
+          } else {
+            goToSlide(currentSlide - 1);
+          }
+          startAutoPlay();
+        }
+      },
+      { passive: true }
+    );
+
+    slider.addEventListener('mouseenter', stopAutoPlay);
+    slider.addEventListener('mouseleave', startAutoPlay);
+
+    goToSlide(0);
+    startAutoPlay();
+  }
+
+  // 3. SAĞ KÖŞE AÇILIR KATEGORİLER MENÜSÜ ETKİLEŞİMİ
+  if (categoriesTrigger && cornerCategories) {
+    categoriesTrigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = cornerCategories.classList.toggle('is-open');
+      categoriesTrigger.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!cornerCategories.contains(e.target)) {
+        cornerCategories.classList.remove('is-open');
+        categoriesTrigger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  // 4. SCROLL REVEAL (KADEMELİ BELİRME) ANİMASYONLARI
+  if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+    );
+
+    revealElements.forEach((el, idx) => {
+      if (!el.classList.contains('is-visible')) {
+        el.style.transitionDelay = `${(idx % 4) * 75}ms`;
+        revealObserver.observe(el);
+      }
+    });
+  } else {
+    revealElements.forEach((el) => el.classList.add('is-visible'));
+  }
+
+  // 5. SAĞ ALT SABİT WHATSAPP ("BİZE ULAŞIN") SİMGESİ VE AÇILIR SOHBET PENCERESİ
+  const waFloatWrap = document.getElementById('whatsappFloatWrap');
+  const waFloatBtn = document.getElementById('whatsappFloatBtn');
+  const waPopup = document.getElementById('whatsappPopup');
+  const waPopupClose = document.getElementById('waPopupClose');
+
+  if (waFloatWrap && waFloatBtn && waPopup) {
+    waFloatBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = waFloatWrap.classList.toggle('is-open');
+      waPopup.setAttribute('aria-hidden', String(!isOpen));
+    });
+
+    if (waPopupClose) {
+      waPopupClose.addEventListener('click', (e) => {
+        e.stopPropagation();
+        waFloatWrap.classList.remove('is-open');
+        waPopup.setAttribute('aria-hidden', 'true');
+      });
+    }
+
+    document.addEventListener('click', (e) => {
+      if (!waFloatWrap.contains(e.target)) {
+        waFloatWrap.classList.remove('is-open');
+        waPopup.setAttribute('aria-hidden', 'true');
+      }
+    });
+  }
+
+  // 6. GİRİŞ SAYFASI (giris.html) SEKME VE FORM ETKİLEŞİMİ
+  const tabLogin = document.getElementById('tabLogin');
+  const tabRegister = document.getElementById('tabRegister');
+  const authHeading = document.getElementById('authHeading');
+  const loginForm = document.getElementById('loginForm');
+  const loginSubmitBtn = document.getElementById('loginSubmitBtn');
+
+  if (tabLogin && tabRegister && authHeading) {
+    tabLogin.addEventListener('click', () => {
+      tabLogin.classList.add('is-active');
+      tabRegister.classList.remove('is-active');
+      authHeading.textContent = 'Müşteri & Bayi Hesabınıza Giriş Yapın';
+    });
+
+    tabRegister.addEventListener('click', () => {
+      tabRegister.classList.add('is-active');
+      tabLogin.classList.remove('is-active');
+      authHeading.textContent = 'Yönetici Paneline Giriş Yapın';
+    });
+  }
+
+  if (loginForm && loginSubmitBtn) {
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const orig = loginSubmitBtn.innerHTML;
+      loginSubmitBtn.innerHTML = '<span>Doğrulanıyor... ✓</span>';
+      loginSubmitBtn.style.backgroundColor = '#B97955';
+      loginSubmitBtn.style.borderColor = '#B97955';
+      setTimeout(() => {
+        loginSubmitBtn.innerHTML = orig;
+        loginSubmitBtn.style.backgroundColor = '';
+        loginSubmitBtn.style.borderColor = '';
+      }, 2400);
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (cornerCategories) cornerCategories.classList.remove('is-open');
+      if (waFloatWrap) waFloatWrap.classList.remove('is-open');
+    }
+  });
+});
