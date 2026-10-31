@@ -259,6 +259,37 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // 6. ANASAYFA CANLI ÜRÜN VİTRİNİ KATEGORİ FİLTRELEME
+  const filterPills = document.querySelectorAll('.home-filter-pill');
+  const productCards = document.querySelectorAll('.home-product-card');
+
+  if (filterPills.length > 0 && productCards.length > 0) {
+    filterPills.forEach((pill) => {
+      pill.addEventListener('click', () => {
+        const targetCat = pill.getAttribute('data-filter');
+        filterPills.forEach((p) => p.classList.remove('is-active'));
+        pill.classList.add('is-active');
+
+        productCards.forEach((card) => {
+          const cardCat = card.getAttribute('data-cat');
+          if (targetCat === 'all' || cardCat === targetCat) {
+            card.style.display = 'flex';
+            setTimeout(() => {
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0) scale(1)';
+            }, 30);
+          } else {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(15px) scale(0.96)';
+            setTimeout(() => {
+              card.style.display = 'none';
+            }, 250);
+          }
+        });
+      });
+    });
+  }
+
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       if (cornerCategories) cornerCategories.classList.remove('is-open');

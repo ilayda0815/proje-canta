@@ -79,18 +79,20 @@
   --radius-xl: 44px;
   --radius-pill: 9999px;
 
-  /* 4. TİPOGRAFİ (EDİTÖRYAL & ELİT KURUMSAL) */
-  --font-serif: 'Cormorant Garamond', Georgia, serif;
-  --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  /* 4. TİPOGRAFİ (TEK TİP MODERN SANS-SERIF & AĞIRLIKSIZ ANTIGRAVITY ESTETİĞİ) */
+  --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-body: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: var(--font-heading); /* Serif fontlar tamamen elendi, tek tip modern sans-serif ailesine bağlandı */
 
-  /* 5. GÖLGELER (FROSTED AMBIENT SHADOWS) */
-  --shadow-subtle: 0 10px 30px -6px rgba(25, 56, 45, 0.06);
-  --shadow-card: 0 18px 42px -10px rgba(25, 56, 45, 0.09);
-  --shadow-hover: 0 28px 60px -14px rgba(25, 56, 45, 0.16);
-  --shadow-copper: 0 14px 32px -6px rgba(185, 121, 85, 0.35);
+  /* 5. GÖLGELER (ANTIGRAVITY AĞIRLIKSIZ SÜZÜLME & FROSTED AMBIENT SHADOWS) */
+  --shadow-subtle: 0 12px 32px -8px rgba(25, 56, 45, 0.05);
+  --shadow-card: 0 24px 64px -16px rgba(25, 56, 45, 0.055), 0 10px 28px -8px rgba(185, 121, 85, 0.035);
+  --shadow-hover: 0 44px 95px -20px rgba(25, 56, 45, 0.10), 0 18px 45px -10px rgba(185, 121, 85, 0.06);
+  --shadow-copper: 0 16px 36px -6px rgba(185, 121, 85, 0.45);
   --shadow-dropdown: 0 32px 70px -12px rgba(25, 56, 45, 0.22);
-  --shadow-glass: var(--glass-specular), 0 16px 38px -8px rgba(25, 56, 45, 0.08);
+  --shadow-glass: 0 24px 64px -16px rgba(25, 56, 45, 0.055), 0 10px 28px -8px rgba(185, 121, 85, 0.035);
+  --shadow-floating: 0 28px 70px -16px rgba(25, 56, 45, 0.055), 0 12px 30px -8px rgba(185, 121, 85, 0.035);
+  --shadow-floating-hover: 0 46px 100px -20px rgba(25, 56, 45, 0.10), 0 18px 45px -10px rgba(185, 121, 85, 0.06);
 
   /* 6. AKICI GEÇİŞLER (TRANSITIONS) */
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
