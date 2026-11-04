@@ -17,119 +17,148 @@
   <div class="bg-ornament bg-ornament--grid-right" aria-hidden="true"></div>
 
   <!-- ÜST MENÜ (HEADER) -->
+    <!-- ========================================================================
+       1. ÜST MENÜ (HEADER)
+       ======================================================================== -->
   <header id="header" class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="brand-logo" aria-label="Nova Pak Çanta Promosyon Anasayfa">
+      
+      <!-- Sol Üst: Nova Pak Kurumsal Logosu -->
+      <a href="index.html" class="brand-logo" aria-label="Nova Pak Tek Kullanımlı Çanta İmalatı Anasayfa">
         <div class="brand-logo__img-wrap">
-          <img src="assets/images/logo-clean.png" alt="Nova Pak Çanta Promosyon Logo" class="brand-logo__img" />
+          <img src="assets/images/nova-pak-logo-transparent.png" alt="Nova Pak Tek Kullanımlı Çanta İmalatı" class="brand-logo__img" />
         </div>
       </a>
 
+      <!-- Sağ Alan: Menü Sekmeleri + Sektörel Çözümler -->
       <div class="header-nav-group">
         <nav aria-label="Ana Menü">
           <ul class="nav-list">
+            <!-- Ana Ürün Kategorileri Dropdown -->
+            <li class="nav-item nav-item--dropdown">
+              <a href="kategori.html" class="nav-link nav-link--has-dropdown">
+                <span>Kategoriler</span>
+                <svg class="nav-link__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </a>
+              <div class="nav-dropdown" role="menu" aria-label="Ana Ürün Kategorileri">
+                <ul class="nav-dropdown__list">
+                  <li><a href="kategori.html?cat=tela-dikisli" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Tela Dikişli Çanta</span></a></li>
+                  <li><a href="kategori.html?cat=karton-canta" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Karton Çanta</span></a></li>
+                  <li><a href="kategori.html?cat=craft-canta" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Craft Çanta</span></a></li>
+                  <li><a href="kategori.html?cat=hambez-canta" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Hambez Çanta</span></a></li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Sektörel Menü Dropdown -->
+            <li class="nav-item nav-item--dropdown">
+              <a href="kategori.html" class="nav-link nav-link--has-dropdown">
+                <span>Sektörler</span>
+                <svg class="nav-link__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </a>
+              <div class="nav-dropdown" role="menu" aria-label="Sektörel Menü">
+                <ul class="nav-dropdown__list">
+                  <li><a href="kategori.html?sector=giyim" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Giyim Mağazacılığı</span></a></li>
+                  <li><a href="kategori.html?sector=pastane-tatli" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Pastane &amp; Fırın &amp; Tatlı</span></a></li>
+                  <li><a href="kategori.html?sector=kitap-kirtasiye" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Kitap, Kırtasiye &amp; Oyuncak</span></a></li>
+                  <li><a href="kategori.html?sector=kuruyemis" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Kuruyemiş Sektörü</span></a></li>
+                  <li><a href="kategori.html?sector=restaurant-cafe" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Restaurant &amp; Cafe</span></a></li>
+                  <li><a href="kategori.html?sector=eczane" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Eczane Sektörü</span></a></li>
+                  <li><a href="kategori.html?sector=market" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Market Sektörü</span></a></li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Bağımsız Promosyon Ürünleri Sayfası -->
+            <li><a href="promosyon.html" class="nav-link">Promosyon Ürünleri</a></li>
+
             <!-- Kurumsal Dropdown -->
             <li class="nav-item nav-item--dropdown">
-              <a href="kurumsal.html" class="nav-link nav-link--has-dropdown active">
+              <a href="kurumsal.html" class="nav-link nav-link--has-dropdown">
                 <span>Kurumsal</span>
                 <svg class="nav-link__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </a>
-              <div class="nav-dropdown nav-dropdown--corporate" role="menu" aria-label="Kurumsal Alt Menüsü">
-                <div class="nav-dropdown__bridge"></div>
+              <div class="nav-dropdown" role="menu" aria-label="Kurumsal Alt Menüsü">
                 <ul class="nav-dropdown__list">
                   <li><a href="firma-profili.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Firma Profili</span></a></li>
-                  <li><a href="yonetim-ve-ekibimiz.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Yönetim ve Ekibimiz</span></a></li>
-                  <li><a href="grup-sirketleri.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Grup Şirketleri</span></a></li>
-                  <li><a href="misyon-ve-vizyon.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Misyon ve Vizyonu</span></a></li>
-                  <li><a href="online-katalog.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Online Katalog</span></a></li>
-                  <li><a href="kalite-belgeleri.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Kalite Belgeleri ve Sosyal Uygunluk</span></a></li>
-                  <li><a href="sponsorluklar-ve-oduller.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Sponsorluklar ve Ödüller</span></a></li>
+                  <li><a href="kalite-belgeleri.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Kalite Belgeleri</span></a></li>
                   <li><a href="sss.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Sıkça Sorulan Sorular</span></a></li>
-                  <li><a href="arge-ve-patent.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Ar-Ge ve Patent Çalışmaları</span></a></li>
                 </ul>
               </div>
             </li>
 
             <li><a href="referanslarimiz.html" class="nav-link">Referanslarımız</a></li>
-            <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+                        <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
           </ul>
         </nav>
 
-        <!-- Açılır Kategoriler Mega Menüsü -->
-        <div class="corner-categories" id="cornerCategories">
-          <button type="button" class="corner-categories__trigger" id="categoriesTrigger" aria-expanded="false" aria-haspopup="true">
-            <span class="corner-categories__icon" aria-hidden="true">
-              <span></span><span></span><span></span><span></span>
-            </span>
-            <span>Ürün Serileri</span>
-            <svg class="corner-categories__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </button>
-
-          <div class="corner-dropdown" role="menu" aria-label="Ürün Kategorileri">
-            <div class="corner-Dropdown-bridge"></div>
-            <div class="corner-dropdown__header">
-              <span class="corner-dropdown__title">Tescilli Çanta Serilerimiz</span>
-              <span class="corner-dropdown__badge">Tekrar Kullanılır</span>
-            </div>
-
-            <div class="corner-dropdown__grid">
-              <a href="kategori.html?cat=netbag" class="dropdown-cat-item">
-                <img src="assets/images/hero-netbag-drawstring.png" alt="Netbag" class="dropdown-cat-item__thumb" />
-                <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Ultrasonik &amp; File</span>
-                  <span class="dropdown-cat-item__name">Netbag</span>
-                </div>
-              </a>
-              <a href="kategori.html?cat=netstrong" class="dropdown-cat-item">
-                <img src="assets/images/hero-floating.png" alt="Netstrong" class="dropdown-cat-item__thumb" />
-                <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Yüksek Mukavemet</span>
-                  <span class="dropdown-cat-item__name">Netstrong</span>
-                </div>
-              </a>
-              <a href="kategori.html?cat=netcool" class="dropdown-cat-item">
-                <img src="assets/images/cantalar.png" alt="Netcool" class="dropdown-cat-item__thumb" />
-                <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Isı Yalıtımlı Termal</span>
-                  <span class="dropdown-cat-item__name">Netcool</span>
-                </div>
-              </a>
-              <a href="kategori.html?cat=netgo" class="dropdown-cat-item">
-                <img src="assets/images/hero-netbag-drawstring.png" alt="Netgo" class="dropdown-cat-item__thumb" />
-                <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Büzgülü &amp; Katlanır</span>
-                  <span class="dropdown-cat-item__name">Netgo</span>
-                </div>
-              </a>
-              <a href="kategori.html?cat=nethandle" class="dropdown-cat-item">
-                <img src="assets/images/hero-floating.png" alt="Nethandle" class="dropdown-cat-item__thumb" />
-                <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Deri &amp; Özel Saplı</span>
-                  <span class="dropdown-cat-item__name">Nethandle</span>
-                </div>
-              </a>
-              <a href="kategori.html?cat=neteco" class="dropdown-cat-item">
-                <img src="assets/images/hero-recycled-bags.png" alt="Neteco" class="dropdown-cat-item__thumb" />
-                <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">%100 Geri Dönüşüm</span>
-                  <span class="dropdown-cat-item__name">Neteco</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="corner-dropdown__footer">
-              <span>Tüm kurumsal koleksiyonu incele</span>
-              <a href="promosyon.html">Tüm Ürünleri İncele &rarr;</a>
-            </div>
-          </div>
-        </div>
+        <!-- Mobil Menü Hamburger Butonu -->
+        <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Menüyü Aç" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
+
     </div>
   </header>
 
-  <main>
+  <!-- MOBİL MENÜ ÇEKMECESİ (DRAWER) -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobil Menü" aria-hidden="true">
+    <div class="mobile-drawer__header">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/images/nova-pak-logo-transparent.png" alt="Nova Pak" style="height: 38px; width: auto;" />
+      </a>
+      <button type="button" class="mobile-drawer__close" id="mobileDrawerClose" aria-label="Menüyü Kapat">&times;</button>
+    </div>
+
+    <div class="mobile-drawer__body">
+      <!-- Çanta Modelleri -->
+      <div class="mobile-nav-group">
+        <span class="mobile-nav-heading">Ana Kategoriler</span>
+        <a href="kategori.html?cat=tela-dikisli" class="mobile-nav-link">Tela Dikişli Çanta</a>
+        <a href="kategori.html?cat=karton-canta" class="mobile-nav-link">Karton Çanta</a>
+        <a href="kategori.html?cat=craft-canta" class="mobile-nav-link">Craft Çanta</a>
+        <a href="kategori.html?cat=hambez-canta" class="mobile-nav-link">Hambez Çanta</a>
+      </div>
+
+      <!-- Sektörel Çözümler -->
+      <div class="mobile-nav-group">
+        <span class="mobile-nav-heading">Sektörel Çözümler</span>
+        <a href="kategori.html?sector=giyim" class="mobile-nav-link">Giyim Mağazacılığı</a>
+        <a href="kategori.html?sector=pastane-tatli" class="mobile-nav-link">Pastane &amp; Fırın &amp; Tatlı</a>
+        <a href="kategori.html?sector=kitap-kirtasiye" class="mobile-nav-link">Kitap &amp; Kırtasiye &amp; Oyuncak</a>
+        <a href="kategori.html?sector=kuruyemis" class="mobile-nav-link">Kuruyemiş Sektörü</a>
+        <a href="kategori.html?sector=restaurant-cafe" class="mobile-nav-link">Restaurant &amp; Cafe</a>
+        <a href="kategori.html?sector=eczane" class="mobile-nav-link">Eczane Sektörü</a>
+        <a href="kategori.html?sector=market" class="mobile-nav-link">Market Sektörü</a>
+      </div>
+
+      <!-- Diğer Sayfalar -->
+      <div class="mobile-nav-group">
+        <span class="mobile-nav-heading">Kurumsal &amp; Bilgi</span>
+        <a href="promosyon.html" class="mobile-nav-link">Promosyon Ürünleri <span class="badge" style="background: var(--color-kraft-brown); color: #fff; padding: 2px 7px; border-radius: 99px; font-size: 0.7rem;">Yeni</span></a>
+        <a href="firma-profili.html" class="mobile-nav-link">Firma Profili</a>
+        <a href="kalite-belgeleri.html" class="mobile-nav-link">Kalite Belgeleri</a>
+        <a href="sss.html" class="mobile-nav-link">Sıkça Sorulan Sorular</a>
+        <a href="referanslarimiz.html" class="mobile-nav-link">Referanslarımız</a>
+        <a href="iletisim.html" class="mobile-nav-link">İletişim</a>
+      </div>
+    </div>
+
+    <div class="mobile-drawer__footer">
+      <div style="font-size: 0.82rem; color: var(--color-anthracite); margin-bottom: 10px;">
+        <strong>Özgür Kırmaz</strong> &bull; Firma Sahibi<br>
+        <span style="opacity: 0.8;">Organize Sanayi Bölgesi, İstanbul</span>
+      </div>
+      <a href="https://wa.me/905305684416?text=Merhaba%20Nova%20Pak%2C%20h%C4%B1zl%C4%B1%20fiyat%20ve%20numune%20talebinde%20bulunmak%20istiyorum." target="_blank" rel="noopener" class="btn btn--primary" style="width: 100%; justify-content: center; padding: 12px 20px;">
+        <span>💬 WhatsApp İletişim</span>
+      </a>
+    </div>
+  </aside>
+
+<main>
     <!-- KURUMSAL SAYFA ÜST BANNER -->
     <section class="page-hero">
       <div class="container">
@@ -155,11 +184,9 @@
           <a href="yonetim-ve-ekibimiz.html" class="corp-quick-nav__link active">Yönetim ve Ekibimiz</a>
           <a href="grup-sirketleri.html" class="corp-quick-nav__link">Grup Şirketleri</a>
           <a href="misyon-ve-vizyon.html" class="corp-quick-nav__link">Misyon ve Vizyonu</a>
-          <a href="online-katalog.html" class="corp-quick-nav__link">Online Katalog</a>
           <a href="kalite-belgeleri.html" class="corp-quick-nav__link">Kalite Belgeleri ve Sosyal Uygunluk</a>
           <a href="sponsorluklar-ve-oduller.html" class="corp-quick-nav__link">Sponsorluklar ve Ödüller</a>
           <a href="sss.html" class="corp-quick-nav__link">Sıkça Sorulan Sorular</a>
-          <a href="arge-ve-patent.html" class="corp-quick-nav__link">Ar-Ge ve Patent Çalışmaları</a>
         </div>
       </div>
     </section>
@@ -179,7 +206,7 @@
             <div class="corp-card">
               <span class="corp-card__badge">Yönetim Kurulu</span>
               <h3 class="corp-card__title">Strateji &amp; Küresel Yatırımlar</h3>
-              <p class="corp-card__desc">Avrupa Yeşil Mutabakatı normlarını ve küresel ambalaj trendlerini şirket stratejimize entegre eden, Ar-Ge ve teknoloji yatırımlarına liderlik eden yönetim kurulumuz.</p>
+              <p class="corp-card__desc">Avrupa Yeşil Mutabakatı normlarını ve küresel ambalaj trendlerini şirket stratejimize entegre eden, modern üretim ve teknoloji yatırımlarına liderlik eden yönetim kurulumuz.</p>
             </div>
             <div class="corp-card">
               <span class="corp-card__badge">Mühendislik Departmanı</span>
@@ -212,161 +239,111 @@
   </main>
 
   <!-- FOOTER -->
-    <footer class="site-footer">
+
+  <!-- ========================================================================
+       ALT BİLGİ ALANI (FOOTER)
+       ======================================================================== -->
+  <footer class="site-footer">
     <div class="container">
-      <div class="footer-top-grid">
+      <div class="footer-grid">
         
-        <!-- Sütun 1: Marka & Kurumsal Kimlik -->
-        <div class="footer-brand">
-          <a href="index.html" class="brand-logo" aria-label="Nova Pak Anasayfa">
-            <div class="brand-logo__img-wrap">
-              <img src="assets/images/logo-clean.png" alt="Nova Pak Logo" class="brand-logo__img" />
-            </div>
-            <div class="brand-logo__text">
-              <span class="brand-logo__title" style="color: var(--color-off-white);">NOVA <span>PAK</span></span>
-              <span class="brand-logo__subtitle" style="color: var(--color-light-gray);">Çanta Promosyon</span>
-            </div>
+        <!-- 1. Marka & Logo & Kimlik -->
+        <div class="footer-col footer-col--brand">
+          <a href="index.html" class="footer-logo-link" aria-label="Nova Pak Anasayfa">
+            <img src="assets/images/nova-pak-logo-light.png" alt="Nova Pak Tek Kullanımlı Çanta İmalatı" class="footer-logo-img" />
           </a>
           <p class="footer-brand__desc">
-            42 ülkeye küresel ihracat yapan, kendi Ar-Ge merkezinde geliştirdiği patentli ultrasonik kaynak teknolojisiyle endüstriyel ve doğa dostu ambalaj çözümleri üreten lider çanta üreticisi.
+            Tek kullanımlı ve çok kullanımlı bez çanta, karton çanta ve kraft ambalaj imalatında sektör lideri kurumsal çözüm ortağınız.
           </p>
           <div class="footer-badges">
-            <span class="footer-badge-pill">ISO 9001 &bull; 14001</span>
-            <span class="footer-badge-pill">SEDEX / SMETA</span>
-            <span class="footer-badge-pill">GOTS &bull; GRS Tescilli</span>
+            <span class="footer-badge-pill">Doğaya Dost</span>
+            <span class="footer-badge-pill">Pratik Kullanım</span>
+            <span class="footer-badge-pill">Kaliteli Üretim</span>
           </div>
         </div>
 
-        <!-- Sütun 2: Tescilli Çanta Serilerimiz -->
-        <div>
-          <h4 class="footer-col__title">Tescilli Çanta Serileri</h4>
+        <!-- 2. Çanta Modelleri -->
+        <div class="footer-col">
+          <h4 class="footer-col__title">Ana Kategoriler</h4>
           <ul class="footer-links">
-            <li><a href="kategori.html?cat=netbag">Netbag &bull; Klasik &amp; File <span class="badge">Ultrasonik</span></a></li>
-            <li><a href="kategori.html?cat=netstrong">Netstrong &bull; Ağır Hizmet <span class="badge">25 kg+</span></a></li>
-            <li><a href="kategori.html?cat=netcool">Netcool &bull; Termal Soğutucu</a></li>
-            <li><a href="kategori.html?cat=netgo">Netgo &bull; Büzgülü &amp; Mobil</a></li>
-            <li><a href="kategori.html?cat=nethandle">Nethandle &bull; Özel Deri Saplı</a></li>
-            <li><a href="kategori.html?cat=neteco">Neteco &bull; %100 Geri Dönüşüm</a></li>
+            <li><a href="kategori.html?cat=tela-dikisli">Tela Dikişli Çanta</a></li>
+            <li><a href="kategori.html?cat=karton-canta">Karton Çanta</a></li>
+            <li><a href="kategori.html?cat=craft-canta">Craft Çanta</a></li>
+            <li><a href="kategori.html?cat=hambez-canta">Hambez Çanta</a></li>
+            <li><a href="promosyon.html">Promosyon Ürünleri <span class="badge" style="background: var(--color-kraft-brown); color: #fff; padding: 2px 7px; border-radius: 99px; font-size: 0.68rem; margin-left: 4px;">Yeni</span></a></li>
           </ul>
         </div>
 
-        <!-- Sütun 3: Kurumsal & Yönetim -->
-        <div>
-          <h4 class="footer-col__title">Kurumsal &amp; Yönetim</h4>
+        <!-- 3. Sektörel Çözümler -->
+        <div class="footer-col">
+          <h4 class="footer-col__title">Sektörel Çözümler</h4>
+          <ul class="footer-links">
+            <li><a href="kategori.html?sector=giyim">Giyim Mağazacılığı</a></li>
+            <li><a href="kategori.html?sector=pastane-tatli">Pastane, Fırın &amp; Tatlı</a></li>
+            <li><a href="kategori.html?sector=kitap-kirtasiye">Kitap, Kırtasiye &amp; Oyuncak</a></li>
+            <li><a href="kategori.html?sector=kuruyemis">Kuruyemiş Sektörü</a></li>
+            <li><a href="kategori.html?sector=restaurant-cafe">Restaurant &amp; Cafe</a></li>
+            <li><a href="kategori.html?sector=eczane">Eczane Sektörü</a></li>
+            <li><a href="kategori.html?sector=market">Market Sektörü</a></li>
+          </ul>
+        </div>
+
+        <!-- 4. Kurumsal Bağlantılar -->
+        <div class="footer-col">
+          <h4 class="footer-col__title">Kurumsal</h4>
           <ul class="footer-links">
             <li><a href="firma-profili.html">Firma Profili</a></li>
-            <li><a href="misyon-ve-vizyon.html">Misyon ve Vizyonumuz</a></li>
-            <li><a href="yonetim-ve-ekibimiz.html">Yönetim ve Ekibimiz</a></li>
-            <li><a href="grup-sirketleri.html">Grup Şirketlerimiz</a></li>
-            <li><a href="arge-ve-patent.html">Ar-Ge ve Patent Çalışmaları</a></li>
-            <li><a href="sponsorluklar-ve-oduller.html">Sponsorluklar ve Ödüller</a></li>
+            <li><a href="kalite-belgeleri.html">Kalite Belgeleri</a></li>
+            <li><a href="referanslarimiz.html">Referanslarımız</a></li>
+            <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
           </ul>
         </div>
 
-        <!-- Sütun 4: Kalite & Destek -->
-        <div>
-          <h4 class="footer-col__title">Kalite &amp; Müşteri</h4>
-          <ul class="footer-links">
-            <li><a href="kalite-belgeleri.html">Kalite Belgeleri &amp; Sosyal Uygunluk</a></li>
-            <li><a href="online-katalog.html">📖 2026 Online Katalog</a></li>
-            <li><a href="referanslarimiz.html">Kurumsal Referanslarımız</a></li>
-            <li><a href="sss.html">Sıkça Sorulan Sorular (SSS)</a></li>
-            <li><a href="promosyon.html">Tüm Promosyon Modelleri</a></li>
-            <li><a href="iletisim.html">Teklif ve İletişim Formu</a></li>
-          </ul>
-        </div>
-
-        <!-- Sütun 5: Fabrika & İletişim -->
-        <div>
-          <h4 class="footer-col__title">Fabrika &amp; İletişim</h4>
+        <!-- 5. İletişim & Kartvizit Bilgileri -->
+        <div class="footer-col footer-col--contact">
+          <h4 class="footer-col__title">İletişim &amp; Fabrika</h4>
           <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-              <circle cx="12" cy="10" r="3"></circle>
-            </svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
             <div>
-              <strong>Fabrika &amp; Genel Merkez:</strong><br />
-              İkitelli OSB, Ambalaj &amp; Çanta İmalat Kompleksi, Başakşehir / İstanbul
+              <strong style="color: var(--color-white); display: block; font-size: 0.88rem;">Özgür Kırmaz</strong>
+              <span style="opacity: 0.8; font-size: 0.78rem;">Firma Sahibi</span>
             </div>
           </div>
           <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-            </svg>
-            <div>
-              <a href="tel:+902120000000">+90 (212) 000 00 00</a>
-            </div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <a href="tel:+905305684416">+90 530 568 44 16</a>
           </div>
           <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
-            <div>
-              <a href="mailto:info@novapak.com.tr">info@novapak.com.tr</a>
-            </div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="mailto:ozgur@novapak.com">ozgur@novapak.com</a>
           </div>
-          <div style="margin-top: 14px;">
-            <a href="https://wa.me/905000000000?text=Merhaba%20Nova%20Pak%2C%20h%C4%B1zl%C4%B1%20teklif%20ve%20numune%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn--primary" style="padding: 10px 18px; font-size: 0.8rem; width: 100%; justify-content: center;">
-              <span>💬 7/24 WhatsApp Teklif Hattı</span>
-            </a>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Organize Sanayi Bölgesi, İstanbul / TÜRKİYE</span>
           </div>
         </div>
 
       </div>
 
-      <div class="footer-bottom-bar">
-        <div>
-          &copy; 2026 Nova Pak Çanta Promosyon San. ve Tic. A.Ş. Tüm Hakları Saklıdır.
-        </div>
-        <div class="footer-legal-links">
-          <a href="firma-profili.html">Hakkımızda</a>
-          <span>&bull;</span>
-          <a href="kalite-belgeleri.html">Kalite Politikası</a>
-          <span>&bull;</span>
-          <a href="sss.html">KVKK Aydınlatma Metni</a>
-          <span>&bull;</span>
-          <a href="online-katalog.html">E-Katalog</a>
-        </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nova Pak Tek Kullanımlı Çanta İmalatı — Tüm Hakları Saklıdır.</p>
+        <p class="footer-bottom__motto">"Doğaya dost, geleceğe değer..."</p>
       </div>
     </div>
   </footer>
 
-  <!-- SAĞ ALT SABİT WHATSAPP ("BİZE ULAŞIN") -->
-  <div class="whatsapp-float-wrap" id="whatsappFloatWrap">
-    <div class="whatsapp-popup" id="whatsappPopup" aria-hidden="true">
-      <div class="whatsapp-popup__head">
-        <div class="whatsapp-popup__brand">
-          <span class="whatsapp-popup__dot"></span>
-          <div>
-            <div class="whatsapp-popup__title">Nova Pak WhatsApp Hattı</div>
-            <div class="whatsapp-popup__status">Çevrimiçi — Kurumsal Destek</div>
-          </div>
-        </div>
-        <button type="button" class="whatsapp-popup__close" id="waPopupClose" aria-label="Kapat">&times;</button>
-      </div>
-      <div class="whatsapp-popup__body">
-        <div class="whatsapp-popup__msg">
-          Merhaba 👋 Kurumsal üretim kapasitemiz, kalite belgelerimiz veya toptan siparişleriniz için hemen yazabilirsiniz.
-        </div>
-        <div class="whatsapp-popup__links">
-          <a href="https://wa.me/905000000000?text=Merhaba%20Nova%20Pak%2C%20kurumsal%20%C3%BCretim%20ve%20%C3%BCr%C3%BCn%20serileriniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="whatsapp-popup__link">
-            <span>💬 Kurumsal Satış Temsilcisi</span>
-            <span>&rarr;</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <button type="button" class="whatsapp-float-btn" id="whatsappFloatBtn" aria-label="WhatsApp ile Bize Ulaşın">
-      <span class="whatsapp-float-btn__icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Sabit WhatsApp Hızlı İletişim Butonu (Sol Tarafa Sabitlendi) -->
+  <aside class="whatsapp-floating-widget" aria-label="WhatsApp İletişim">
+    <a href="https://wa.me/905305684416?text=Merhaba%20Nova%20Pak%2C%20h%C4%B1zl%C4%B1%20fiyat%20ve%20numune%20talebinde%20bulunmak%20istiyorum." target="_blank" rel="noopener" class="whatsapp-float-btn" aria-label="WhatsApp Canlı Destek">
+      <div class="whatsapp-float-btn__icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
         </svg>
-      </span>
-      <span>Bize Ulaşın</span>
-    </button>
-  </div>
+      </div>
+      <span class="whatsapp-float-btn__text">Hızlı Fiyat Teklifi</span>
+    </a>
+  </aside>
 
   <script src="js/products-data.js"></script>
   <script src="js/main.js"></script>

@@ -3,423 +3,561 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nova Pak Çanta Promosyon | Doğa Dostu Kurumsal Bez Çanta Üreticisi</title>
-  <!-- Google Fonts: Plus Jakarta Sans, Cormorant Garamond & Inter -->
+  <title>Nova Pak | Tek Kullanımlı Çanta İmalatı — Doğa Dostu Çözümler</title>
+  <meta name="description" content="Nova Pak tela dikişli çanta, karton çanta, craft çanta ve hambez çanta imalatı. Giyim, pastane, kırtasiye, kuruyemiş, cafe, eczane ve market sektörlerine özel toptan baskılı çözümler." />
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <!-- Ana Stil Dosyası -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- Dekoratif Çok Şeffaf Mimari Halkalar -->
+  <!-- Dekoratif Çok Şeffaf Mimari Zemin Halkaları -->
   <div class="bg-ornament bg-ornament--hero-left" aria-hidden="true"></div>
   <div class="bg-ornament bg-ornament--grid-right" aria-hidden="true"></div>
 
   <!-- ========================================================================
-       1. ÜST MENÜ (LOGO -> ANASAYFA | ÜRÜNLERİMİZ, KURUMSAL, REFERANSLARIMIZ, İLETİŞİM)
+       1. ÜST MENÜ (HEADER)
        ======================================================================== -->
   <header id="header" class="site-header">
     <div class="container header-inner">
       
-      <!-- Sol Üst: Logo (Anasayfaya Yönlendirir) -->
-      <a href="index.html" class="brand-logo" aria-label="Nova Pak Çanta Promosyon Anasayfa">
+      <!-- Sol Üst: Nova Pak Kurumsal Logosu -->
+      <a href="index.html" class="brand-logo" aria-label="Nova Pak Tek Kullanımlı Çanta İmalatı Anasayfa">
         <div class="brand-logo__img-wrap">
-          <img src="assets/images/logo-clean.png" alt="Nova Pak Çanta Promosyon Logo" class="brand-logo__img" />
+          <img src="assets/images/nova-pak-logo-transparent.png" alt="Nova Pak Tek Kullanımlı Çanta İmalatı" class="brand-logo__img" />
         </div>
       </a>
 
-      <!-- Sağ Alan: Kurumsal Dropdown Menüler + Sağ Köşe Kategoriler -->
+      <!-- Sağ Alan: Menü Sekmeleri + Sektörel Çözümler -->
       <div class="header-nav-group">
         <nav aria-label="Ana Menü">
           <ul class="nav-list">
+            <!-- Ana Ürün Kategorileri Dropdown -->
+            <li class="nav-item nav-item--dropdown">
+              <a href="kategori.html" class="nav-link nav-link--has-dropdown">
+                <span>Kategoriler</span>
+                <svg class="nav-link__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </a>
+              <div class="nav-dropdown" role="menu" aria-label="Ana Ürün Kategorileri">
+                <ul class="nav-dropdown__list">
+                  <li><a href="kategori.html?cat=tela-dikisli" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Tela Dikişli Çanta</span></a></li>
+                  <li><a href="kategori.html?cat=karton-canta" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Karton Çanta</span></a></li>
+                  <li><a href="kategori.html?cat=craft-canta" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Craft Çanta</span></a></li>
+                  <li><a href="kategori.html?cat=hambez-canta" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Hambez Çanta</span></a></li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Sektörel Menü Dropdown -->
+            <li class="nav-item nav-item--dropdown">
+              <a href="kategori.html" class="nav-link nav-link--has-dropdown">
+                <span>Sektörler</span>
+                <svg class="nav-link__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </a>
+              <div class="nav-dropdown" role="menu" aria-label="Sektörel Menü">
+                <ul class="nav-dropdown__list">
+                  <li><a href="kategori.html?sector=giyim" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Giyim Mağazacılığı</span></a></li>
+                  <li><a href="kategori.html?sector=pastane-tatli" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Pastane &amp; Fırın &amp; Tatlı</span></a></li>
+                  <li><a href="kategori.html?sector=kitap-kirtasiye" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Kitap, Kırtasiye &amp; Oyuncak</span></a></li>
+                  <li><a href="kategori.html?sector=kuruyemis" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Kuruyemiş Sektörü</span></a></li>
+                  <li><a href="kategori.html?sector=restaurant-cafe" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Restaurant &amp; Cafe</span></a></li>
+                  <li><a href="kategori.html?sector=eczane" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Eczane Sektörü</span></a></li>
+                  <li><a href="kategori.html?sector=market" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Market Sektörü</span></a></li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Bağımsız Promosyon Ürünleri Sayfası -->
+            <li><a href="promosyon.html" class="nav-link">Promosyon Ürünleri</a></li>
+
             <!-- Kurumsal Dropdown -->
             <li class="nav-item nav-item--dropdown">
               <a href="kurumsal.html" class="nav-link nav-link--has-dropdown">
                 <span>Kurumsal</span>
                 <svg class="nav-link__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </a>
-              <div class="nav-dropdown nav-dropdown--corporate" role="menu" aria-label="Kurumsal Alt Menüsü">
-                <div class="nav-dropdown__bridge"></div>
+              <div class="nav-dropdown" role="menu" aria-label="Kurumsal Alt Menüsü">
                 <ul class="nav-dropdown__list">
                   <li><a href="firma-profili.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Firma Profili</span></a></li>
-                  <li><a href="yonetim-ve-ekibimiz.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Yönetim ve Ekibimiz</span></a></li>
-                  <li><a href="grup-sirketleri.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Grup Şirketleri</span></a></li>
-                  <li><a href="misyon-ve-vizyon.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Misyon ve Vizyonu</span></a></li>
-                  <li><a href="online-katalog.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Online Katalog</span></a></li>
-                  <li><a href="kalite-belgeleri.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Kalite Belgeleri ve Sosyal Uygunluk</span></a></li>
-                  <li><a href="sponsorluklar-ve-oduller.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Sponsorluklar ve Ödüller</span></a></li>
+                  <li><a href="kalite-belgeleri.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Kalite Belgeleri</span></a></li>
                   <li><a href="sss.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Sıkça Sorulan Sorular</span></a></li>
-                  <li><a href="arge-ve-patent.html" class="nav-dropdown__link"><span class="nav-dropdown__bullet"></span><span>Ar-Ge ve Patent Çalışmaları</span></a></li>
                 </ul>
               </div>
             </li>
 
             <li><a href="referanslarimiz.html" class="nav-link">Referanslarımız</a></li>
-            <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+                        <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
           </ul>
         </nav>
 
-        <!-- Son Köşe: Açılır Kategoriler Mega Menüsü (Aşağı Kaydırıldığında Sağ Köşeye Kayarak Kalır) -->
-        <div class="corner-categories" id="cornerCategories">
-          <button type="button" class="corner-categories__trigger" id="categoriesTrigger" aria-expanded="false" aria-haspopup="true">
-            <span class="corner-categories__icon" aria-hidden="true">
-              <span></span><span></span><span></span><span></span>
-            </span>
-            <span>Ürün Serileri</span>
-            <svg class="corner-categories__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </button>
-
-          <div class="corner-dropdown" role="menu" aria-label="Ürün Kategorileri">
-            <div class="corner-Dropdown-bridge"></div>
-            <div class="corner-dropdown__header">
-              <span class="corner-dropdown__title">Tescilli Çanta Serilerimiz</span>
-              <span class="corner-dropdown__badge">Tekrar Kullanılır</span>
-            </div>
-
-            <div class="corner-dropdown__grid">
-              <a href="kategori.html?cat=netbag" class="dropdown-cat-item">
-                <img src="assets/images/hero-netbag-drawstring.png" alt="Netbag" class="dropdown-cat-item__thumb" />
-                <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Ultrasonik &amp; File</span>
-                  <span class="dropdown-cat-item__name">Netbag</span>
-                </div>
-              </a>
-
-              <a href="kategori.html?cat=netstrong" class="dropdown-cat-item">
-                <img src="assets/images/hero-floating.png" alt="Netstrong" class="dropdown-cat-item__thumb" />
-                <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Yüksek Mukavemet</span>
-                  <span class="dropdown-cat-item__name">Netstrong</span>
-                </div>
-              </a>
-
-              <a href="kategori.html?cat=netcool" class="dropdown-cat-item">
-                <img src="assets/images/cantalar.png" alt="Netcool" class="dropdown-cat-item__thumb" />
-                <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Isı Yalıtımlı Termal</span>
-                  <span class="dropdown-cat-item__name">Netcool</span>
-                </div>
-              </a>
-
-              <a href="kategori.html?cat=netgo" class="dropdown-cat-item">
-                <img src="assets/images/hero-netbag-drawstring.png" alt="Netgo" class="dropdown-cat-item__thumb" />
-                <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Büzgülü &amp; Katlanır</span>
-                  <span class="dropdown-cat-item__name">Netgo</span>
-                </div>
-              </a>
-
-              <a href="kategori.html?cat=nethandle" class="dropdown-cat-item">
-                <img src="assets/images/hero-floating.png" alt="Nethandle" class="dropdown-cat-item__thumb" />
-                <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">Deri &amp; Özel Saplı</span>
-                  <span class="dropdown-cat-item__name">Nethandle</span>
-                </div>
-              </a>
-
-              <a href="kategori.html?cat=neteco" class="dropdown-cat-item">
-                <img src="assets/images/hero-recycled-bags.png" alt="Neteco" class="dropdown-cat-item__thumb" />
-                <div class="dropdown-cat-item__info">
-                  <span class="dropdown-cat-item__num">%100 Geri Dönüşüm</span>
-                  <span class="dropdown-cat-item__name">Neteco</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="corner-dropdown__footer">
-              <span>Tüm kurumsal koleksiyonu incele</span>
-              <a href="promosyon.html">Tüm Ürünleri İncele &rarr;</a>
-            </div>
-          </div>
-        </div>
+        <!-- Mobil Menü Hamburger Butonu -->
+        <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Menüyü Aç" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
 
     </div>
   </header>
 
+  <!-- MOBİL MENÜ ÇEKMECESİ (DRAWER) -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobil Menü" aria-hidden="true">
+    <div class="mobile-drawer__header">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/images/nova-pak-logo-transparent.png" alt="Nova Pak" style="height: 38px; width: auto;" />
+      </a>
+      <button type="button" class="mobile-drawer__close" id="mobileDrawerClose" aria-label="Menüyü Kapat">&times;</button>
+    </div>
+
+    <div class="mobile-drawer__body">
+      <!-- Çanta Modelleri -->
+      <div class="mobile-nav-group">
+        <span class="mobile-nav-heading">Ana Kategoriler</span>
+        <a href="kategori.html?cat=tela-dikisli" class="mobile-nav-link">Tela Dikişli Çanta</a>
+        <a href="kategori.html?cat=karton-canta" class="mobile-nav-link">Karton Çanta</a>
+        <a href="kategori.html?cat=craft-canta" class="mobile-nav-link">Craft Çanta</a>
+        <a href="kategori.html?cat=hambez-canta" class="mobile-nav-link">Hambez Çanta</a>
+      </div>
+
+      <!-- Sektörel Çözümler -->
+      <div class="mobile-nav-group">
+        <span class="mobile-nav-heading">Sektörel Çözümler</span>
+        <a href="kategori.html?sector=giyim" class="mobile-nav-link">Giyim Mağazacılığı</a>
+        <a href="kategori.html?sector=pastane-tatli" class="mobile-nav-link">Pastane &amp; Fırın &amp; Tatlı</a>
+        <a href="kategori.html?sector=kitap-kirtasiye" class="mobile-nav-link">Kitap &amp; Kırtasiye &amp; Oyuncak</a>
+        <a href="kategori.html?sector=kuruyemis" class="mobile-nav-link">Kuruyemiş Sektörü</a>
+        <a href="kategori.html?sector=restaurant-cafe" class="mobile-nav-link">Restaurant &amp; Cafe</a>
+        <a href="kategori.html?sector=eczane" class="mobile-nav-link">Eczane Sektörü</a>
+        <a href="kategori.html?sector=market" class="mobile-nav-link">Market Sektörü</a>
+      </div>
+
+      <!-- Diğer Sayfalar -->
+      <div class="mobile-nav-group">
+        <span class="mobile-nav-heading">Kurumsal &amp; Bilgi</span>
+        <a href="promosyon.html" class="mobile-nav-link">Promosyon Ürünleri <span class="badge" style="background: var(--color-kraft-brown); color: #fff; padding: 2px 7px; border-radius: 99px; font-size: 0.7rem;">Yeni</span></a>
+        <a href="firma-profili.html" class="mobile-nav-link">Firma Profili</a>
+        <a href="kalite-belgeleri.html" class="mobile-nav-link">Kalite Belgeleri</a>
+        <a href="sss.html" class="mobile-nav-link">Sıkça Sorulan Sorular</a>
+        <a href="referanslarimiz.html" class="mobile-nav-link">Referanslarımız</a>
+        <a href="iletisim.html" class="mobile-nav-link">İletişim</a>
+      </div>
+    </div>
+
+    <div class="mobile-drawer__footer">
+      <div style="font-size: 0.82rem; color: var(--color-anthracite); margin-bottom: 10px;">
+        <strong>Özgür Kırmaz</strong> &bull; Firma Sahibi<br>
+        <span style="opacity: 0.8;">Organize Sanayi Bölgesi, İstanbul</span>
+      </div>
+      <a href="https://wa.me/905305684416?text=Merhaba%20Nova%20Pak%2C%20h%C4%B1zl%C4%B1%20fiyat%20ve%20numune%20talebinde%20bulunmak%20istiyorum." target="_blank" rel="noopener" class="btn btn--primary" style="width: 100%; justify-content: center; padding: 12px 20px;">
+        <span>💬 WhatsApp İletişim</span>
+      </a>
+    </div>
+  </aside>
+
   <main>
     <!-- ======================================================================
-         2. HERO (KARŞILAMA) ALANI — YANA KAYDIRMALI & AŞAĞI İNDİKÇE ŞEFFAFLAŞAN SAHNE
+         2. HERO (KARŞILAMA) SLIDER ALANI — REFERANS: TASARIM ÖRNEK 1 & TASARIM 2 WEBM
          ====================================================================== -->
     <section id="anasayfa" class="hero-section" data-hero-theme="0">
+
       <div class="hero-scroll-stage" id="heroScrollStage">
         <div class="container">
+          
+          <div class="hero-slider" id="heroSlider" aria-roledescription="carousel" aria-label="Nova Pak Çanta Koleksiyonları">
+            <div class="hero-slider__track" id="heroSliderTrack">
 
-          <div class="hero-slider" id="heroSlider" aria-roledescription="carousel" aria-label="Nova Pak Endüstriyel Çanta Koleksiyonları">
-            <div class="hero-slider__viewport">
-              <div class="hero-slider__track" id="heroSliderTrack">
-
-                <!-- SLIDE 01: Netstrong & Nethandle Özel Tasarım Kanvas & Endüstriyel Bez Çantalar (hero.jpeg) -->
-                <div class="hero-slide hero-slide--signature is-active" data-slide-index="0">
-                  <div class="hero-grid">
-                    <div class="hero-content">
-                      <div class="hero-eyebrow">
-                        <span class="hero-eyebrow__dot"></span>
-                        <span class="hero-eyebrow__text">01 / Tekrar Kullanılır &bull; Netstrong &amp; Nethandle Serisi</span>
-                      </div>
-
-                      <h1 class="hero-title">
-                        <span class="hero-title__brand">Nova Pak ile</span>
-                        <span class="hero-title__accent">Gücü Taşıyın.</span>
-                      </h1>
-
-                      <p class="hero-description">
-                        Yüksek mukavemetli <strong>Netstrong</strong> laminasyonlu kanvas çantalar ve <strong>Nethandle</strong> özel saplı kurumsal modellerle markanızı milyonlarca noktada doğa dostu teknolojiyle temsil ediyoruz.
-                      </p>
-
-                      <div class="hero-actions">
-                        <a href="kategori.html?cat=netstrong" class="btn btn--primary">
-                          <span>Seriyi Keşfet</span>
-                          <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
-                          </svg>
-                        </a>
-                        <a href="kurumsal.html#firma-profili" class="btn btn--secondary">
-                          <span>Kurumsal Gücümüz</span>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="hero-visual">
-                      <div class="hero-visual__halo" aria-hidden="true"></div>
-                      <div class="hero-visual__orbits" aria-hidden="true">
-                        <svg class="orbit-svg orbit-svg--outer" viewBox="0 0 640 640" overflow="visible" fill="none">
-                          <circle cx="320" cy="320" r="300" stroke="#B97955" stroke-width="1.8" stroke-opacity="0.42" stroke-dasharray="80 160 25 120 40 180" stroke-linecap="round" />
-                          <circle cx="320" cy="320" r="272" stroke="#244C3B" stroke-width="1.4" stroke-opacity="0.30" stroke-dasharray="50 140 20 90" stroke-linecap="round" />
-                          <circle cx="320" cy="20" r="4.5" fill="#B97955" fill-opacity="0.85" />
-                          <circle cx="592" cy="320" r="3.5" fill="#244C3B" fill-opacity="0.75" />
-                          <circle cx="128" cy="460" r="3" fill="#B97955" fill-opacity="0.7" />
-                        </svg>
-                        <svg class="orbit-svg orbit-svg--inner" viewBox="0 0 640 640" overflow="visible" fill="none">
-                          <ellipse cx="320" cy="320" rx="240" ry="210" stroke="#B97955" stroke-width="1.6" stroke-opacity="0.36" stroke-dasharray="60 150 30 110" stroke-linecap="round" />
-                          <circle cx="320" cy="320" r="185" stroke="#244C3B" stroke-width="1.3" stroke-opacity="0.26" stroke-dasharray="35 120 15 90" stroke-linecap="round" />
-                          <circle cx="110" cy="320" r="4" fill="#B97955" fill-opacity="0.85" />
-                          <circle cx="475" cy="230" r="3.2" fill="#244C3B" fill-opacity="0.7" />
-                        </svg>
-                      </div>
-
-                      <div class="hero-visual__floating-wrap">
-                        <img src="assets/images/hero-floating.png" alt="Nova Pak Netstrong ve Nethandle Kurumsal Bez Çanta Serisi" class="hero-visual__img" />
-                        <div class="hero-floating-tag">
-                          <span class="hero-floating-tag__badge">Öne Çıkan Seri</span>
-                          <span class="hero-floating-tag__title">Netstrong &bull; Ağır Hizmet</span>
-                          <span class="hero-floating-tag__sub">Lamine Kanvas &amp; Deri Takviye</span>
-                        </div>
-                      </div>
-
-                      <div class="hero-visual__ground-shadow" aria-hidden="true"></div>
-                    </div>
-                  </div>
+              <!-- SLIDE 01: Hero 1 Animasyonlu Özel İmalat (hero1) -->
+              <div class="hero-slide is-active" data-slide-index="0">
+                <!-- Sadece İlk Slayta Özel Tamamen Şeffaf hero11.png Arka Planı -->
+                <div class="hero-slide-bg-wrap" aria-hidden="true">
+                  <img src="assets/images/hero11.png" alt="" class="hero-slide-bg-img" />
+                  <div class="hero-slide-bg-overlay"></div>
                 </div>
 
-                <!-- SLIDE 02: Neteco %100 Geri Dönüştürülmüş & Doğa Dostu Çantalar (geridonusunhero.jpeg) -->
-                <div class="hero-slide hero-slide--eco" data-slide-index="1">
-                  <div class="hero-grid hero-grid--reverse">
-                    <div class="hero-visual">
-                      <div class="hero-visual__halo hero-visual__halo--eco" aria-hidden="true"></div>
-                      <div class="hero-visual__orbits hero-visual__orbits--circular" aria-hidden="true">
-                        <svg class="orbit-svg orbit-svg--outer" viewBox="0 0 640 640" overflow="visible" fill="none">
-                          <circle cx="320" cy="320" r="300" stroke="#244C3B" stroke-width="1.8" stroke-opacity="0.40" stroke-dasharray="75 160 30 120" stroke-linecap="round" />
-                          <circle cx="320" cy="320" r="268" stroke="#428268" stroke-width="1.4" stroke-opacity="0.32" stroke-dasharray="55 140 20 100" stroke-linecap="round" />
-                          <circle cx="320" cy="20" r="4.5" fill="#244C3B" fill-opacity="0.85" />
-                          <circle cx="588" cy="320" r="3.5" fill="#428268" fill-opacity="0.75" />
-                        </svg>
-                        <svg class="orbit-svg orbit-svg--inner" viewBox="0 0 640 640" overflow="visible" fill="none">
-                          <ellipse cx="320" cy="320" rx="240" ry="215" stroke="#B97955" stroke-width="1.5" stroke-opacity="0.34" stroke-dasharray="50 160 25 100" stroke-linecap="round" />
-                          <circle cx="320" cy="320" r="185" stroke="#244C3B" stroke-width="1.3" stroke-opacity="0.25" stroke-dasharray="30 130" stroke-linecap="round" />
-                          <circle cx="535" cy="320" r="4" fill="#428268" fill-opacity="0.8" />
-                          <circle cx="150" cy="240" r="3" fill="#B97955" fill-opacity="0.7" />
-                        </svg>
-                      </div>
-
-                      <div class="hero-visual__floating-wrap">
-                        <img src="assets/images/hero-recycled-bags.png" alt="Neteco %100 Geri Dönüştürülmüş Bez Çantalar" class="hero-visual__img hero-visual__img--eco" />
-                        <div class="hero-floating-tag hero-floating-tag--eco">
-                          <span class="hero-floating-tag__badge">Doğa Dostu</span>
-                          <span class="hero-floating-tag__title">Neteco &bull; Geri Dönüşüm</span>
-                          <span class="hero-floating-tag__sub">%100 Re-Cotton &amp; Sıfır Atık</span>
-                        </div>
-                      </div>
-
-                      <div class="hero-visual__ground-shadow" aria-hidden="true"></div>
+                <div class="hero-grid">
+                  
+                  <div class="hero-content">
+                    <div class="hero-eyebrow">
+                      <span class="hero-eyebrow__pulse" aria-hidden="true"></span>
+                      <span class="hero-eyebrow__text">01 / YÜKSEK MUKAVEMET &bull; DOĞA DOSTU İMALAT</span>
                     </div>
 
-                    <div class="hero-content hero-content--eco">
-                      <div class="hero-eyebrow hero-eyebrow--eco">
-                        <span class="hero-eyebrow__leaf" aria-hidden="true">🌿</span>
-                        <span class="hero-eyebrow__text">02 / Sürdürülebilir Gelecek &bull; Neteco %100 Geri Dönüşüm</span>
+                    <h1 class="hero-title">
+                      <span class="hero-title__brand">Nova Pak</span> Çanta Koleksiyonu
+                    </h1>
+
+                    <p class="hero-description">
+                      Ultrasonik dikişli nonwoven bez çantalardan lüks kraft ve karton ambalajlara; markanıza özel, çevre dostu ve toptan üretim gücü.
+                    </p>
+
+                    <div class="hero-actions">
+                      <a href="#urunler" class="hero-btn-more">
+                        <span>Ürünleri İncele</span>
+                      </a>
+                      <a href="https://wa.me/905305684416?text=Merhaba%20Nova%20Pak%2C%20toptan%20%C3%A7anta%20imalat%C4%B1%20i%C3%A7in%20bilgi%20ve%20fiyat%20teklifi%20almak%20istiyorum." target="_blank" rel="noopener" class="hero-btn-quote">
+                        <span>Teklif Al &rarr;</span>
+                      </a>
+                    </div>
+
+                    <div class="hero-specs">
+                      <span class="spec-pill">Doğaya Dost</span>
+                      <span class="spec-pill">Geri Dönüştürülebilir</span>
+                      <span class="spec-pill">Hızlı Sevkiyat</span>
+                    </div>
+                  </div>
+
+                  <div class="hero-visual hero-visual--hero1">
+                    <div class="hero-visual__halo" aria-hidden="true"></div>
+                    <div class="hero-visual__orbits" aria-hidden="true">
+                      <svg class="orbit-svg orbit-svg--outer" viewBox="0 0 540 540">
+                        <circle cx="270" cy="270" r="250" fill="none" stroke="rgba(165,132,101,0.28)" stroke-width="1.5" stroke-dasharray="8 12" />
+                        <circle cx="270" cy="270" r="190" fill="none" stroke="rgba(16,45,76,0.18)" stroke-width="1" stroke-dasharray="4 8" />
+                      </svg>
+                    </div>
+
+                    <div class="hero-visual__floating-wrap hero-visual__floating-wrap--animated">
+                      <div class="hero-stamp-badge">
+                        <span>Nova</span>
+                        <span>Pak</span>
                       </div>
 
-                      <h2 class="hero-title">
-                        <span class="hero-title__brand">Neteco Serisi ile</span>
-                        <span class="hero-title__accent hero-title__accent--eco">Yeşil Dönüşüm.</span>
-                      </h2>
-
-                      <p class="hero-description">
-                        GRS ve GOTS sertifikalı <strong>Neteco</strong> serimiz; geri dönüştürülmüş Re-Cotton pamuk ipliği, organik kanvas ve sıfır atık prensibiyle kurumunuzun karbon ayak izini azaltır.
-                      </p>
-
-                      <div class="hero-actions">
-                        <a href="kategori.html?cat=neteco" class="btn btn--primary">
-                          <span>Neteco Serisini İncele</span>
-                          <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
-                          </svg>
-                        </a>
-                        <a href="kurumsal.html#kalite-belgeleri" class="btn btn--secondary">
-                          <span>Kalite Belgelerimiz</span>
-                        </a>
+                      <div class="hero-floating-tag">
+                        <span class="hero-floating-tag__badge">Özel İmalat</span>
+                        <span class="hero-floating-tag__title">Nova Pak Çanta Koleksiyonu</span>
+                        <span class="hero-floating-tag__sub">Bez &bull; Kraft &bull; Karton</span>
                       </div>
                     </div>
                   </div>
+
                 </div>
-
-                <!-- SLIDE 03: Netbag, Netgo & Netcool Serileri (hero2.jpeg) -->
-                <div class="hero-slide hero-slide--artisan" data-slide-index="2">
-                  <div class="hero-grid">
-                    <div class="hero-content hero-content--atelier">
-                      <div class="hero-eyebrow hero-eyebrow--artisan">
-                        <span class="hero-eyebrow__dot"></span>
-                        <span class="hero-eyebrow__text">03 / Patentli Mühendislik &bull; Netbag, Netgo &amp; Netcool</span>
-                      </div>
-
-                      <h2 class="hero-title">
-                        <span class="hero-title__brand">Netbag, Netgo ve</span>
-                        <span class="hero-title__accent">Akıllı Çözümler.</span>
-                      </h2>
-
-                      <p class="hero-description">
-                        Ultrasonik kaynaklı ve organik file örgülü <strong>Netbag</strong>, halat büzgülü <strong>Netgo</strong> ve ısı yalıtımlı termal <strong>Netcool</strong> modelleriyle perakendeden gıdaya her sektöre özel çözüm.
-                      </p>
-
-                      <div class="hero-actions">
-                        <a href="promosyon.html" class="btn btn--primary">
-                          <span>Tüm Ürünleri İncele</span>
-                          <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
-                          </svg>
-                        </a>
-                        <a href="kurumsal.html#arge-ve-patent" class="btn btn--secondary">
-                          <span>Ar-Ge &amp; Patentlerimiz</span>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="hero-visual">
-                      <div class="hero-visual__halo hero-visual__halo--artisan" aria-hidden="true"></div>
-                      <div class="hero-visual__orbits hero-visual__orbits--circular" aria-hidden="true">
-                        <svg class="orbit-svg orbit-svg--outer" viewBox="0 0 640 640" overflow="visible" fill="none">
-                          <circle cx="320" cy="320" r="300" stroke="#B97955" stroke-width="1.8" stroke-opacity="0.42" stroke-dasharray="75 160 25 120" stroke-linecap="round" />
-                          <circle cx="320" cy="320" r="270" stroke="#244C3B" stroke-width="1.4" stroke-opacity="0.30" stroke-dasharray="50 145 20 95" stroke-linecap="round" />
-                          <circle cx="320" cy="20" r="4.5" fill="#B97955" fill-opacity="0.85" />
-                          <circle cx="590" cy="320" r="3.5" fill="#B97955" fill-opacity="0.75" />
-                        </svg>
-                        <svg class="orbit-svg orbit-svg--inner" viewBox="0 0 640 640" overflow="visible" fill="none">
-                          <ellipse cx="320" cy="320" rx="245" ry="210" stroke="#244C3B" stroke-width="1.5" stroke-opacity="0.34" stroke-dasharray="55 160 25 110" stroke-linecap="round" />
-                          <circle cx="320" cy="320" r="185" stroke="#B97955" stroke-width="1.3" stroke-opacity="0.28" stroke-dasharray="30 130" stroke-linecap="round" />
-                          <circle cx="110" cy="320" r="4" fill="#B97955" fill-opacity="0.85" />
-                          <circle cx="485" cy="250" r="3" fill="#244C3B" fill-opacity="0.7" />
-                        </svg>
-                      </div>
-
-                      <div class="hero-visual__floating-wrap">
-                        <img src="assets/images/hero-netbag-drawstring.png" alt="Netbag, Netgo ve Netcool Tescilli Çanta Serileri" class="hero-visual__img hero-visual__img--artisan" />
-                        <div class="hero-floating-tag hero-floating-tag--artisan">
-                          <span class="hero-floating-tag__badge">İnovasyon</span>
-                          <span class="hero-floating-tag__title">Netcool &bull; Termal Seri</span>
-                          <span class="hero-floating-tag__sub">Çok Katmanlı Isı İzolasyonu</span>
-                        </div>
-                      </div>
-
-                      <div class="hero-visual__ground-shadow" aria-hidden="true"></div>
-                    </div>
-                  </div>
-                </div>
-
               </div>
-            </div>
 
+              <!-- SLIDE 02: Tela Dikişli Çanta (Stüdyo Portre Çemberi & Küçültülmüş Etiket) -->
+              <div class="hero-slide" data-slide-index="1">
+                <div class="hero-grid">
+                  
+                  <div class="hero-content">
+                    <div class="hero-eyebrow">
+                      <span class="hero-eyebrow__pulse" aria-hidden="true"></span>
+                      <span class="hero-eyebrow__text">02 / GERİ DÖNÜŞTÜRÜLEBİLİR &bull; NONWOVEN TEKNOLOJİSİ</span>
+                    </div>
+
+                    <h2 class="hero-title">
+                      <span class="hero-title__brand">Anadolu Frisch Markt</span> Tela Dikişli Çanta
+                    </h2>
+
+                    <p class="hero-description">
+                      Yüksek mukavemetli dikiş takviyesi ve körüklü taban yapısıyla süpermarketler, giyim mağazaları ve etkinlikler için uzun ömürlü, doğaya dost bez çanta imalatı.
+                    </p>
+
+                    <div class="hero-actions">
+                      <a href="kategori.html?cat=tela-dikisli" class="hero-btn-more">
+                        <span>Daha Fazla Bilgi</span>
+                      </a>
+                      <a href="https://wa.me/905305684416?text=Merhaba%20Nova%20Pak%2C%20Tela%20Diki%C5%9Fli%20%C3%87anta%20i%C3%A7in%20fiyat%20teklifi%20almak%20istiyorum." target="_blank" rel="noopener" class="hero-btn-quote">
+                        <span>Teklif Al &rarr;</span>
+                      </a>
+                    </div>
+
+                    <div class="hero-specs">
+                      <span class="spec-pill">Çevreye Duyarlı</span>
+                      <span class="spec-pill">Uzun Ömürlü &amp; Dayanıklı</span>
+                      <span class="spec-pill">Nonwoven Kumaş</span>
+                    </div>
+                  </div>
+
+                  <div class="hero-visual">
+                    <div class="hero-visual__floating-wrap">
+                      <!-- Yuvarlak Stüdyo Çemberi: Çanta Resmi Tamamen Bu Çemberin İçinde Merkezlenir -->
+                      <div class="hero-studio-arch">
+                        <img src="assets/images/products/tela-dikisli-hero-cutout.png" alt="Nova Pak Tela Dikişli Çanta" class="hero-visual__img hero-visual__img--arch-bag" />
+                      </div>
+                      
+                      <div class="hero-visual-floor-shadow" aria-hidden="true"></div>
+
+                      <div class="hero-stamp-badge hero-stamp-badge--green">
+                        <span>Tekrar</span>
+                        <span>Kullanılır</span>
+                      </div>
+
+                      <!-- Küçültülmüş Zarif Beyaz Etiket -->
+                      <div class="hero-floating-tag">
+                        <span class="hero-floating-tag__badge">Fotoğraftaki Model</span>
+                        <span class="hero-floating-tag__title">Anadolu Frisch Markt</span>
+                        <span class="hero-floating-tag__sub">Körük Tabanlı &bull; Takviyeli Dikiş</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- SLIDE 03: Hero 12 Geri Dönüşüm & Büküm Saplı Kraft Çanta -->
+              <div class="hero-slide" data-slide-index="2">
+                <div class="hero-grid">
+                  
+                  <div class="hero-content">
+                    <div class="hero-eyebrow">
+                      <span class="hero-eyebrow__pulse" style="background: #2E6F40; box-shadow: 0 0 10px rgba(46,111,64,0.6);" aria-hidden="true"></span>
+                      <span class="hero-eyebrow__text">03 / DOĞAL KRAFT &bull; ÇEVREYE DUYARLI AMBALAJ ALTERNATİFLERİ</span>
+                    </div>
+
+                    <h2 class="hero-title">
+                      <span class="hero-title__brand">Büküm Saplı</span> Kraft Çanta
+                    </h2>
+
+                    <p class="hero-description">
+                      Sürdürülebilir orman kaynaklarından saf selüloz lifleriyle, markanız için plastik yerine tercih edebileceğiniz doğa dostu ve zarif büküm saplı ambalaj alternatifleri.
+                    </p>
+
+                    <div class="hero-actions">
+                      <a href="#urunler" class="hero-btn-more">
+                        <span>Kraft Modelleri İncele</span>
+                      </a>
+                      <a href="https://wa.me/905305684416?text=Merhaba%20Nova%20Pak%2C%20b%C3%BCk%C3%BCm%20sapl%C4%B1%20kraft%20%C3%A7anta%20modelleri%20hakk%C4%B1nda%20fiyat%20ve%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="hero-btn-quote">
+                        <span>Fiyat Teklifi Al &rarr;</span>
+                      </a>
+                    </div>
+
+                    <div class="hero-specs">
+                      <span class="spec-pill">🌱 Çevreye Duyarlı</span>
+                      <span class="spec-pill">♻️ Yeniden Kullanılabilir</span>
+                      <span class="spec-pill">✨ Şık &amp; Doğal Görünüm</span>
+                    </div>
+                  </div>
+
+                  <div class="hero-visual hero-visual--hero12">
+                    <!-- Radyal Işıltılı Arka Plan -->
+                    <div class="hero-visual__halo hero-visual__halo--eco" aria-hidden="true"></div>
+                    
+                    <!-- Çift Katmanlı Dönen Yörüngeler -->
+                    <div class="hero-visual__orbits hero-visual__orbits--hero12" aria-hidden="true">
+                      <!-- Dış Yörünge (Saat Yönünde Döner) -->
+                      <svg class="orbit-svg orbit-svg--hero12-outer" viewBox="0 0 540 540">
+                        <circle cx="270" cy="270" r="255" fill="none" stroke="rgba(59, 122, 66, 0.35)" stroke-width="1.5" stroke-dasharray="10 14" />
+                        <circle cx="270" cy="270" r="230" fill="none" stroke="rgba(165, 132, 101, 0.22)" stroke-width="1" />
+                      </svg>
+                      <!-- İç Yörünge (Ters Yönde Döner) -->
+                      <svg class="orbit-svg orbit-svg--hero12-inner" viewBox="0 0 420 420">
+                        <circle cx="210" cy="210" r="195" fill="none" stroke="rgba(16, 45, 76, 0.22)" stroke-width="1.2" stroke-dasharray="6 10" />
+                        <circle cx="210" cy="210" r="160" fill="none" stroke="rgba(59, 122, 66, 0.25)" stroke-width="1" stroke-dasharray="4 8" />
+                      </svg>
+                    </div>
+
+                    <!-- Hero 12 Merkez Görseli ve Süzülme Animasyonu (Etiketler Sabit, Kendi Kendine Dönmez) -->
+                    <div class="hero-visual__floating-wrap hero-visual__floating-wrap--hero12">
+                      <img src="assets/images/hero12-cutout.png" alt="Nova Pak Büküm Saplı Kraft Çanta" class="hero-visual__img hero-visual__img--hero12" />
+                      
+                      <!-- 3D Taban Kontak Gölgesi -->
+                      <div class="hero-visual__ground-shadow hero-visual__ground-shadow--hero12" aria-hidden="true"></div>
+
+                      <div class="hero-stamp-badge hero-stamp-badge--green">
+                        <span>Doğal</span>
+                        <span>Kraft</span>
+                      </div>
+
+                      <div class="hero-floating-tag">
+                        <span class="hero-floating-tag__badge" style="color: #2E6F40;">Geri Kazanım</span>
+                        <span class="hero-floating-tag__title">Büküm Saplı Kraft</span>
+                        <span class="hero-floating-tag__sub">Doğal Kağıt &bull; Zarif Tasarım</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- SLIDE 04: Otomatik İmalat Parkuru & Fabrika Üretim Gücü (Sayfayla Bütünleşik) -->
+              <div class="hero-slide hero-slide--manufacturing" data-slide-index="3">
+                
+                <!-- Sadece Bu Slayta Özel Tam Arka Plan Fabrika İmalat Videosu -->
+                <div class="hero-slide-bg-video-wrap" aria-hidden="true">
+                  <video autoplay loop muted playsinline poster="cantaresim/video_frames/screencast_0.jpg" class="hero-slide-bg-video">
+                    <source src="assets/videos/nova-pak-uretim.webm" type="video/webm">
+                  </video>
+                  <div class="hero-slide-bg-video-overlay"></div>
+                </div>
+
+                <div class="hero-grid hero-grid--mfg">
+                  
+                  <div class="hero-content hero-content--mfg">
+                    <div class="hero-eyebrow">
+                      <span class="hero-eyebrow__pulse" aria-hidden="true"></span>
+                      <span class="hero-eyebrow__text">04 / OTOMATİK İMALAT PARKURU &bull; YÜKSEK HIZLI ÜRETİM</span>
+                    </div>
+
+                    <h2 class="hero-title hero-title--mfg">
+                      <span class="hero-title__brand hero-title__brand--mfg">Otomatik İmalat Hattı</span>
+                    </h2>
+
+                    <p class="hero-description hero-description--mfg">
+                      Nova Pak üretim tesislerinde; ultrasonik kaynak, çok renkli flekso baskı ve otomatik körük katlama parkurumuzla markanıza özel, uzun ömürlü ve dayanıklı çanta çözümleri üretiyoruz.
+                    </p>
+
+                    <div class="hero-actions">
+                      <a href="#urunler" class="hero-btn-more">
+                        <span>Tüm Modelleri İncele</span>
+                      </a>
+                      <a href="https://wa.me/905305684416?text=Merhaba%20Nova%20Pak%2C%20toptan%20imalat%20ve%20fiyat%20teklifi%20almak%20istiyorum." target="_blank" rel="noopener" class="hero-btn-quote">
+                        <span>Fabrikadan Teklif Al &rarr;</span>
+                      </a>
+                    </div>
+
+                    <div class="hero-specs">
+                      <span class="spec-pill spec-pill--mfg">⚡ Yüksek Hızlı Üretim</span>
+                      <span class="spec-pill spec-pill--mfg">🏭 Canlı Renkli Flekso Baskı</span>
+                      <span class="spec-pill spec-pill--mfg">🛡️ Güçlendirilmiş Dikiş Mukavemeti</span>
+                    </div>
+                  </div>
+
+                  <div class="hero-visual hero-visual--mfg">
+                    <div class="hero-mfg-stats-card">
+                      <div class="hero-mfg-stat">
+                        <div class="hero-mfg-stat__icon" aria-hidden="true">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                          </svg>
+                        </div>
+                        <div>
+                          <div class="hero-mfg-stat__title">Yeniden Kullanılabilir</div>
+                          <div class="hero-mfg-stat__lbl">Plastik yerine çevreye duyarlı bez çanta</div>
+                        </div>
+                      </div>
+                      <div class="hero-mfg-stat-divider"></div>
+                      <div class="hero-mfg-stat">
+                        <div class="hero-mfg-stat__icon" aria-hidden="true">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                          </svg>
+                        </div>
+                        <div>
+                          <div class="hero-mfg-stat__title">Uzun Ömürlü &amp; Dayanıklı</div>
+                          <div class="hero-mfg-stat__lbl">Güçlendirilmiş dikiş ve sağlam kulplar</div>
+                        </div>
+                      </div>
+                      <div class="hero-mfg-badge-live">
+                        <span>Ultrasonik Kaynak &bull; Otomatik Hat</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Slider 4 Nokta -->
+          <div class="hero-slider__dots" role="tablist" aria-label="Slayt Seçimi">
+            <button type="button" class="hero-dot is-active" data-slide-to="0" aria-label="1. Slayt: Nova Pak Çanta Koleksiyonu" aria-selected="true"></button>
+            <button type="button" class="hero-dot" data-slide-to="1" aria-label="2. Slayt: Tela Dikişli Çanta" aria-selected="false"></button>
+            <button type="button" class="hero-dot" data-slide-to="2" aria-label="3. Slayt: Büküm Saplı Kraft Çanta" aria-selected="false"></button>
+            <button type="button" class="hero-dot" data-slide-to="3" aria-label="4. Slayt: Otomatik İmalat Parkuru" aria-selected="false"></button>
           </div>
 
         </div>
       </div>
 
-      <!-- Sadece Noktalar (Daha Altta, İçerikle Asla İç İçe Geçmez) -->
-      <div class="hero-dots" id="heroSliderDots" role="tablist" aria-label="Slayt Seçimi">
-        <button type="button" class="hero-dot is-active" data-slide-to="0" aria-label="1. Slayt: Netstrong ve Nethandle" aria-selected="true"></button>
-        <button type="button" class="hero-dot" data-slide-to="1" aria-label="2. Slayt: Neteco %100 Geri Dönüşüm" aria-selected="false"></button>
-        <button type="button" class="hero-dot" data-slide-to="2" aria-label="3. Slayt: Netbag, Netgo ve Netcool" aria-selected="false"></button>
-      </div>
-
-      <!-- Sayfanın Solunda ve Sağında Küçük Ok İşaretleri -->
+      <!-- Kaydırma Okları — Tasarım Örnek 1 Stili (En Uç Kenarlarda Minimal Oklar) -->
       <button type="button" class="hero-nav-arrow hero-nav-arrow--prev" id="heroPrevBtn" aria-label="Önceki Slayt">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="15 18 9 12 15 6"></polyline>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
         </svg>
       </button>
       <button type="button" class="hero-nav-arrow hero-nav-arrow--next" id="heroNextBtn" aria-label="Sonraki Slayt">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="9 18 15 12 9 6"></polyline>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
         </svg>
       </button>
     </section>
-
     <!-- ======================================================================
-         2. RAKAMLARLA ENDÜSTRİYEL LİDERLİK & GÜVENİLİRLİK ŞERİDİ
+         2. BEZ ÇANTALARIN AVANTAJLARI (BİLGİLENDİRME ŞERİDİ)
          ====================================================================== -->
     <section class="home-stats-strip reveal">
       <div class="container">
         <div class="home-stats-grid">
+          
           <div class="home-stat-card">
-            <div class="home-stat-card__num">42<span>+</span></div>
-            <div class="home-stat-card__title">Küresel İhracat</div>
-            <div class="home-stat-card__desc">Avrupa, Körfez ve Kuzey Amerika pazarlarına düzenli sevkiyat.</div>
+            <div class="home-stat-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+              </svg>
+            </div>
+            <h3 class="home-stat-card__title">Yeniden Kullanılabilir</h3>
+            <p class="home-stat-card__desc">Plastik yerine yeniden kullanılabilir bez çanta tercih ederek çevreye duyarlı bir adım atın.</p>
           </div>
+
           <div class="home-stat-card">
-            <div class="home-stat-card__num">120<span>M+</span></div>
-            <div class="home-stat-card__title">Yıllık Üretim</div>
-            <div class="home-stat-card__desc">Tam otomatik ultrasonik ve ipliksiz entegre üretim parkuru.</div>
+            <div class="home-stat-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="home-stat-card__title">Uzun Ömürlü &amp; Dayanıklı</h3>
+            <p class="home-stat-card__desc">Güçlendirilmiş dikiş ve sağlam kulp yapısıyla uzun ömürlü ve dayanıklı kullanım sunan bez çantalar.</p>
           </div>
+
           <div class="home-stat-card">
-            <div class="home-stat-card__num">104<span>+</span> Kez</div>
-            <div class="home-stat-card__title">Ortalama Ömür</div>
-            <div class="home-stat-card__desc">1 Nova Pak çanta ortalama 500 plastik poşet tüketimini önler.</div>
+            <div class="home-stat-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+              </svg>
+            </div>
+            <h3 class="home-stat-card__title">Doğa Dostu Alternatif</h3>
+            <p class="home-stat-card__desc">Markanız için tek kullanımlık atıkları azaltan, çevreye saygılı sürdürülebilir ambalaj alternatifleri.</p>
           </div>
+
           <div class="home-stat-card">
-            <div class="home-stat-card__num">25<span>kg+</span></div>
-            <div class="home-stat-card__title">Taşıma Mukavemeti</div>
-            <div class="home-stat-card__desc">Ağır hizmet takviyeli taban ve ultrasonik kulp kaynağı.</div>
+            <div class="home-stat-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <h3 class="home-stat-card__title">Şık &amp; Prestijli Tasarım</h3>
+            <p class="home-stat-card__desc">Kaliteli kurumsal logo baskısı ve estetik kumaş dokusuyla markanıza değer katan vitrin sunumu.</p>
           </div>
+
           <div class="home-stat-card">
-            <div class="home-stat-card__num">%100</div>
-            <div class="home-stat-card__title">Döngüsel Ekonomi</div>
-            <div class="home-stat-card__desc">Sıfır atık, GOTS ve GRS tescilli geri dönüştürülebilir kumaş.</div>
+            <div class="home-stat-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                <line x1="3" y1="6" x2="21" y2="6"/>
+                <path d="M16 10a4 4 0 0 1-8 0"/>
+              </svg>
+            </div>
+            <h3 class="home-stat-card__title">Çok Amaçlı Kullanım</h3>
+            <p class="home-stat-card__desc">Mağazacılıktan gıdaya, etkinliklerden günlük yaşama her alanda pratik ve fonksiyonel çözümler.</p>
           </div>
+
         </div>
       </div>
     </section>
 
     <!-- ======================================================================
-         3. TESCİLLİ ÜRÜN GRUPLARIMIZ (NETBAG, NETSTRONG, NETCOOL, NETGO, NETHANDLE, NETECO)
+         3. 4 ANA ÜRÜN KATEGORİSİ BENTO VİTRİNİ
          ====================================================================== -->
-    <section id="urunlerimiz" class="categories-section">
+    <section id="kategoriler" class="categories-section">
       <div class="container">
         
         <div class="section-header reveal">
           <div class="section-header__left">
-            <div class="section-tag">Tescilli Ürün Gruplarımız</div>
-            <h2 class="section-title">Endüstriyel &amp; Doğa Dostu <span class="serif-accent">Çanta Serilerimiz</span></h2>
+            <div class="section-tag">Sınırsız Model &amp; Özel İmalat</div>
+            <h2 class="section-title">Her Modele ve İhtiyaca Uygun <span class="serif-accent">Özel Üretim Çantalar</span></h2>
+            <p style="color: var(--color-anthracite); opacity: 0.85; max-width: 680px; margin: 12px 0 0; font-size: 0.95rem; line-height: 1.6;">
+              Markanızın kurumsal kimliğine ve kullanım amacına göre; dilediğiniz kumaş türü, özel ölçü, körük genişliği, kulp stili ve yüksek çözünürlüklü baskı teknolojileriyle her tarzda sınırsız üretim yapıyoruz.
+            </p>
           </div>
           <div>
-            <a href="promosyon.html" class="btn btn--secondary">
-              <span>Tüm Ürünleri İncele</span>
+            <a href="kategori.html" class="btn btn--secondary">
+              <span>Tüm Modelleri Keşfet</span>
               <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="7" y1="17" x2="17" y2="7"></line>
                 <polyline points="7 7 17 7 17 17"></polyline>
@@ -428,290 +566,314 @@
           </div>
         </div>
 
-        <div class="corp-series-grid">
-          <!-- 01: NETBAG -->
-          <a href="kategori.html?cat=netbag" class="corp-series-card reveal">
-            <div class="corp-series-card__media">
-              <span class="corp-series-card__badge">SERİ 01</span>
-              <span class="corp-series-card__tag">Ultrasonik &amp; File</span>
-              <img src="assets/images/hero-netbag-drawstring.png" alt="Netbag Serisi" class="corp-series-card__img" />
+        <div class="corp-series-grid" style="grid-template-columns: repeat(4, 1fr);">
+          
+          <!-- Kategori 01: Tela Dikişli Çanta -->
+          <a href="kategori.html?cat=tela-dikisli" class="corp-series-card reveal">
+            <div class="corp-series-card__media overflow-hidden">
+              <span class="corp-series-card__badge">01</span>
+              <span class="corp-series-card__tag">Nonwoven &amp; Dikişli</span>
+              <img src="assets/images/products/Claid-AI-26c17fc691144fb698aba62154f846ca.png" alt="Tela Dikişli Çanta" class="corp-series-card__img w-full h-full object-cover" />
             </div>
             <div class="corp-series-card__body">
-              <span class="corp-series-card__sub">Klasik &amp; Fileli Bez Çanta Serisi</span>
-              <h3 class="corp-series-card__title">Netbag</h3>
-              <p class="corp-series-card__desc">Perakende zincirleri, mağazacılık ve günlük kullanım için el geçmeli, körüklü ultrasonik kaynaklı ve organik file örgülü bez çantalar.</p>
+              <span class="corp-series-card__sub">Dayanıklı &amp; Ekonomik</span>
+              <h3 class="corp-series-card__title">Tela Dikişli Çanta</h3>
+              <p class="corp-series-card__desc">Güçlendirilmiş dikişleri ve yüksek taşıma kapasitesiyle giyim mağazaları ve süpermarketlerin birinci tercihi.</p>
               <div class="corp-series-card__foot">
-                <span>Netbag Modellerini İncele</span>
+                <span>Modelleri İncele</span>
                 <span>&rarr;</span>
               </div>
             </div>
           </a>
 
-          <!-- 02: NETSTRONG -->
-          <a href="kategori.html?cat=netstrong" class="corp-series-card reveal">
-            <div class="corp-series-card__media">
-              <span class="corp-series-card__badge">SERİ 02</span>
-              <span class="corp-series-card__tag">25 kg+ Dayanım</span>
-              <img src="assets/images/hero-floating.png" alt="Netstrong Serisi" class="corp-series-card__img" />
+          <!-- Kategori 02: Karton Çanta -->
+          <a href="kategori.html?cat=karton-canta" class="corp-series-card reveal">
+            <div class="corp-series-card__media overflow-hidden">
+              <span class="corp-series-card__badge">02</span>
+              <span class="corp-series-card__tag">Lüks Bristol</span>
+              <img src="assets/images/products/Claid-AI-3cdeb7f2d297441183da1131eb11523a.png" alt="Karton Çanta" class="corp-series-card__img w-full h-full object-cover" />
             </div>
             <div class="corp-series-card__body">
-              <span class="corp-series-card__sub">Yüksek Mukavemetli Ağır Hizmet Serisi</span>
-              <h3 class="corp-series-card__title">Netstrong</h3>
-              <p class="corp-series-card__desc">OPP/Mat laminasyonlu dokuma, güçlendirilmiş taban ve ağır gramajlı kanvas dokusuyla yüksek taşıma kapasitesi sunan endüstriyel seri.</p>
+              <span class="corp-series-card__sub">Prestij &amp; Lüks Kutu</span>
+              <h3 class="corp-series-card__title">Karton Çanta</h3>
+              <p class="corp-series-card__desc">Amerikan Bristol ve kuşe kartondan, mat/parlak selefon kaplamalı ve varak yaldız baskılı prestij çantaları.</p>
               <div class="corp-series-card__foot">
-                <span>Netstrong Modellerini İncele</span>
+                <span>Modelleri İncele</span>
                 <span>&rarr;</span>
               </div>
             </div>
           </a>
 
-          <!-- 03: NETCOOL -->
-          <a href="kategori.html?cat=netcool" class="corp-series-card reveal">
-            <div class="corp-series-card__media">
-              <span class="corp-series-card__badge">SERİ 03</span>
-              <span class="corp-series-card__tag">Isı Yalıtımlı</span>
-              <img src="assets/images/cantalar.png" alt="Netcool Serisi" class="corp-series-card__img" />
+          <!-- Kategori 03: Craft Çanta -->
+          <a href="kategori.html?cat=craft-canta" class="corp-series-card reveal">
+            <div class="corp-series-card__media overflow-hidden">
+              <span class="corp-series-card__badge">03</span>
+              <span class="corp-series-card__tag">Doğa Dostu Kraft</span>
+              <img src="assets/images/products/Claid-AI-a6485ac929da448fa342ac7c4150323a.png" alt="Craft Çanta" class="corp-series-card__img w-full h-full object-cover" />
             </div>
             <div class="corp-series-card__body">
-              <span class="corp-series-card__sub">Termal &amp; Soğutucu Çanta Serisi</span>
-              <h3 class="corp-series-card__title">Netcool</h3>
-              <p class="corp-series-card__desc">Alüminyum folyo ve PE köpük laminasyonlu iç katmanıyla soğuk/sıcak zincirini koruyan fermuarlı ve cırtlı termal gıda çantaları.</p>
+              <span class="corp-series-card__sub">Doğal Kraft Dokusu</span>
+              <h3 class="corp-series-card__title">Craft Çanta</h3>
+              <p class="corp-series-card__desc">Kahverengi ve beyaz kraft kağıttan, büküm saplı, gıda ve perakende mağazalarına uygun çevre dostu ambalaj.</p>
               <div class="corp-series-card__foot">
-                <span>Netcool Modellerini İncele</span>
+                <span>Modelleri İncele</span>
                 <span>&rarr;</span>
               </div>
             </div>
           </a>
 
-          <!-- 04: NETGO -->
-          <a href="kategori.html?cat=netgo" class="corp-series-card reveal">
-            <div class="corp-series-card__media">
-              <span class="corp-series-card__badge">SERİ 04</span>
-              <span class="corp-series-card__tag">Büzgülü &amp; Mobil</span>
-              <img src="assets/images/hero-netbag-drawstring.png" alt="Netgo Serisi" class="corp-series-card__img" />
+          <!-- Kategori 04: Hambez Çanta -->
+          <a href="kategori.html?cat=hambez-canta" class="corp-series-card reveal">
+            <div class="corp-series-card__media overflow-hidden">
+              <span class="corp-series-card__badge">04</span>
+              <span class="corp-series-card__tag">Doğal Pamuk</span>
+              <img src="assets/images/products/Claid-AI-06dbf37fb7c7428c81dced601a54021d.png" alt="Hambez Çanta" class="corp-series-card__img w-full h-full object-cover" />
             </div>
             <div class="corp-series-card__body">
-              <span class="corp-series-card__sub">Pratik Katlanır &amp; Büzgülü Seri</span>
-              <h3 class="corp-series-card__title">Netgo</h3>
-              <p class="corp-series-card__desc">Halat kordonlu büzgülü sırt çantaları, cep boy katlanabilir cüzdan çantalar ve etkinlik/festival kullanımına uygun ergonomik modeller.</p>
+              <span class="corp-series-card__sub">Tekrar Kullanılır Kanvas</span>
+              <h3 class="corp-series-card__title">Hambez Çanta</h3>
+              <p class="corp-series-card__desc">Organik pamuk liflerinden üretilen, yıkanabilir ve uzun ömürlü kullanım sunan prestijli bez çantalar.</p>
               <div class="corp-series-card__foot">
-                <span>Netgo Modellerini İncele</span>
+                <span>Modelleri İncele</span>
                 <span>&rarr;</span>
               </div>
             </div>
           </a>
 
-          <!-- 05: NETHANDLE -->
-          <a href="kategori.html?cat=nethandle" class="corp-series-card reveal">
-            <div class="corp-series-card__media">
-              <span class="corp-series-card__badge">SERİ 05</span>
-              <span class="corp-series-card__tag">Özel Saplı</span>
-              <img src="assets/images/hero-floating.png" alt="Nethandle Serisi" class="corp-series-card__img" />
-            </div>
-            <div class="corp-series-card__body">
-              <span class="corp-series-card__sub">Ergonomik &amp; Deri Saplı Tasarım Serisi</span>
-              <h3 class="corp-series-card__title">Nethandle</h3>
-              <p class="corp-series-card__desc">Gerçek/vegan deri kulplu, bakır perçinli, kolon dokuma saplı veya enjeksiyon takviye kulplu üst segment butik ve yönetici çantaları.</p>
-              <div class="corp-series-card__foot">
-                <span>Nethandle Modellerini İncele</span>
-                <span>&rarr;</span>
-              </div>
-            </div>
-          </a>
-
-          <!-- 06: NETECO -->
-          <a href="kategori.html?cat=neteco" class="corp-series-card reveal">
-            <div class="corp-series-card__media">
-              <span class="corp-series-card__badge">SERİ 06</span>
-              <span class="corp-series-card__tag">%100 Eko-Dönüşüm</span>
-              <img src="assets/images/hero-recycled-bags.png" alt="Neteco Serisi" class="corp-series-card__img" />
-            </div>
-            <div class="corp-series-card__body">
-              <span class="corp-series-card__sub">%100 Geri Dönüştürülmüş &amp; Organik Seri</span>
-              <h3 class="corp-series-card__title">Neteco</h3>
-              <p class="corp-series-card__desc">GRS ve GOTS sertifikalı Re-Cotton geri dönüştürülmüş pamuk, doğal jüt ve rPET kumaştan üretilen sıfır atık vizyonlu çevreci çantalar.</p>
-              <div class="corp-series-card__foot">
-                <span>Neteco Modellerini İncele</span>
-                <span>&rarr;</span>
-              </div>
-            </div>
-          </a>
         </div>
 
       </div>
     </section>
 
     <!-- ======================================================================
-         4. CANLI KOLEKSİYON VİTRİNİ & HIZLI KATEGORİ FİLTRESİ
+         4. SEKTÖREL ÇÖZÜMLER & HIZLI KEŞİF
          ====================================================================== -->
-    <section class="home-catalog-section">
+    <section class="container" style="margin-bottom: 60px;">
+      <div class="section-header reveal" style="text-align: center; flex-direction: column;">
+        <div class="section-tag" style="margin: 0 auto 10px;">Sektörel Uzmanlık &amp; Özel Tasarım</div>
+        <h2 class="section-title">Tüm Sektörlere Uygun <span class="serif-accent">Ambalaj ve Çanta Çözümleri</span></h2>
+        <p style="color: var(--color-anthracite); opacity: 0.85; max-width: 680px; margin: 10px auto 0; font-size: 0.95rem;">
+          Perakendeden gıdaya, medikalden lojistiğe her iş kolunun mukavemet, taban hacmi ve sunum beklentisine uygun; her ebat ve tarzda üretim gerçekleştiriyoruz.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; margin-top: 32px;">
+        <a href="kategori.html?sector=giyim" class="cat-tab-pill" style="text-align: center; justify-content: center; display: flex;">Giyim Mağazacılığı</a>
+        <a href="kategori.html?sector=pastane-tatli" class="cat-tab-pill" style="text-align: center; justify-content: center; display: flex;">Pastane &amp; Fırın &amp; Tatlı</a>
+        <a href="kategori.html?sector=kitap-kirtasiye" class="cat-tab-pill" style="text-align: center; justify-content: center; display: flex;">Kitap &amp; Kırtasiye &amp; Oyuncak</a>
+        <a href="kategori.html?sector=kuruyemis" class="cat-tab-pill" style="text-align: center; justify-content: center; display: flex;">Kuruyemiş Sektörü</a>
+        <a href="kategori.html?sector=restaurant-cafe" class="cat-tab-pill" style="text-align: center; justify-content: center; display: flex;">Restaurant &amp; Cafe</a>
+        <a href="kategori.html?sector=eczane" class="cat-tab-pill" style="text-align: center; justify-content: center; display: flex;">Eczane Sektörü</a>
+        <a href="kategori.html?sector=market" class="cat-tab-pill" style="text-align: center; justify-content: center; display: flex;">Market Sektörü</a>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. CANLI KOLEKSİYON VİTRİNİ & KATEGORİ FİLTRELEME
+         ====================================================================== -->
+    <section id="urunler" class="home-catalog-section">
       <div class="container">
         
         <div class="section-header reveal" style="text-align: center; justify-content: center; flex-direction: column;">
-          <div class="section-tag" style="margin: 0 auto 10px;">Hızlı Koleksiyon Keşfi</div>
-          <h2 class="section-title">Öne Çıkan <span class="serif-accent">Ürün Modellerimiz</span></h2>
-          <p style="color: var(--color-text-muted); max-width: 620px; margin: 12px auto 0; font-size: 0.94rem;">
-            Kurumsal kimliğinize ve promosyon projenize en uygun modeli filtreleyerek teknik özelliklerini ve minimum sipariş detaylarını canlı olarak inceleyin.
+          <div class="section-tag" style="margin: 0 auto 10px;">İmalat Kataloğu</div>
+          <h2 class="section-title">Öne Çıkan <span class="serif-accent">Baskılı Çanta Modellerimiz</span></h2>
+          <p style="color: var(--color-anthracite); opacity: 0.85; max-width: 620px; margin: 12px auto 0; font-size: 0.94rem;">
+            Tüm ürünlerimizde kurumsal logo baskısı, özel ebat ve körük opsiyonları sunulmaktadır.
           </p>
         </div>
 
+        <!-- Kategori Filtre Butonları -->
         <div class="home-filter-nav reveal">
-          <button type="button" class="home-filter-pill is-active" data-filter="all">Tüm Koleksiyon</button>
-          <button type="button" class="home-filter-pill" data-filter="netbag">Netbag (Klasik &amp; File)</button>
-          <button type="button" class="home-filter-pill" data-filter="netstrong">Netstrong (Ağır Hizmet)</button>
-          <button type="button" class="home-filter-pill" data-filter="netcool">Netcool (Termal Soğutucu)</button>
-          <button type="button" class="home-filter-pill" data-filter="netgo">Netgo (Büzgülü &amp; Mobil)</button>
-          <button type="button" class="home-filter-pill" data-filter="nethandle">Nethandle (Özel Saplı)</button>
-          <button type="button" class="home-filter-pill" data-filter="neteco">Neteco (Geri Dönüşüm)</button>
+          <button type="button" class="home-filter-pill is-active" data-filter="all">Tüm Ürünler</button>
+          <button type="button" class="home-filter-pill" data-filter="tela-dikisli">Tela Dikişli Çanta</button>
+          <button type="button" class="home-filter-pill" data-filter="karton-canta">Karton Çanta</button>
+          <button type="button" class="home-filter-pill" data-filter="craft-canta">Craft Çanta</button>
+          <button type="button" class="home-filter-pill" data-filter="hambez-canta">Hambez Çanta</button>
         </div>
 
-        <div class="home-products-grid reveal" id="homeProductsGrid">
+        <!-- Ürün Kartları Grid Listesi -->
+        <div class="home-products-grid reveal">
           
-          <!-- Card 1: Netbag Classic -->
-          <div class="home-product-card" data-cat="netbag">
-            <div class="home-product-card__media">
-              <span class="home-product-card__badge">Çok Satan</span>
-              <span class="home-product-card__cat">Netbag</span>
-              <img src="assets/images/hero-floating.png" alt="Netbag Classic Bez Çanta" class="home-product-card__img" />
+          <!-- Kart 1: HKM Turuncu Tela Çanta -->
+          <div class="home-product-card overflow-hidden" data-cat="tela-dikisli">
+            <div class="home-product-card__media overflow-hidden">
+              <span class="home-product-card__cat">Tela Dikişli</span>
+              <img src="assets/images/products/Claid-AI-26c17fc691144fb698aba62154f846ca.png" alt="HKM Prestij Tela Dikişli Çanta" class="home-product-card__img w-full h-full object-cover" />
             </div>
             <div class="home-product-card__body">
-              <h3 class="home-product-card__title">Netbag Classic Körüksüz Bez Çanta (35x40 cm)</h3>
+              <span class="product-sector-tag" style="width: max-content; margin-bottom: 8px;">Giyim Mağazacılığı</span>
+              <h3 class="home-product-card__title">HKM Turuncu Körük Tabanlı Tela Çanta</h3>
+              <p class="product-card__desc">Kalın takviyeli dikiş, kurdele sap ve su itici laminasyonlu nonwoven kumaş.</p>
               <div class="home-product-card__specs">
-                <span class="home-product-spec">Ultrasonik Kaynak</span>
-                <span class="home-product-spec">120gr Tela</span>
-                <span class="home-product-spec">Flekso / Serigrafi</span>
+                <span class="home-product-spec">100 gr Nonwoven</span>
+                <span class="home-product-spec">Körüklü Taban</span>
+                <span class="home-product-spec">Min. 1.000 Adet</span>
               </div>
               <div class="home-product-card__foot">
-                <div class="home-product-moq">Min. Sipariş: <strong>250 Adet</strong></div>
-                <a href="https://wa.me/905000000000?text=Merhaba%20Netbag%20Classic%20Bez%20%C3%87anta%20i%C3%A7in%20teklif%20almak%20istiyorum." target="_blank" rel="noopener" class="home-product-btn">
-                  <span>Numune İste</span> &rarr;
+                <span class="home-product-moq">Toptan İmalat</span>
+                <a href="https://wa.me/905305684416?text=Merhaba%20Nova%20Pak%2C%20HKM%20Tela%20%C3%87anta%20i%C3%A7in%20fiyat%20teklifi%20almak%20istiyorum." target="_blank" rel="noopener" class="home-product-btn">
+                  <span>Teklif Al &rarr;</span>
                 </a>
               </div>
             </div>
           </div>
 
-          <!-- Card 2: Netstrong HeavyDuty -->
-          <div class="home-product-card" data-cat="netstrong">
-            <div class="home-product-card__media">
-              <span class="home-product-card__badge" style="background: var(--color-copper);">25 kg Mukavemet</span>
-              <span class="home-product-card__cat">Netstrong</span>
-              <img src="assets/images/hero-leather-bags.png" alt="Netstrong HeavyDuty Kanvas Çanta" class="home-product-card__img" />
+          <!-- Kart 2: U1 Coffee Organik Çanta -->
+          <div class="home-product-card overflow-hidden" data-cat="tela-dikisli">
+            <div class="home-product-card__media overflow-hidden">
+              <span class="home-product-card__cat">Tela Dikişli</span>
+              <img src="assets/images/products/Claid-AI-06dbf37fb7c7428c81dced601a54021d.png" alt="U1 Coffee Tela Dikişli Çanta" class="home-product-card__img w-full h-full object-cover" />
             </div>
             <div class="home-product-card__body">
-              <h3 class="home-product-card__title">Netstrong HeavyDuty 380gr Kanvas Çanta</h3>
+              <span class="product-sector-tag" style="width: max-content; margin-bottom: 8px;">Restaurant &amp; Cafe</span>
+              <h3 class="home-product-card__title">U1 Coffee Doğal Dokulu Tela Dikişli Çanta</h3>
+              <p class="product-card__desc">Organik keten efektli dayanıklı tela kumaş ve geniş taban körüğü.</p>
               <div class="home-product-card__specs">
-                <span class="home-product-spec">Ağır Hizmet Taban</span>
-                <span class="home-product-spec">380gr Ham Kanvas</span>
-                <span class="home-product-spec">Çapraz Takviyeli Kulp</span>
+                <span class="home-product-spec">Ultrasonik Dikiş</span>
+                <span class="home-product-spec">Çevre Dostu</span>
+                <span class="home-product-spec">Min. 1.000 Adet</span>
               </div>
               <div class="home-product-card__foot">
-                <div class="home-product-moq">Min. Sipariş: <strong>100 Adet</strong></div>
-                <a href="https://wa.me/905000000000?text=Merhaba%20Netstrong%20HeavyDuty%20%C3%87anta%20i%C3%A7in%20teklif%20almak%20istiyorum." target="_blank" rel="noopener" class="home-product-btn">
-                  <span>Numune İste</span> &rarr;
+                <span class="home-product-moq">Toptan İmalat</span>
+                <a href="https://wa.me/905305684416?text=Merhaba%20Nova%20Pak%2C%20U1%20Coffee%20Tela%20%C3%87anta%20i%C3%A7in%20teklif%20almak%20istiyorum." target="_blank" rel="noopener" class="home-product-btn">
+                  <span>Teklif Al &rarr;</span>
                 </a>
               </div>
             </div>
           </div>
 
-          <!-- Card 3: Netcool Termal -->
-          <div class="home-product-card" data-cat="netcool">
-            <div class="home-product-card__media">
-              <span class="home-product-card__badge">Isı Yalıtımlı</span>
-              <span class="home-product-card__cat">Netcool</span>
-              <img src="assets/images/cantalar.png" alt="Netcool ThermoPlus Termal Çanta" class="home-product-card__img" />
+          <!-- Kart 3: Obir Kuruyemiş Tela Çanta -->
+          <div class="home-product-card overflow-hidden" data-cat="tela-dikisli">
+            <div class="home-product-card__media overflow-hidden">
+              <span class="home-product-card__cat">Tela Dikişli</span>
+              <img src="assets/images/products/Claid-AI-a6485ac929da448fa342ac7c4150323a.png" alt="Obir Kuruyemiş Tela Çanta" class="home-product-card__img w-full h-full object-cover" />
             </div>
             <div class="home-product-card__body">
-              <h3 class="home-product-card__title">Netcool ThermoPlus Isı İzolasyonlu Çanta</h3>
+              <span class="product-sector-tag" style="width: max-content; margin-bottom: 8px;">Kuruyemiş Sektörü</span>
+              <h3 class="home-product-card__title">Obir Natürel Dokuma Efektli Tela Çanta</h3>
+              <p class="product-card__desc">Gıda güvenliğine uygun, koku yapmayan dayanıklı saplı tela çanta.</p>
               <div class="home-product-card__specs">
-                <span class="home-product-spec">Alüminyum Folyo + PE</span>
-                <span class="home-product-spec">Fermuarlı Kapanış</span>
-                <span class="home-product-spec">4 Saat Soğuk/Sıcak Koruma</span>
+                <span class="home-product-spec">Kraft Dokulu Tela</span>
+                <span class="home-product-spec">Tazelik Koruyucu</span>
+                <span class="home-product-spec">Min. 1.000 Adet</span>
               </div>
               <div class="home-product-card__foot">
-                <div class="home-product-moq">Min. Sipariş: <strong>250 Adet</strong></div>
-                <a href="https://wa.me/905000000000?text=Merhaba%20Netcool%20ThermoPlus%20Termal%20%C3%87anta%20i%C3%A7in%20teklif%20almak%20istiyorum." target="_blank" rel="noopener" class="home-product-btn">
-                  <span>Numune İste</span> &rarr;
+                <span class="home-product-moq">Toptan İmalat</span>
+                <a href="https://wa.me/905305684416?text=Merhaba%20Nova%20Pak%2C%20Obir%20Tela%20%C3%87anta%20i%C3%A7in%20teklif%20almak%20istiyorum." target="_blank" rel="noopener" class="home-product-btn">
+                  <span>Teklif Al &rarr;</span>
                 </a>
               </div>
             </div>
           </div>
 
-          <!-- Card 4: Neteco %100 Recycled -->
-          <div class="home-product-card" data-cat="neteco">
-            <div class="home-product-card__media">
-              <span class="home-product-card__badge" style="background: #2D6A4F;">%100 Eko</span>
-              <span class="home-product-card__cat">Neteco</span>
-              <img src="assets/images/hero-recycled-bags.png" alt="Neteco Re-Cotton Geri Dönüştürülmüş Bez Çanta" class="home-product-card__img" />
+          <!-- Kart 4: Anadolu Frisch Markt Tela Çanta -->
+          <div class="home-product-card overflow-hidden" data-cat="tela-dikisli">
+            <div class="home-product-card__media overflow-hidden">
+              <span class="home-product-card__cat">Tela Dikişli</span>
+              <img src="assets/images/products/Claid-AI-959fc157cb9d4b93a950816efff36855.png" alt="Anadolu Markt Tela Çanta" class="home-product-card__img w-full h-full object-cover" />
             </div>
             <div class="home-product-card__body">
-              <h3 class="home-product-card__title">Neteco Re-Cotton %100 Geri Dönüştürülmüş Çanta</h3>
+              <span class="product-sector-tag" style="width: max-content; margin-bottom: 8px;">Market Sektörü</span>
+              <h3 class="home-product-card__title">Anadolu Frisch Markt Körük Tabanlı Tela Çanta</h3>
+              <p class="product-card__desc">Kalın nonwoven tela kumaş, yüksek taşıma dayanıklılığı ve takviyeli saplar.</p>
               <div class="home-product-card__specs">
-                <span class="home-product-spec">GRS Sertifikalı Pamuk</span>
-                <span class="home-product-spec">Su Bazlı Eko Boya</span>
-                <span class="home-product-spec">Sıfır Atık Üretim</span>
+                <span class="home-product-spec">Yüksek Dayanıklılık</span>
+                <span class="home-product-spec">Geniş Körük</span>
+                <span class="home-product-spec">Min. 1.000 Adet</span>
               </div>
               <div class="home-product-card__foot">
-                <div class="home-product-moq">Min. Sipariş: <strong>250 Adet</strong></div>
-                <a href="https://wa.me/905000000000?text=Merhaba%20Neteco%20Geri%20D%C3%B6n%C3%BC%C5%9Ft%C3%BCr%C3%BClm%C3%BC%C5%9F%20%C3%87anta%20i%C3%A7in%20teklif%20almak%20istiyorum." target="_blank" rel="noopener" class="home-product-btn">
-                  <span>Numune İste</span> &rarr;
+                <span class="home-product-moq">Toptan İmalat</span>
+                <a href="https://wa.me/905305684416?text=Merhaba%20Nova%20Pak%2C%20Anadolu%20Markt%20Tela%20%C3%87anta%20i%C3%A7in%20teklif%20almak%20istiyorum." target="_blank" rel="noopener" class="home-product-btn">
+                  <span>Teklif Al &rarr;</span>
                 </a>
               </div>
             </div>
           </div>
 
-          <!-- Card 5: Netgo Büzgülü Sırt Çantası -->
-          <div class="home-product-card" data-cat="netgo">
-            <div class="home-product-card__media">
-              <span class="home-product-card__badge">Ergonomik</span>
-              <span class="home-product-card__cat">Netgo</span>
-              <img src="assets/images/hero-netbag-drawstring.png" alt="Netgo Büzgülü Halat Kordonlu Sırt Çantası" class="home-product-card__img" />
+          <!-- Kart 5: Sevinç Pastanesi Tela Çanta -->
+          <div class="home-product-card overflow-hidden" data-cat="tela-dikisli">
+            <div class="home-product-card__media overflow-hidden">
+              <span class="home-product-card__cat">Tela Dikişli</span>
+              <img src="assets/images/products/Claid-AI-61ff62f2ffdd4c8cb3287c6994e9d79c.png" alt="Sevinç Pastanesi Tela Çanta" class="home-product-card__img w-full h-full object-cover" />
             </div>
             <div class="home-product-card__body">
-              <h3 class="home-product-card__title">Netgo Cord Büzgülü Halat Kordonlu Sırt Çantası</h3>
+              <span class="product-sector-tag" style="width: max-content; margin-bottom: 8px;">Pastane &amp; Fırın &amp; Tatlı</span>
+              <h3 class="home-product-card__title">Sevinç 1957 Kutu Tabanlı Tela Pasta Çantası</h3>
+              <p class="product-card__desc">Geniş kare kutu tabanı sayesinde pasta kutularını düz ve devrilmeden taşır.</p>
               <div class="home-product-card__specs">
-                <span class="home-product-spec">Kalın Pamuk Halat Kordon</span>
-                <span class="home-product-spec">Metal Kuşgözü</span>
-                <span class="home-product-spec">Fuar &amp; Festival Tipi</span>
+                <span class="home-product-spec">Kutu Taban</span>
+                <span class="home-product-spec">Termo Dikiş</span>
+                <span class="home-product-spec">Min. 1.000 Adet</span>
               </div>
               <div class="home-product-card__foot">
-                <div class="home-product-moq">Min. Sipariş: <strong>250 Adet</strong></div>
-                <a href="https://wa.me/905000000000?text=Merhaba%20Netgo%20B%C3%BCzg%C3%BCl%C3%BC%20S%C4%B1rt%20%C3%87antas%C4%B1%20i%C3%A7in%20teklif%20almak%20istiyorum." target="_blank" rel="noopener" class="home-product-btn">
-                  <span>Numune İste</span> &rarr;
+                <span class="home-product-moq">Toptan İmalat</span>
+                <a href="https://wa.me/905305684416?text=Merhaba%20Nova%20Pak%2C%20Sevin%C3%A7%20Pastanesi%20Tela%20%C3%87anta%20i%C3%A7in%20teklif%20almak%20istiyorum." target="_blank" rel="noopener" class="home-product-btn">
+                  <span>Teklif Al &rarr;</span>
                 </a>
               </div>
             </div>
           </div>
 
-          <!-- Card 6: Nethandle Deri Kulplu Butik -->
-          <div class="home-product-card" data-cat="nethandle">
-            <div class="home-product-card__media">
-              <span class="home-product-card__badge" style="background: var(--color-copper);">VIP Prestij</span>
-              <span class="home-product-card__cat">Nethandle</span>
-              <img src="assets/images/hero-floating.png" alt="Nethandle Hakiki Deri Saplı Butik Çanta" class="home-product-card__img" />
+          <!-- Kart 6: Eczane Ekose Dikişli Tela Çanta -->
+          <div class="home-product-card overflow-hidden" data-cat="tela-dikisli">
+            <div class="home-product-card__media overflow-hidden">
+              <span class="home-product-card__cat">Tela Dikişli</span>
+              <img src="assets/images/products/Claid-AI-5c34b9b0440049f09723357d53436c0c.png" alt="Eczane Ekose Tela Çanta" class="home-product-card__img w-full h-full object-cover" />
             </div>
             <div class="home-product-card__body">
-              <h3 class="home-product-card__title">Nethandle LeatherCraft Deri Kulplu Butik Çanta</h3>
+              <span class="product-sector-tag" style="width: max-content; margin-bottom: 8px;">Eczane Sektörü</span>
+              <h3 class="home-product-card__title">Eczane Ekose Desenli Takviyeli Tela Çanta</h3>
+              <p class="product-card__desc">Kumaş kulplu, şık ekose desenli sağlam medikal çanta.</p>
               <div class="home-product-card__specs">
-                <span class="home-product-spec">Vegan/Hakiki Deri Kulp</span>
-                <span class="home-product-spec">Bakır Perçin Takviyeli</span>
-                <span class="home-product-spec">Yönetici Protokol Hediyesi</span>
+                <span class="home-product-spec">90 gr Nonwoven</span>
+                <span class="home-product-spec">Eczane Ebatı</span>
+                <span class="home-product-spec">Min. 1.000 Adet</span>
               </div>
               <div class="home-product-card__foot">
-                <div class="home-product-moq">Min. Sipariş: <strong>100 Adet</strong></div>
-                <a href="https://wa.me/905000000000?text=Merhaba%20Nethandle%20Deri%20Kulplu%20%C3%87anta%20i%C3%A7in%20teklif%20almak%20istiyorum." target="_blank" rel="noopener" class="home-product-btn">
-                  <span>Numune İste</span> &rarr;
+                <span class="home-product-moq">Toptan İmalat</span>
+                <a href="https://wa.me/905305684416?text=Merhaba%20Nova%20Pak%2C%20Eczane%20Tela%20%C3%87anta%20i%C3%A7in%20teklif%20almak%20istiyorum." target="_blank" rel="noopener" class="home-product-btn">
+                  <span>Teklif Al &rarr;</span>
                 </a>
               </div>
             </div>
           </div>
 
+          <!-- Kategori Boş Durum (Empty State) Kartı -->
+          <div class="home-empty-state" id="homeEmptyState" style="display: none;">
+            <div class="home-empty-state__icon" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+            </div>
+            <h3 class="home-empty-state__title">Bu kategoriye ait ürünler yakında eklenecektir</h3>
+            <p class="home-empty-state__desc">
+              Karton, Craft ve Hambez çanta imalat modellerimizin fotoğraf çekimleri ve ürün hazırlıkları devam etmektedir. Mevcut tela dikişli modellerimizi inceleyebilir veya firmanıza özel imalat için doğrudan WhatsApp hattımızdan bize ulaşabilirsiniz.
+            </p>
+            <div class="home-empty-state__actions">
+              <a href="kategori.html?cat=tela-dikisli" class="btn btn--primary" style="padding: 12px 24px;">
+                <span>Tela Dikişli Koleksiyonunu İncele &rarr;</span>
+              </a>
+              <a href="https://wa.me/905305684416?text=Merhaba%20Nova%20Pak%2C%20%C3%B6zel%20%C3%BCretim%20ve%20katalog%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn--whatsapp" style="padding: 12px 22px;">
+                <span>WhatsApp İletişim</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 48px;">
+          <a href="kategori.html" class="btn btn--primary" style="padding: 16px 36px;">
+            <span>34 Ürünün Tamamını Gör &rarr;</span>
+          </a>
         </div>
 
       </div>
     </section>
 
     <!-- ======================================================================
-         5. DÖNGÜSEL EKONOMİ & SÜRDÜRÜLEBİLİRLİK MANİFESTOSU (PLASTİK VS. NOVA PAK)
+         6. SÜRDÜRÜLEBİLİRLİK: PLASTİK POŞET VS. NOVA PAK DOĞA DOSTU ÇANTA
          ====================================================================== -->
     <section class="sustainability-section">
       <div class="container">
@@ -724,17 +886,12 @@
           <div>
             <a href="kalite-belgeleri.html" class="btn btn--secondary">
               <span>Sertifikalarımızı İnceleyin</span>
-              <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="7" y1="17" x2="17" y2="7"></line>
-                <polyline points="7 7 17 7 17 17"></polyline>
-              </svg>
             </a>
           </div>
         </div>
 
         <div class="sustainability-bento reveal">
-          
-          <!-- Sol Kolon: Geleneksel Plastik Poşet -->
+          <!-- Sol: Plastik -->
           <div class="sustainability-col sustainability-col--plastic">
             <div class="sustainability-badge sustainability-badge--bad">
               <span>✕</span> Geleneksel Tek Kullanımlık Plastik
@@ -744,376 +901,265 @@
             <ul class="sustainability-list">
               <li class="sustainability-item">
                 <span class="sustainability-item__icon sustainability-item__icon--bad">✕</span>
-                <div><strong>12 Dakikalık Kullanım Ömrü:</strong> Ortalama 12 dakika sonra çöpe atılır ve doğaya karışır.</div>
+                <div><strong>12 Dakikalık Ömür:</strong> Birkaç dakika içinde çöpe atılır, doğada 500 yıl yok olmaz.</div>
               </li>
               <li class="sustainability-item">
                 <span class="sustainability-item__icon sustainability-item__icon--bad">✕</span>
-                <div><strong>500 Yıl Çözünmeyen Atık:</strong> Toprakta ve okyanuslarda yüzlerce yıl mikroplastik olarak kalır.</div>
+                <div><strong>Solventli Boyalar:</strong> Gıdaya ve çevreye zararlı kimyasal mürekkepler barındırır.</div>
               </li>
               <li class="sustainability-item">
                 <span class="sustainability-item__icon sustainability-item__icon--bad">✕</span>
-                <div><strong>Zararlı Çözücü Boyalar:</strong> Ağır kimyasal ve solvent bazlı mürekkepler kullanılır.</div>
-              </li>
-              <li class="sustainability-item">
-                <span class="sustainability-item__icon sustainability-item__icon--bad">✕</span>
-                <div><strong>Sıfır Kurumsal Prestij:</strong> Müşterinizin evinde veya ofisinde asla saklanmaz.</div>
+                <div><strong>Sıfır Prestij Değeri:</strong> Müşteri tarafından saklanmaz, markanıza katma değer katmaz.</div>
               </li>
             </ul>
-
-            <div class="sustainability-impact-box" style="border-left-color: #B23B3B;">
-              <div class="sustainability-impact-box__title" style="color: #B23B3B;">Küresel Çevre Tehlikesi</div>
-              <div class="sustainability-impact-box__desc">Her yıl dünyada üretilen 5 trilyon plastik poşetin yalnızca %1'i geri dönüştürülebilmektedir.</div>
-            </div>
           </div>
 
-          <!-- Sağ Kolon: Nova Pak Ultrasonik Bez Çanta -->
+          <!-- Sağ: Nova Pak -->
           <div class="sustainability-col sustainability-col--eco">
             <div class="sustainability-badge sustainability-badge--good">
-              <span>✓</span> Nova Pak Tescilli Doğa Dostu Çanta
+              <span>✓</span> Nova Pak Doğa Dostu Çanta İmalatı
             </div>
-            <h3 class="sustainability-title">104+ Kez Prestijli Kullanım &amp; Sıfır Atık</h3>
+            <h3 class="sustainability-title">Yeniden Kullanılabilir &amp; Çevreye Duyarlı Ambalaj</h3>
             
             <ul class="sustainability-list">
               <li class="sustainability-item">
                 <span class="sustainability-item__icon sustainability-item__icon--good">✓</span>
-                <div><strong>104+ Kez Tekrar Kullanım:</strong> 1 Nova Pak bez çanta tek başına 500 plastik poşetin üretilmesini engeller.</div>
+                <div><strong>Yeniden Kullanılabilir:</strong> Plastik yerine yeniden kullanılabilir bez çanta tercih ederek çevreye duyarlı bir adım atın.</div>
               </li>
               <li class="sustainability-item">
                 <span class="sustainability-item__icon sustainability-item__icon--good">✓</span>
-                <div><strong>%100 Geri Dönüştürülebilir:</strong> Döngüsel ekonomiye uygun GRS ve GOTS tescilli hammadde.</div>
+                <div><strong>Doğa Dostu Alternatif:</strong> Tek kullanımlık poşet atıklarını azaltarak sürdürülebilir bir geleceğe katkı sağlayın.</div>
               </li>
               <li class="sustainability-item">
                 <span class="sustainability-item__icon sustainability-item__icon--good">✓</span>
-                <div><strong>Su Bazlı Ekolojik Boyalar:</strong> OEKO-TEX Standard 100 tescilli, sağlığa ve gıdaya zararsız pigmentler.</div>
-              </li>
-              <li class="sustainability-item">
-                <span class="sustainability-item__icon sustainability-item__icon--good">✓</span>
-                <div><strong>Yıllarca Dolaşan Marka Prestiji:</strong> Müşteriniz çantanızı alışverişte, sporda ve seyahatte gururla taşır.</div>
+                <div><strong>Kalıcı Marka Prestiji:</strong> Uzun ömürlü ve dayanıklı kullanım sunan bez çantalar ile logonuz sürekli görünür kalsın.</div>
               </li>
             </ul>
-
-            <div class="sustainability-impact-box">
-              <div class="sustainability-impact-box__title">Sürdürülebilir Karbon Tasarrufu</div>
-              <div class="sustainability-impact-box__desc">Nova Pak ile çalışan 1.000+ kurumsal firma, her yıl milyonlarca kilogram plastik atığın doğaya karışmasını önlüyor.</div>
-            </div>
           </div>
-
         </div>
 
       </div>
     </section>
 
     <!-- ======================================================================
-         6. 4 AŞAMADA KUSURSUZ SİPARİŞ VE ÜRETİM DÖNGÜSÜ
+         7. 4 AŞAMADA KUSURSUZ SİPARİŞ VE İMALAT DÖNGÜSÜ
          ====================================================================== -->
     <section class="process-section">
       <div class="container">
         
         <div class="section-header reveal">
           <div class="section-header__left">
-            <div class="section-tag">Endüstriyel Süreç Mimarisi</div>
-            <h2 class="section-title">Konseptten Küresel Sevkiyata: <span class="serif-accent">4 Kusursuz Adım</span></h2>
+            <div class="section-tag">Üretim Standartlarımız</div>
+            <h2 class="section-title">Konseptten Sevkiyata: <span class="serif-accent">4 Kusursuz Adım</span></h2>
           </div>
           <div>
-            <a href="arge-ve-patent.html" class="btn btn--secondary">
-              <span>Ar-Ge ve Teknolojimiz</span>
-              <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="7" y1="17" x2="17" y2="7"></line>
-                <polyline points="7 7 17 7 17 17"></polyline>
-              </svg>
+            <a href="firma-profili.html" class="btn btn--secondary">
+              <span>Firma Profilimiz</span>
             </a>
           </div>
         </div>
 
         <div class="process-grid reveal">
-          
           <div class="process-card">
             <div class="process-card__step">01</div>
             <h3 class="process-card__title">İhtiyaç &amp; Ebat Analizi</h3>
-            <p class="process-card__desc">Sektörünüze, taşıma yüküne ve kurumsal kimliğinize göre optimum kumaş gramajı, körük ölçüsü ve kulp ergonomisi belirlenir.</p>
+            <p class="process-card__desc">Sektörünüze, ürün boyutlarınıza ve kurumsal kimliğinize göre en uygun kumaş kalınlığı ve körük geometrisi belirlenir.</p>
           </div>
 
           <div class="process-card">
             <div class="process-card__step">02</div>
-            <h3 class="process-card__title">3D Mockup &amp; Numune Onayı</h3>
-            <p class="process-card__desc">Grafik tasarım ekibimiz logonuzu ölçeklendirir; 24 saat içinde 3D dijital görselleştirme ve fiziksel numune hazırlanarak onayınıza sunulur.</p>
+            <h3 class="process-card__title">3D Tasarım &amp; Numune Onayı</h3>
+            <p class="process-card__desc">Logonuz grafik ekibimizce modellenir; 24 saat içinde 3D dijital görsel ve fiziksel numune hazırlanarak onayınıza sunulur.</p>
           </div>
 
           <div class="process-card">
             <div class="process-card__step">03</div>
-            <h3 class="process-card__title">Ultrasonik Seri Üretim</h3>
-            <p class="process-card__desc">Kendi Ar-Ge patentli yüksek frekanslı ipliksiz ultrasonik kaynak hatlarımızda sıfır hata ve yüksek mukavemetle seri imalat gerçekleştirilir.</p>
+            <h3 class="process-card__title">Yüksek Kaliteli İmalat</h3>
+            <p class="process-card__desc">Otomatik dikiş hatlarımızda, birinci sınıf iplik ve kumaş hammaddeleriyle sıfır hata ve kopmaz mukavemet standardıyla imal edilir.</p>
           </div>
 
           <div class="process-card">
             <div class="process-card__step">04</div>
-            <h3 class="process-card__title">42 Ülkeye Zamanında Sevkiyat</h3>
-            <p class="process-card__desc">Uluslararası kalite kontrol ve barkodlama süreçlerinin ardından paletli, hijyenik ve korumalı paketlemeyle fabrikanıza güvenle teslim edilir.</p>
+            <h3 class="process-card__title">Zamanında Güvenli Sevkiyat</h3>
+            <p class="process-card__desc">Kalite kontrol süreçlerinin ardından paletli, hijyenik ve korumalı paketlemeyle fabrikanıza veya deponuza zamanında teslim edilir.</p>
           </div>
-
         </div>
 
       </div>
     </section>
 
     <!-- ======================================================================
-         7. KURUMSAL ÜRETİM GÜCÜ, AR-GE & SÜRDÜRÜLEBİLİRLİK (NETPAK REFERANSLI KURUMSAL YAPI)
+         8. KURUMSAL KİMLİK VE TEMEL İMALAT DEĞERLERİMİZ (KARTVİZİT)
          ====================================================================== -->
     <section class="corporate-power-section">
       <div class="container">
         <div class="section-header reveal">
           <div class="section-header__left">
-            <div class="section-tag">Kurumsal Yapı &amp; Teknoloji</div>
-            <h2 class="section-title">Ar-Ge, Patent ve <span class="serif-accent">Sürdürülebilir Üretim</span></h2>
+            <div class="section-tag">Nova Pak Kurumsal Kimliği</div>
+            <h2 class="section-title">"Doğaya dost, <span class="serif-accent">geleceğe değer..."</span></h2>
           </div>
           <div>
             <a href="kurumsal.html" class="btn btn--primary">
-              <span>Kurumsal Merkezimizi İnceleyin</span>
-              <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="7" y1="17" x2="17" y2="7"></line>
-                <polyline points="7 7 17 7 17 17"></polyline>
-              </svg>
+              <span>Kurumsal Merkezimiz</span>
             </a>
           </div>
         </div>
 
         <div class="corp-cards-grid reveal">
+          <!-- Değer 1 -->
           <div class="corp-card corp-card--accent">
-            <span class="corp-card__badge">Ar-Ge &amp; Patent Merkezi</span>
-            <h3 class="corp-card__title">Ultrasonik Kaynak &amp; Makine Teknolojisi</h3>
-            <p class="corp-card__desc">İpliksiz yüksek frekanslı ultrasonik birleştirme, otomatik sap kaynak istasyonları ve kendi Ar-Ge merkezimizde geliştirilen faydalı model tescilli üretim hatlarıyla sıfır hata standardı sunuyoruz.</p>
-            <div style="margin-top: 16px;">
-              <a href="arge-ve-patent.html" style="font-weight: 700; font-size: 0.85rem; color: var(--color-copper);">Ar-Ge Çalışmalarımız &rarr;</a>
-            </div>
+            <span class="corp-card__badge">Temel Değerimiz</span>
+            <h3 class="corp-card__title">Doğaya Dost Çözümler</h3>
+            <p class="corp-card__desc">Geri dönüştürülebilir, sürdürülebilir hammaddeler ve su bazlı ekolojik boyalarla gezegenimizin geleceğine değer katan imalat anlayışı.</p>
           </div>
 
+          <!-- Değer 2 -->
           <div class="corp-card corp-card--accent">
-            <span class="corp-card__badge">Tekrar Kullanılır Ekoloji</span>
-            <h3 class="corp-card__title">1 Bez Çanta = 500 Plastik Poşet Tasarrufu</h3>
-            <p class="corp-card__desc">Ortalama 104 kez tekrar kullanılan her bir Nova Pak bez çanta, yüzlerce tek kullanımlık plastik poşetin doğaya karışmasını önler; su bazlı ekologik boyalarla doğayı korur.</p>
-            <div style="margin-top: 16px;">
-              <a href="misyon-ve-vizyon.html" style="font-weight: 700; font-size: 0.85rem; color: var(--color-copper);">Misyon ve Vizyonumuz &rarr;</a>
-            </div>
+            <span class="corp-card__badge">Kullanıcı Odaklı</span>
+            <h3 class="corp-card__title">Pratik Kullanım</h3>
+            <p class="corp-card__desc">Ergonomik kulp tasarımları, genişletilmiş taban körükleri ve hafif gövdesiyle hem mağazanıza hem de müşterinize maksimum taşıma konforu.</p>
           </div>
 
+          <!-- Değer 3 -->
           <div class="corp-card corp-card--accent">
-            <span class="corp-card__badge">Küresel İhracat &amp; Kapasite</span>
-            <h3 class="corp-card__title">42+ Ülkeye İhracat &amp; Tam Entegre Tesis</h3>
-            <p class="corp-card__desc">Dokuma, laminasyon, rotogravür/serigrafi baskı ve konfeksiyon süreçlerinin tamamını kendi entegre tesislerimizde gerçekleştirerek ulusal ve uluslararası zincir markalara hizmet veriyoruz.</p>
-            <div style="margin-top: 16px;">
-              <a href="firma-profili.html" style="font-weight: 700; font-size: 0.85rem; color: var(--color-copper);">Firma Profilimiz &rarr;</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Kalite Belgeleri ve Sosyal Uygunluk Şeridi -->
-        <div class="corp-certs-strip reveal">
-          <div>
-            <div style="font-family: var(--font-heading); font-weight: 800; font-size: 1.05rem;">Uluslararası Kalite Belgeleri ve Sosyal Uygunluk</div>
-            <div style="font-size: 0.84rem; color: var(--color-sand-beige); margin-top: 3px;">Tüm üretim süreçlerimiz bağımsız uluslararası denetim kuruluşları tarafından sertifikalandırılmıştır.</div>
-          </div>
-          <div class="corp-certs-strip__badges">
-            <a href="kalite-belgeleri.html" class="corp-cert-pill">ISO 9001 &bull; 14001</a>
-            <a href="kalite-belgeleri.html" class="corp-cert-pill">SEDEX / SMETA</a>
-            <a href="kalite-belgeleri.html" class="corp-cert-pill">GOTS &amp; GRS</a>
-            <a href="kalite-belgeleri.html" class="corp-cert-pill">OEKO-TEX® Standard 100</a>
-            <a href="online-katalog.html" class="corp-cert-pill" style="background: var(--color-copper); border-color: var(--color-copper);">📖 2026 Online Katalog</a>
+            <span class="corp-card__badge">İmalat Standardı</span>
+            <h3 class="corp-card__title">Kaliteli Üretim</h3>
+            <p class="corp-card__desc">Yüksek taşıma dayanıklılığına sahip takviyeli dikişler, net ve canlı logo baskısı ve uzun ömürlü kullanım sunan renk kalitesi.</p>
           </div>
         </div>
 
         <!-- Hızlı Teklif & Numune Çağrı Bannerı (CTA Box) -->
         <div class="home-cta-banner reveal">
           <div>
-            <div class="home-cta-banner__tag">Kurumsal Çözüm Ortaklığı</div>
-            <h3 class="home-cta-banner__title">Markanıza Özel <span>Ücretsiz Numune</span> ve 3D Tasarım Desteği Alın</h3>
+            <div class="home-cta-banner__tag">Kurumsal İmalatçı Avantajı</div>
+            <h3 class="home-cta-banner__title">Özgür Kırmaz &bull; Nova Pak Çanta İmalatı</h3>
             <p class="home-cta-banner__desc">
-              Toptan bez çanta siparişlerinizde logonuzun 3D dijital modellemesini 24 saatte hazırlıyor, fiziksel numuneyi adresinize kargoluyoruz.
+              Doğrudan imalatçı fiyatlarıyla toptan tela dikişli çanta, karton çanta, craft çanta ve hambez çanta siparişleriniz için bize ulaşın.
             </p>
           </div>
-          <div class="home-cta-banner__actions">
-            <a href="https://wa.me/905000000000?text=Merhaba%20Nova%20Pak%2C%20markam%C4%B1za%20%C3%B6zel%20numune%20ve%20fiyat%20teklifi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn--primary" style="background: var(--color-copper); border-color: var(--color-copper); width: 100%; justify-content: center;">
-              <span>💬 WhatsApp ile Numune İste</span>
-              <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="7" y1="17" x2="17" y2="7"></line>
-                <polyline points="7 7 17 7 17 17"></polyline>
-              </svg>
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <a href="https://wa.me/905305684416?text=Merhaba%20Nova%20Pak%2C%20h%C4%B1zl%C4%B1%20teklif%20ve%20numune%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn--primary" style="padding: 16px 32px; justify-content: center;">
+              <span>WhatsApp: +90 530 568 44 16</span>
             </a>
-            <a href="online-katalog.html" class="btn btn--secondary" style="border-color: rgba(222, 210, 194, 0.4); color: var(--color-white); width: 100%; justify-content: center;">
-              <span>📖 2026 Kataloğu İndir</span>
+            <a href="iletisim.html" class="btn btn--secondary" style="border-color: rgba(226, 211, 193, 0.4); color: var(--color-white); justify-content: center;">
+              <span>Fabrika &amp; İletişim Bilgileri &rarr;</span>
             </a>
           </div>
         </div>
 
       </div>
     </section>
+
   </main>
 
   <!-- ========================================================================
-       8. BÜYÜK KURUMSAL MEGA-FOOTER (5 SÜTUNLU ZENGİN MİMARİ)
+       9. MEGA FOOTER
        ======================================================================== -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-top-grid">
+      <div class="footer-grid">
         
-        <!-- Sütun 1: Marka & Kurumsal Kimlik -->
-        <div class="footer-brand">
-          <a href="index.html" class="brand-logo" aria-label="Nova Pak Anasayfa">
-            <div class="brand-logo__img-wrap">
-              <img src="assets/images/logo-clean.png" alt="Nova Pak Logo" class="brand-logo__img" />
-            </div>
-            <div class="brand-logo__text">
-              <span class="brand-logo__title" style="color: var(--color-off-white);">NOVA <span>PAK</span></span>
-              <span class="brand-logo__subtitle" style="color: var(--color-light-gray);">Çanta Promosyon</span>
-            </div>
+        <!-- 1. Marka & Logo & Kimlik -->
+        <div class="footer-col footer-col--brand">
+          <a href="index.html" class="footer-logo-link" aria-label="Nova Pak Anasayfa">
+            <img src="assets/images/nova-pak-logo-light.png" alt="Nova Pak Tek Kullanımlı Çanta İmalatı" class="footer-logo-img" />
           </a>
           <p class="footer-brand__desc">
-            42 ülkeye küresel ihracat yapan, kendi Ar-Ge merkezinde geliştirdiği patentli ultrasonik kaynak teknolojisiyle endüstriyel ve doğa dostu ambalaj çözümleri üreten lider çanta üreticisi.
+            Tek kullanımlı ve çok kullanımlı bez çanta, karton çanta ve kraft ambalaj imalatında sektör lideri kurumsal çözüm ortağınız.
           </p>
           <div class="footer-badges">
-            <span class="footer-badge-pill">ISO 9001 &bull; 14001</span>
-            <span class="footer-badge-pill">SEDEX / SMETA</span>
-            <span class="footer-badge-pill">GOTS &bull; GRS Tescilli</span>
+            <span class="footer-badge-pill">Doğaya Dost</span>
+            <span class="footer-badge-pill">Pratik Kullanım</span>
+            <span class="footer-badge-pill">Kaliteli Üretim</span>
           </div>
         </div>
 
-        <!-- Sütun 2: Tescilli Çanta Serilerimiz -->
-        <div>
-          <h4 class="footer-col__title">Tescilli Çanta Serileri</h4>
+        <!-- 2. Çanta Modelleri -->
+        <div class="footer-col">
+          <h4 class="footer-col__title">Ana Kategoriler</h4>
           <ul class="footer-links">
-            <li><a href="kategori.html?cat=netbag">Netbag &bull; Klasik &amp; File <span class="badge">Ultrasonik</span></a></li>
-            <li><a href="kategori.html?cat=netstrong">Netstrong &bull; Ağır Hizmet <span class="badge">25 kg+</span></a></li>
-            <li><a href="kategori.html?cat=netcool">Netcool &bull; Termal Soğutucu</a></li>
-            <li><a href="kategori.html?cat=netgo">Netgo &bull; Büzgülü &amp; Mobil</a></li>
-            <li><a href="kategori.html?cat=nethandle">Nethandle &bull; Özel Deri Saplı</a></li>
-            <li><a href="kategori.html?cat=neteco">Neteco &bull; %100 Geri Dönüşüm</a></li>
+            <li><a href="kategori.html?cat=tela-dikisli">Tela Dikişli Çanta</a></li>
+            <li><a href="kategori.html?cat=karton-canta">Karton Çanta</a></li>
+            <li><a href="kategori.html?cat=craft-canta">Craft Çanta</a></li>
+            <li><a href="kategori.html?cat=hambez-canta">Hambez Çanta</a></li>
+            <li><a href="promosyon.html">Promosyon Ürünleri <span class="badge" style="background: var(--color-kraft-brown); color: #fff; padding: 2px 7px; border-radius: 99px; font-size: 0.68rem; margin-left: 4px;">Yeni</span></a></li>
           </ul>
         </div>
 
-        <!-- Sütun 3: Kurumsal & Yönetim -->
-        <div>
-          <h4 class="footer-col__title">Kurumsal &amp; Yönetim</h4>
+        <!-- 3. Sektörel Çözümler -->
+        <div class="footer-col">
+          <h4 class="footer-col__title">Sektörel Çözümler</h4>
+          <ul class="footer-links">
+            <li><a href="kategori.html?sector=giyim">Giyim Mağazacılığı</a></li>
+            <li><a href="kategori.html?sector=pastane-tatli">Pastane, Fırın &amp; Tatlı</a></li>
+            <li><a href="kategori.html?sector=kitap-kirtasiye">Kitap, Kırtasiye &amp; Oyuncak</a></li>
+            <li><a href="kategori.html?sector=kuruyemis">Kuruyemiş Sektörü</a></li>
+            <li><a href="kategori.html?sector=restaurant-cafe">Restaurant &amp; Cafe</a></li>
+            <li><a href="kategori.html?sector=eczane">Eczane Sektörü</a></li>
+            <li><a href="kategori.html?sector=market">Market Sektörü</a></li>
+          </ul>
+        </div>
+
+        <!-- 4. Kurumsal Bağlantılar -->
+        <div class="footer-col">
+          <h4 class="footer-col__title">Kurumsal</h4>
           <ul class="footer-links">
             <li><a href="firma-profili.html">Firma Profili</a></li>
-            <li><a href="misyon-ve-vizyon.html">Misyon ve Vizyonumuz</a></li>
-            <li><a href="yonetim-ve-ekibimiz.html">Yönetim ve Ekibimiz</a></li>
-            <li><a href="grup-sirketleri.html">Grup Şirketlerimiz</a></li>
-            <li><a href="arge-ve-patent.html">Ar-Ge ve Patent Çalışmaları</a></li>
-            <li><a href="sponsorluklar-ve-oduller.html">Sponsorluklar ve Ödüller</a></li>
+            <li><a href="kalite-belgeleri.html">Kalite Belgeleri</a></li>
+            <li><a href="referanslarimiz.html">Referanslarımız</a></li>
+            <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
           </ul>
         </div>
 
-        <!-- Sütun 4: Kalite & Destek -->
-        <div>
-          <h4 class="footer-col__title">Kalite &amp; Müşteri</h4>
-          <ul class="footer-links">
-            <li><a href="kalite-belgeleri.html">Kalite Belgeleri &amp; Sosyal Uygunluk</a></li>
-            <li><a href="online-katalog.html">📖 2026 Online Katalog</a></li>
-            <li><a href="referanslarimiz.html">Kurumsal Referanslarımız</a></li>
-            <li><a href="sss.html">Sıkça Sorulan Sorular (SSS)</a></li>
-            <li><a href="promosyon.html">Tüm Promosyon Modelleri</a></li>
-            <li><a href="iletisim.html">Teklif ve İletişim Formu</a></li>
-          </ul>
-        </div>
-
-        <!-- Sütun 5: Fabrika & İletişim -->
-        <div>
-          <h4 class="footer-col__title">Fabrika &amp; İletişim</h4>
+        <!-- 5. İletişim & Kartvizit Bilgileri -->
+        <div class="footer-col footer-col--contact">
+          <h4 class="footer-col__title">İletişim &amp; Fabrika</h4>
           <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-              <circle cx="12" cy="10" r="3"></circle>
-            </svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
             <div>
-              <strong>Fabrika &amp; Genel Merkez:</strong><br />
-              İkitelli OSB, Ambalaj &amp; Çanta İmalat Kompleksi, Başakşehir / İstanbul
+              <strong style="color: var(--color-white); display: block; font-size: 0.88rem;">Özgür Kırmaz</strong>
+              <span style="opacity: 0.8; font-size: 0.78rem;">Firma Sahibi</span>
             </div>
           </div>
           <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-            </svg>
-            <div>
-              <a href="tel:+902120000000">+90 (212) 000 00 00</a>
-            </div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <a href="tel:+905305684416">+90 530 568 44 16</a>
           </div>
           <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
-            <div>
-              <a href="mailto:info@novapak.com.tr">info@novapak.com.tr</a>
-            </div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="mailto:ozgur@novapak.com">ozgur@novapak.com</a>
           </div>
-          <div style="margin-top: 14px;">
-            <a href="https://wa.me/905000000000?text=Merhaba%20Nova%20Pak%2C%20h%C4%B1zl%C4%B1%20teklif%20ve%20numune%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn--primary" style="padding: 10px 18px; font-size: 0.8rem; width: 100%; justify-content: center;">
-              <span>💬 7/24 WhatsApp Teklif Hattı</span>
-            </a>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Organize Sanayi Bölgesi, İstanbul / TÜRKİYE</span>
           </div>
         </div>
 
       </div>
 
-      <div class="footer-bottom-bar">
-        <div>
-          &copy; 2026 Nova Pak Çanta Promosyon San. ve Tic. A.Ş. Tüm Hakları Saklıdır.
-        </div>
-        <div class="footer-legal-links">
-          <a href="firma-profili.html">Hakkımızda</a>
-          <span>&bull;</span>
-          <a href="kalite-belgeleri.html">Kalite Politikası</a>
-          <span>&bull;</span>
-          <a href="sss.html">KVKK Aydınlatma Metni</a>
-          <span>&bull;</span>
-          <a href="online-katalog.html">E-Katalog</a>
-        </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nova Pak Tek Kullanımlı Çanta İmalatı — Tüm Hakları Saklıdır.</p>
+        <p class="footer-bottom__motto">"Doğaya dost, geleceğe değer..."</p>
       </div>
     </div>
   </footer>
 
-  <!-- ========================================================================
-       6. SAĞ ALT KISIMDA HEP BEKLEYEN SABİT WHATSAPP ("BİZE ULAŞIN") SİMGESİ
-       ======================================================================== -->
-  <div class="whatsapp-float-wrap" id="whatsappFloatWrap">
-    <div class="whatsapp-popup" id="whatsappPopup" aria-hidden="true">
-      <div class="whatsapp-popup__head">
-        <div class="whatsapp-popup__brand">
-          <span class="whatsapp-popup__dot"></span>
-          <div>
-            <div class="whatsapp-popup__title">Nova Pak WhatsApp Hattı</div>
-            <div class="whatsapp-popup__status">Çevrimiçi — Hızlı Yanıt</div>
-          </div>
-        </div>
-        <button type="button" class="whatsapp-popup__close" id="waPopupClose" aria-label="Kapat">&times;</button>
-      </div>
-      <div class="whatsapp-popup__body">
-        <div class="whatsapp-popup__msg">
-          Merhaba 👋 <strong>Nova Pak Çanta Promosyon</strong>'a hoş geldiniz. Size nasıl yardımcı olabiliriz?
-        </div>
-        <div class="whatsapp-popup__links">
-          <a href="https://wa.me/905000000000?text=Merhaba%20Nova%20Pak%2C%20%C3%BCr%C3%BCn%20fiyatlar%C4%B1%20ve%20stok%20durumu%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="whatsapp-popup__link">
-            <span>💬 Fiyat &amp; Stok Bilgisi Sor</span>
-            <span>&rarr;</span>
-          </a>
-          <a href="https://wa.me/905000000000?text=Merhaba%20Nova%20Pak%2C%20toptan%20%C3%A7anta%20ve%20promosyon%20sipari%C5%9Fi%20i%C3%A7in%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum." target="_blank" rel="noopener" class="whatsapp-popup__link">
-            <span>👜 Özel Üretim &amp; Sipariş Hattı</span>
-            <span>&rarr;</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <button type="button" class="whatsapp-float-btn" id="whatsappFloatBtn" aria-label="WhatsApp ile Bize Ulaşın">
-      <span class="whatsapp-float-btn__icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Sabit WhatsApp Hızlı İletişim Butonu -->
+  <aside class="whatsapp-floating-widget" aria-label="WhatsApp İletişim">
+    <a href="https://wa.me/905305684416?text=Merhaba%20Nova%20Pak%2C%20h%C4%B1zl%C4%B1%20fiyat%20ve%20numune%20talebinde%20bulunmak%20istiyorum." target="_blank" rel="noopener" class="whatsapp-float-btn" aria-label="WhatsApp Canlı Destek">
+      <div class="whatsapp-float-btn__icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
         </svg>
-      </span>
-      <span>Bize Ulaşın</span>
-    </button>
-  </div>
+      </div>
+      <span class="whatsapp-float-btn__text">Hızlı Fiyat Teklifi</span>
+    </a>
+  </aside>
 
+  <!-- JavaScript Dosyaları -->
   <script src="js/products-data.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 </html>
