@@ -480,4 +480,61 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initProductImageMagnifier();
 
+  // 8. 4 ANA KATEGORİ (1 2 3 4) MOBİL YANA KAYDIRMALI SLIDER KONTROLÜ
+  function initCorpSeriesMobileSlider() {
+    const corpGrid = document.getElementById('corpSeriesGrid');
+    const corpDots = document.querySelectorAll('#corpSeriesDots .corp-series-dot');
+    const corpPrev = document.getElementById('corpSeriesPrev');
+    const corpNext = document.getElementById('corpSeriesNext');
+
+    if (!corpGrid) return;
+
+    const getCardWidth = () => {
+      const card = corpGrid.querySelector('.corp-series-card');
+      return card ? card.offsetWidth + 16 : 300;
+    };
+
+    const updateActiveDot = () => {
+      const cardWidth = getCardWidth();
+      const activeIdx = Math.min(
+        corpDots.length - 1,
+        Math.max(0, Math.round(corpGrid.scrollLeft / cardWidth))
+      );
+      corpDots.forEach((dot, idx) => {
+        dot.classList.toggle('is-active', idx === activeIdx);
+      });
+    };
+
+    corpGrid.addEventListener('scroll', () => {
+      window.requestAnimationFrame(updateActiveDot);
+    }, { passive: true });
+
+    corpDots.forEach((dot) => {
+      dot.addEventListener('click', () => {
+        const idx = Number(dot.getAttribute('data-index') || 0);
+        const cardWidth = getCardWidth();
+        corpGrid.scrollTo({
+          left: idx * cardWidth,
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    if (corpPrev) {
+      corpPrev.addEventListener('click', () => {
+        const cardWidth = getCardWidth();
+        corpGrid.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+      });
+    }
+
+    if (corpNext) {
+      corpNext.addEventListener('click', () => {
+        const cardWidth = getCardWidth();
+        corpGrid.scrollBy({ left: cardWidth, behavior: 'smooth' });
+      });
+    }
+  }
+
+  initCorpSeriesMobileSlider();
+
 });

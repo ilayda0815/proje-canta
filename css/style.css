@@ -1757,9 +1757,13 @@ button {
 /* 6 TESCİLLİ SERİ KARTLARI — YAPBOZ (JIGSAW PUZZLE) ASİMETRİSİ & DÜZENLİ BÜTÜNLÜK */
 .corp-series-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
   align-items: stretch;
+}
+
+.corp-series-nav {
+  display: none;
 }
 
 .corp-series-card {
@@ -4504,7 +4508,83 @@ button {
     padding: 6px 14px;
     gap: 8px;
   }
-  .corp-series-grid,
+  /* 4 Ana Kategori Modelleri (01, 02, 03, 04) - Mobilde Teker Teker Yana Kaydırmalı Snap Slider */
+  .corp-series-grid {
+    display: flex !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 16px !important;
+    padding: 10px 4px 18px 4px !important;
+    margin: 0 !important;
+    scrollbar-width: none !important;
+    touch-action: pan-x pan-y !important;
+  }
+  .corp-series-grid::-webkit-scrollbar {
+    display: none !important;
+  }
+  .corp-series-card {
+    flex: 0 0 calc(100% - 24px) !important;
+    min-width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+    scroll-snap-align: center !important;
+    scroll-snap-stop: always !important;
+    margin: 0 !important;
+    transform: none !important;
+    box-sizing: border-box !important;
+  }
+  .corp-series-card__media {
+    aspect-ratio: 16 / 11 !important;
+    max-height: 270px !important;
+  }
+  .corp-series-nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 16px !important;
+    margin-top: 6px !important;
+    margin-bottom: 28px !important;
+  }
+  .corp-series-dots {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+  .corp-series-dot {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 99px !important;
+    background: rgba(16, 45, 76, 0.22) !important;
+    border: none !important;
+    padding: 0 !important;
+    cursor: pointer !important;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+  .corp-series-dot.is-active {
+    width: 32px !important;
+    background: var(--color-kraft-brown) !important;
+    box-shadow: 0 2px 8px rgba(165, 132, 101, 0.4) !important;
+  }
+  .corp-series-arrow {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.96) !important;
+    border: 1.5px solid rgba(165, 132, 101, 0.35) !important;
+    color: var(--color-primary-navy) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    box-shadow: 0 4px 14px rgba(16, 45, 76, 0.08) !important;
+    transition: all 0.2s ease !important;
+  }
+  .corp-series-arrow:active {
+    transform: scale(0.92) !important;
+    background: var(--color-primary-navy) !important;
+    color: #FFFFFF !important;
+  }
+
   .pillars-grid,
   .ref-showcase-grid,
   .contact-info-grid,

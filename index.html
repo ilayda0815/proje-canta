@@ -576,7 +576,7 @@
           </div>
         </div>
 
-        <div class="corp-series-grid" style="grid-template-columns: repeat(4, 1fr);">
+        <div class="corp-series-grid" id="corpSeriesGrid">
           
           <!-- Kategori 01: Tela Dikişli Çanta -->
           <a href="kategori.html?cat=tela-dikisli" class="corp-series-card reveal">
@@ -650,6 +650,22 @@
             </div>
           </a>
 
+        </div>
+
+        <!-- Mobilde Teker Teker Yana Kaydırma Kontrolleri / Sayfalama Noktaları -->
+        <div class="corp-series-nav" id="corpSeriesNav" aria-label="Kategori Modelleri Geçişi">
+          <button type="button" class="corp-series-arrow corp-series-arrow--prev" id="corpSeriesPrev" aria-label="Önceki Model">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <div class="corp-series-dots" id="corpSeriesDots">
+            <button type="button" class="corp-series-dot is-active" data-index="0" aria-label="1. Model: Tela Dikişli"></button>
+            <button type="button" class="corp-series-dot" data-index="1" aria-label="2. Model: Karton Çanta"></button>
+            <button type="button" class="corp-series-dot" data-index="2" aria-label="3. Model: Craft Çanta"></button>
+            <button type="button" class="corp-series-dot" data-index="3" aria-label="4. Model: Hambez Çanta"></button>
+          </div>
+          <button type="button" class="corp-series-arrow corp-series-arrow--next" id="corpSeriesNext" aria-label="Sonraki Model">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
         </div>
 
       </div>
