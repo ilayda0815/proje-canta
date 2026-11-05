@@ -43,7 +43,7 @@ const NOVA_PAK_CATALOG = {
       title: "Tela Dikişli Çanta",
       shortDesc: "Yüksek mukavemetli nonwoven kumaş ve takviyeli dikiş yapısıyla uzun ömürlü mağaza çantaları.",
       badge: "Nonwoven & Dikişli",
-      featuredImage: "assets/images/products/Claid-AI-26c17fc691144fb698aba62154f846ca.png"
+      featuredImage: "./assets/images/products/Claid-AI-26c17fc691144fb698aba62154f846ca.png"
     },
     {
       id: "karton-canta",
@@ -51,7 +51,7 @@ const NOVA_PAK_CATALOG = {
       title: "Karton Çanta",
       shortDesc: "Lüks Amerikan Bristol ve kuşe kartondan, selefon kaplamalı ve varak baskılı prestij çantaları.",
       badge: "Lüks Kutu & Bristol",
-      featuredImage: "assets/images/products/Claid-AI-3cdeb7f2d297441183da1131eb11523a.png"
+      featuredImage: "./assets/images/products/Claid-AI-3cdeb7f2d297441183da1131eb11523a.png"
     },
     {
       id: "craft-canta",
@@ -59,7 +59,7 @@ const NOVA_PAK_CATALOG = {
       title: "Craft Çanta",
       shortDesc: "Doğal kahverengi ve beyaz kraft kağıttan, büküm saplı, gıda ve perakende uyumlu ekolojik çantalar.",
       badge: "Doğal Kraft",
-      featuredImage: "assets/images/products/Claid-AI-a6485ac929da448fa342ac7c4150323a.png"
+      featuredImage: "./assets/images/products/Claid-AI-a6485ac929da448fa342ac7c4150323a.png"
     },
     {
       id: "hambez-canta",
@@ -67,7 +67,7 @@ const NOVA_PAK_CATALOG = {
       title: "Hambez Çanta",
       shortDesc: "Doğal pamuk ham kumaştan, yıkanabilir ve tekrar tekrar kullanılan doğa dostu bez çantalar.",
       badge: "Doğal Ham Pamuk",
-      featuredImage: "assets/images/products/Claid-AI-06dbf37fb7c7428c81dced601a54021d.png"
+      featuredImage: "./assets/images/products/Claid-AI-06dbf37fb7c7428c81dced601a54021d.png"
     }
   ],
 
@@ -130,7 +130,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "giyim",
       badge: "Lüks Mağazacılık",
-      image: "assets/images/products/Claid-AI-02eb8d13d3784cba81c6c628694ad142.png",
+      image: "./assets/images/products/Claid-AI-02eb8d13d3784cba81c6c628694ad142.png",
       specs: ["300 gr Bristol Karton", "Mat Selefon Kaplama", "Kordon İp Sap", "Körüklü Kutu Tabanı"],
       description: "Giyim ve aksesuar mağazaları için kutu tabanlı, prestijli Amerikan Bristol karton çanta.",
       minOrder: "1.000 Adet"
@@ -141,7 +141,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "restaurant-cafe",
       badge: "Organik Pamuk",
-      image: "assets/images/products/Claid-AI-06dbf37fb7c7428c81dced601a54021d.png",
+      image: "./assets/images/products/Claid-AI-06dbf37fb7c7428c81dced601a54021d.png",
       specs: ["Ham Pamuk Kumaş", "220 gr/m² Kanvas", "Geniş Taban Körüğü", "Yıkanabilir Kumaş"],
       description: "Kahve kavurucuları ve butik kafeler için take-away ve promosyon amaçlı hambez çanta.",
       minOrder: "500 Adet"
@@ -152,7 +152,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "pastane-tatli",
       badge: "Gıda Uygunluklu",
-      image: "assets/images/products/Claid-AI-09175fd65bc94f1d94610483aa79c20a.png",
+      image: "./assets/images/products/Claid-AI-09175fd65bc94f1d94610483aa79c20a.png",
       specs: ["120 gr Beyaz Kraft Kağıt", "Büküm Kağıt Sap", "Geniş Pasta Tabanı", "Renkli Ofset Baskı"],
       description: "Tatlı ve pasta kutularının yatay düzlemde taşınmasını sağlayan geniş tabanlı craft çanta.",
       minOrder: "1.000 Adet"
@@ -163,7 +163,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "giyim",
       badge: "Özel Renkli Tela",
-      image: "assets/images/products/Claid-AI-0aa8ea101f844f3ab31553e2158ad24a (1).png",
+      image: "./assets/images/products/Claid-AI-0aa8ea101f844f3ab31553e2158ad24a (1).png",
       specs: ["100 gr Nonwoven Kumaş", "Çift Sıra Dikiş Takviyesi", "Canlı Pembe Renk", "Yumuşak Dokunuş"],
       description: "Moda evleri ve bayan giyim mağazaları için şık, sağlam dikişli nonwoven çanta.",
       minOrder: "1.000 Adet"
@@ -174,7 +174,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "kitap-kirtasiye",
       badge: "Kurumsal Standart",
-      image: "assets/images/products/Claid-AI-0c87209efaf64cf0b34ce3d550d499d3.png",
+      image: "./assets/images/products/Claid-AI-0c87209efaf64cf0b34ce3d550d499d3.png",
       specs: ["80 gr Saf Beyaz Tela", "Ultrasonik & Dikişli Birleşim", "A4 Evrak Ebatı", "Taşıma Kulplu"],
       description: "Eğitim kurumları, seminerler ve kırtasiyeler için ideal beyaz dikişli tela çanta.",
       minOrder: "1.000 Adet"
@@ -185,7 +185,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "giyim",
       badge: "Minimalist Seri",
-      image: "assets/images/products/Claid-AI-21286b6639654b0ba35254c0e3c09b8d.png",
+      image: "./assets/images/products/Claid-AI-21286b6639654b0ba35254c0e3c09b8d.png",
       specs: ["90 gr Nonwoven Tela", "Kumaş Sap", "Yüksek Taşıma Kapasitesi", "Logo Baskı Alanı"],
       description: "Giyim perakendecileri için modern, sade ve ekonomik dikişli tela alışveriş çantası.",
       minOrder: "1.000 Adet"
@@ -196,7 +196,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "giyim",
       badge: "Karakteristik Renk",
-      image: "assets/images/products/Claid-AI-26c17fc691144fb698aba62154f846ca.png",
+      image: "./assets/images/products/Claid-AI-26c17fc691144fb698aba62154f846ca.png",
       specs: ["250 gr Kroma Karton", "Grogren Kurdele Sap", "Parlak Selefon", "Karton Takviyeli Dip"],
       description: "Marka kimliğini vurgulayan turuncu kordon saplı, kalın karton giyim çantası.",
       minOrder: "1.000 Adet"
@@ -207,7 +207,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "kuruyemis",
       badge: "Doğal Kraft",
-      image: "assets/images/products/Claid-AI-2ddd2e3ea3b542648568f68483dff8af.png",
+      image: "./assets/images/products/Claid-AI-2ddd2e3ea3b542648568f68483dff8af.png",
       specs: ["140 gr Kahverengi Kraft", "Düz Kağıt Sap", "Hava Geçirgen Doku", "Tam Boy Desen Baskı"],
       description: "Kuruyemiş ve kuru gıda ürünlerinin nefes alarak taze kalmasını sağlayan craft çanta.",
       minOrder: "1.000 Adet"
@@ -218,7 +218,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "giyim",
       badge: "VIP Prestij",
-      image: "assets/images/products/Claid-AI-3cdeb7f2d297441183da1131eb11523a.png",
+      image: "./assets/images/products/Claid-AI-3cdeb7f2d297441183da1131eb11523a.png",
       specs: ["350 gr Mat Kuşe Karton", "Altın Varak Yaldız", "Bürümcük İp Sap", "Siyah Mat Selefon"],
       description: "Kuyumcu, saat ve lüks aksesuar markalarına özel altın yaldız işlemeli karton çanta.",
       minOrder: "1.000 Adet"
@@ -229,7 +229,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "kitap-kirtasiye",
       badge: "Dikey Evrak",
-      image: "assets/images/products/Claid-AI-492be74607cc4b2cb8ead52a8bc4944c.png",
+      image: "./assets/images/products/Claid-AI-492be74607cc4b2cb8ead52a8bc4944c.png",
       specs: ["100 gr Kalın Nonwoven", "Dikey Körük Geometrisi", "Uzun Omuz Askısı", "Katalog Uyumlu"],
       description: "Katalog, kitap ve dokümanların rahatça taşınması için tasarlanan dikey tela çanta.",
       minOrder: "1.000 Adet"
@@ -240,7 +240,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "kitap-kirtasiye",
       badge: "Yatay Tip",
-      image: "assets/images/products/Claid-AI-4c61e93831294e41868e1fc06cb5f773.png",
+      image: "./assets/images/products/Claid-AI-4c61e93831294e41868e1fc06cb5f773.png",
       specs: ["80 gr Saf Tela", "Yatay Geniş Ağız", "Çift Dikişli Sap", "A3/A4 Uyumlu"],
       description: "Seminer, kongre ve eğitim etkinlikleri için geniş ağızlı yatay tela çanta.",
       minOrder: "1.000 Adet"
@@ -251,7 +251,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "eczane",
       badge: "Dermokozmetik",
-      image: "assets/images/products/Claid-AI-54992367ddaa4809b8264b4dc55b68f0.png",
+      image: "./assets/images/products/Claid-AI-54992367ddaa4809b8264b4dc55b68f0.png",
       specs: ["Organik Pamuk", "Dermokozmetik Uyumlu", "Kumaş Saplı", "Hassas Cilt Dostu"],
       description: "Eczanelerin dermokozmetik ve doğal bakım reyonlarına özel organik ham pamuk çanta.",
       minOrder: "500 Adet"
@@ -262,7 +262,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "eczane",
       badge: "Eczane Özel",
-      image: "assets/images/products/Claid-AI-5c34b9b0440049f09723357d53436c0c.png",
+      image: "./assets/images/products/Claid-AI-5c34b9b0440049f09723357d53436c0c.png",
       specs: ["90 gr Nonwoven Kumaş", "Kumaş Kulplu Dikiş", "Özel Eczane Ebatı", "Ekose Şık Desen"],
       description: "İlaç ve medikal ürünlerin güvenle taşınması için güçlendirilmiş dikişli eczane çantası.",
       minOrder: "1.000 Adet"
@@ -273,7 +273,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "giyim",
       badge: "Doğal Kanvas",
-      image: "assets/images/products/Claid-AI-5d4a9bc5a0534e3bada0bad3acaa0ae4.png",
+      image: "./assets/images/products/Claid-AI-5d4a9bc5a0534e3bada0bad3acaa0ae4.png",
       specs: ["240 gr Kalın Kanvas", "Körüksüz Düz Kalıp", "Uzun Ömürlü Kullanım", "Omuz Askılı"],
       description: "Yıkanabilir kalın kanvas kumaştan, uzun ömürlü ve tekrar tekrar kullanılabilir hambez çanta.",
       minOrder: "500 Adet"
@@ -284,7 +284,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "pastane-tatli",
       badge: "Pasta Tabanlı",
-      image: "assets/images/products/Claid-AI-61ff62f2ffdd4c8cb3287c6994e9d79c.png",
+      image: "./assets/images/products/Claid-AI-61ff62f2ffdd4c8cb3287c6994e9d79c.png",
       specs: ["300 gr Amerikan Bristol", "Geniş Kare Kutu Tabanı", "Kordon İp Sap", "Yağ Dayanıklı Taban"],
       description: "Pasta, kek ve tatlı kutularının devrilmeden taşınmasını sağlayan kare tabanlı karton çanta.",
       minOrder: "1.000 Adet"
@@ -295,7 +295,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "kitap-kirtasiye",
       badge: "Ağır Yük Dayanımlı",
-      image: "assets/images/products/Claid-AI-6b5a349b84d849f08a0e6d8265dfa429.png",
+      image: "./assets/images/products/Claid-AI-6b5a349b84d849f08a0e6d8265dfa429.png",
       specs: ["Ham Bez Pamuk", "Çapraz Dikişli Saplar", "Ağır Kitap Taşıma Gücü", "Geniş Hacim"],
       description: "Kitapevleri ve kütüphaneler için ağır kitap yüklerini kolayca taşıyan takviyeli ham bez çanta.",
       minOrder: "500 Adet"
@@ -306,7 +306,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "giyim",
       badge: "Kurumsal Lacivert",
-      image: "assets/images/products/Claid-AI-6e93650617c44d179d25dd2ffedf82bd.png",
+      image: "./assets/images/products/Claid-AI-6e93650617c44d179d25dd2ffedf82bd.png",
       specs: ["280 gr Bristol Karton", "Kurumsal Lacivert Renk", "Altın Yaldız Baskı", "Pamuk Halat Sap"],
       description: "Lüks butikler için lacivert zemin üzeri altın yaldız baskılı prestij karton çanta.",
       minOrder: "1.000 Adet"
@@ -317,7 +317,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "eczane",
       badge: "Medikal & Kozmetik",
-      image: "assets/images/products/Claid-AI-71ce6fef5dba46e2b67bdff607af3574.png",
+      image: "./assets/images/products/Claid-AI-71ce6fef5dba46e2b67bdff607af3574.png",
       specs: ["90 gr Nonwoven Kumaş", "Renkli Çiçek Baskısı", "Dikişli Sap Birleşimi", "Antibakteriyel Uyum"],
       description: "Eczane ve kozmetik satış noktaları için zarif çiçek motifli dikişli tela çanta.",
       minOrder: "1.000 Adet"
@@ -328,7 +328,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "pastane-tatli",
       badge: "Baklava Tabanı",
-      image: "assets/images/products/Claid-AI-8bd941c2950442dabf366c7bfac026bd.png",
+      image: "./assets/images/products/Claid-AI-8bd941c2950442dabf366c7bfac026bd.png",
       specs: ["120 gr Yağ Tutmaz Kraft", "Baklava Tepsisi Uyumlu", "Büküm Kağıt Sap", "Kraft Doğallığı"],
       description: "Baklava tepsisi ve tatlı kutularına özel geniş körüklü kraft pastane çantası.",
       minOrder: "1.000 Adet"
@@ -339,7 +339,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "market",
       badge: "20 kg Mukavemet",
-      image: "assets/images/products/Claid-AI-959fc157cb9d4b93a950816efff36855.png",
+      image: "./assets/images/products/Claid-AI-959fc157cb9d4b93a950816efff36855.png",
       specs: ["100 gr Kalın Nonwoven", "20 kg Taşıma Mukavemeti", "Geniş Körük Taban", "Çift Dikişli Sap"],
       description: "Market ve süpermarket alışverişlerinde yüzlerce kez kullanılan ağır hizmet tela çanta.",
       minOrder: "1.000 Adet"
@@ -350,7 +350,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "kuruyemis",
       badge: "Tazelik Koruyucu",
-      image: "assets/images/products/Claid-AI-a6485ac929da448fa342ac7c4150323a.png",
+      image: "./assets/images/products/Claid-AI-a6485ac929da448fa342ac7c4150323a.png",
       specs: ["130 gr Doğal Kraft Kağıt", "Büküm Kağıt Sap", "Hava Alan Gözenekler", "Gıda Dostu"],
       description: "Taze kuruyemiş ve baharat paketlerinin nefes alarak lezzetini korumasını sağlayan craft çanta.",
       minOrder: "1.000 Adet"
@@ -361,7 +361,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "giyim",
       badge: "Geri Dönüşümlü",
-      image: "assets/images/products/Claid-AI-a6a2fd1ea0a146ccbf80983528550cde.png",
+      image: "./assets/images/products/Claid-AI-a6a2fd1ea0a146ccbf80983528550cde.png",
       specs: ["140 gr Kalın Kraft Kağıt", "Güçlendirilmiş Büküm Kulp", "Yüksek Taşıma Gücü", "Geri Dönüşümlü"],
       description: "Tekstil ve giyim perakendesinde çevre dostu duruş sergileyen kraft alışveriş çantası.",
       minOrder: "1.000 Adet"
@@ -372,7 +372,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "market",
       badge: "Süpermarket Boy",
-      image: "assets/images/products/Claid-AI-ae5de1764bc14b658a979d5080af2a08.png",
+      image: "./assets/images/products/Claid-AI-ae5de1764bc14b658a979d5080af2a08.png",
       specs: ["100 gr Ağır Hizmet Tela", "Çift Kat Taban Takviyesi", "Ekstra Geniş Hacim", "Yeşil Doğa Konsepti"],
       description: "Zincir marketler ve gıda perakendecileri için geniş hacimli, sağlam dikişli market çantası.",
       minOrder: "1.000 Adet"
@@ -383,7 +383,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "eczane",
       badge: "Eczane Prestij",
-      image: "assets/images/products/Claid-AI-aec1b4e388b24c5e9805fd3a634845b1.png",
+      image: "./assets/images/products/Claid-AI-aec1b4e388b24c5e9805fd3a634845b1.png",
       specs: ["230 gr Amerikan Bristol", "Özel Eczane Ebatı", "Kırmızı Şerit İp Sap", "İstanbul Silüet Baskı"],
       description: "Şık tasarımı ve kompakt boyutuyla eczaneler için özel olarak üretilen karton çanta.",
       minOrder: "1.000 Adet"
@@ -394,7 +394,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "giyim",
       badge: "Kumaş Doku",
-      image: "assets/images/products/Claid-AI-aef44bc9eed54bbfa4bcf4c2a486d3f9.png",
+      image: "./assets/images/products/Claid-AI-aef44bc9eed54bbfa4bcf4c2a486d3f9.png",
       specs: ["Dokulu Kumaş Görünümü", "Lamine Tela Kumaş", "Körüksüz Düz Kesim", "Yumuşak Tutuş"],
       description: "Kumaş dokusu hissi veren melanj gri renkli, zarif dikişli tela butik çantası.",
       minOrder: "1.000 Adet"
@@ -405,7 +405,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "giyim",
       badge: "Trend Tasarım",
-      image: "assets/images/products/Claid-AI-b0bc2d4070254fa7a64c6e851752f8c7.png",
+      image: "./assets/images/products/Claid-AI-b0bc2d4070254fa7a64c6e851752f8c7.png",
       specs: ["Koyu Zemin Renkli Baskı", "Dikişli Gövde & Sap", "90 gr Nonwoven", "Genç Giyim Konsepti"],
       description: "Genç giyim ve sokak modası mağazalarına hitap eden dinamik tasarımlı tela çanta.",
       minOrder: "1.000 Adet"
@@ -416,7 +416,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "restaurant-cafe",
       badge: "Fırın & Kafe",
-      image: "assets/images/products/Claid-AI-ba9c3e3fddf24a44b3ec527177d4bca6.png",
+      image: "./assets/images/products/Claid-AI-ba9c3e3fddf24a44b3ec527177d4bca6.png",
       specs: ["110 gr Esmer Kraft Kağıt", "Geniş Ekmek & Pasta Tabanı", "Sıcak & Soğuk Dayanımı", "Desenli Baskı"],
       description: "Fırın, kafe ve restoranların paket servis ve unlu mamul sunumları için özel craft çanta.",
       minOrder: "1.000 Adet"
@@ -427,7 +427,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "kitap-kirtasiye",
       badge: "Neşeli Konsept",
-      image: "assets/images/products/Claid-AI-bed22cc825904f2cbec68858510c50ab.png",
+      image: "./assets/images/products/Claid-AI-bed22cc825904f2cbec68858510c50ab.png",
       specs: ["250 gr Kuşe Karton", "Canlı Çizgili Renkler", "Beyaz Kordon İp Sap", "Parlak Koruyucu Selefon"],
       description: "Oyuncak mağazaları ve çocuk kırtasiyeleri için canlı renkli, sevimli karton çanta.",
       minOrder: "1.000 Adet"
@@ -438,7 +438,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "market",
       badge: "Geniş Hacim",
-      image: "assets/images/products/Claid-AI-c67af8d0dac84419aa93b3434ad275aa.png",
+      image: "./assets/images/products/Claid-AI-c67af8d0dac84419aa93b3434ad275aa.png",
       specs: ["Ağır Yük Taşıma Tabanı", "Takviyeli Çapraz Dikiş", "100 gr Kalın Tela", "Yardım Kolisi Uyumlu"],
       description: "Gıda paketleri ve kuru erzak taşımaya uygun, ekstra dayanıklı dikişli tela çanta.",
       minOrder: "1.000 Adet"
@@ -449,7 +449,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "market",
       badge: "Süpermarket Boy",
-      image: "assets/images/products/Claid-AI-c6d7be6d08cc4884a609a32d04326fcc.png",
+      image: "./assets/images/products/Claid-AI-c6d7be6d08cc4884a609a32d04326fcc.png",
       specs: ["110 gr Kalın Nonwoven", "Süpermarket Körüğü", "Gıda Güvenliğine Uygun", "Kopmaz Kulplar"],
       description: "Market zincirleri için tasarlanmış geniş tabanlı ve yüksek yük taşıma mukavemetli çanta.",
       minOrder: "1.000 Adet"
@@ -460,7 +460,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "giyim",
       badge: "Büyük Boy Hambez",
-      image: "assets/images/products/Claid-AI-cc9fed98660546fd89f439e70c606232.png",
+      image: "./assets/images/products/Claid-AI-cc9fed98660546fd89f439e70c606232.png",
       specs: ["Büyük Boy Battaniye Ebatı", "Ham Pamuk Kumaş", "Geniş Taban & Körük", "Nefes Alan Kumaş"],
       description: "Çeyiz, yorgan ve ev tekstili ürünleri için büyük ebatlı, doğal ve nefes alan hambez çanta.",
       minOrder: "500 Adet"
@@ -471,7 +471,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "kitap-kirtasiye",
       badge: "Ayakkabı Kutusu Boyu",
-      image: "assets/images/products/Claid-AI-d0a9968bf5814405aab72c7d935c5914.png",
+      image: "./assets/images/products/Claid-AI-d0a9968bf5814405aab72c7d935c5914.png",
       specs: ["Ayakkabı Kutusu Tabanı", "250 gr Bristol Karton", "Çocuk Sağlığına Uygun", "Kordon Sap"],
       description: "Çocuk ayakkabısı ve kırtasiye kutuları için özel taban ölçüsüne sahip karton çanta.",
       minOrder: "1.000 Adet"
@@ -482,7 +482,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "pastane-tatli",
       badge: "Butik Tatlı Boyu",
-      image: "assets/images/products/Claid-AI-d27d74d78a2d47dd952390049ad99f1e.png",
+      image: "./assets/images/products/Claid-AI-d27d74d78a2d47dd952390049ad99f1e.png",
       specs: ["Kare Kutu Tabanı", "Doğal Ekolojik Kraft", "Kopmaz Büküm Kulp", "Özel Desenli Baskı"],
       description: "Butik kurabiye, pasta ve tatlı kutularını düz tutarak taşıyan zarif craft çanta.",
       minOrder: "1.000 Adet"
@@ -493,7 +493,7 @@ const NOVA_PAK_CATALOG = {
       category: "tela-dikisli",
       sector: "restaurant-cafe",
       badge: "Cafe & Lounge",
-      image: "assets/images/products/Claid-AI-fb41d2c83a2647af8a7bd3ccd2e38d2a.png",
+      image: "./assets/images/products/Claid-AI-fb41d2c83a2647af8a7bd3ccd2e38d2a.png",
       specs: ["Take-away Kahve Uyumlu", "Ham Pamuk Kumaş", "Minimalist Tipografi", "Yıkanabilir Kalite"],
       description: "Şık kafeler, kahve zincirleri ve lounge mekanlar için çevre dostu bez kahve çantası.",
       minOrder: "500 Adet"

@@ -6139,3 +6139,85 @@ button {
 .overflow-hidden {
   overflow: hidden !important;
 }
+
+/* ==========================================================================
+   ÜRÜN RESMİ BÜYÜTEÇ (IMAGE MAGNIFIER / ZOOM) LÜKS EFEKTİ
+   ========================================================================== */
+.product-card__media,
+.home-product-card__media {
+  cursor: zoom-in;
+  position: relative;
+}
+
+/* Yüzen Büyüteç Lensi (Floating Loupe / Zoom Lens) */
+.product-zoom-lens {
+  position: fixed;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  border: 3px solid #A58465; /* Kurumsal Kraft & Altın Bordür */
+  box-shadow: 
+    0 16px 45px rgba(16, 45, 76, 0.35),
+    inset 0 0 16px rgba(16, 45, 76, 0.15),
+    0 0 0 3px rgba(255, 255, 255, 0.95);
+  pointer-events: none;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  z-index: 9999999;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.7);
+  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.2s ease;
+  overflow: hidden;
+  will-change: transform, opacity, left, top, background-position;
+}
+
+.product-zoom-lens.is-active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+/* Büyüteç İçi Işık / Yansıma Efekti */
+.product-zoom-lens::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 55%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Büyüteç Altındaki Kurumsal Zoom Etiketi */
+.product-zoom-lens::after {
+  content: "🔍 2.5x Detay";
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(16, 45, 76, 0.92);
+  color: #F3EDE3;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(165, 132, 101, 0.5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* Mobil ve Dokunmatik Cihazlarda Tamamen Devre Dışı Bırak */
+@media (hover: none), (pointer: coarse), (max-width: 991px) {
+  .product-zoom-lens {
+    display: none !important;
+  }
+  .product-card__media,
+  .home-product-card__media {
+    cursor: default !important;
+  }
+}

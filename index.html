@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+  <script>
+    if (window.location.pathname === '/canta') {
+      window.location.replace('/canta/' + window.location.search + window.location.hash);
+    }
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="assets/images/nova-pak-logo-clean.png" />
+  <link rel="icon" type="image/png" href="./assets/images/nova-pak-logo-clean.png" />
   <title>Nova Pak | Tek Kullanımlı Çanta İmalatı — Doğa Dostu Çözümler</title>
   <meta name="description" content="Nova Pak tela dikişli çanta, karton çanta, craft çanta ve hambez çanta imalatı. Giyim, pastane, kırtasiye, kuruyemiş, cafe, eczane ve market sektörlerine özel toptan baskılı çözümler." />
   <!-- Google Fonts: Plus Jakarta Sans & Inter -->
@@ -11,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <!-- Ana Stil Dosyası -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
 
@@ -28,7 +33,7 @@
       <!-- Sol Üst: Nova Pak Kurumsal Logosu -->
       <a href="index.html" class="brand-logo" aria-label="Nova Pak Tek Kullanımlı Çanta İmalatı Anasayfa">
         <div class="brand-logo__img-wrap">
-          <img src="assets/images/nova-pak-logo-transparent.png" alt="Nova Pak Tek Kullanımlı Çanta İmalatı" class="brand-logo__img" />
+          <img src="./assets/images/nova-pak-logo-transparent.png" alt="Nova Pak Tek Kullanımlı Çanta İmalatı" class="brand-logo__img" />
         </div>
       </a>
 
@@ -110,7 +115,7 @@
   <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobil Menü" aria-hidden="true">
     <div class="mobile-drawer__header">
       <a href="index.html" class="brand-logo">
-        <img src="assets/images/nova-pak-logo-transparent.png" alt="Nova Pak" style="height: 38px; width: auto;" />
+        <img src="./assets/images/nova-pak-logo-transparent.png" alt="Nova Pak" style="height: 38px; width: auto;" />
       </a>
       <button type="button" class="mobile-drawer__close" id="mobileDrawerClose" aria-label="Menüyü Kapat">&times;</button>
     </div>
@@ -176,7 +181,7 @@
               <div class="hero-slide is-active" data-slide-index="0">
                 <!-- Sadece İlk Slayta Özel Tamamen Şeffaf hero11.png Arka Planı -->
                 <div class="hero-slide-bg-wrap" aria-hidden="true">
-                  <img src="assets/images/hero11.png" alt="" class="hero-slide-bg-img" />
+                  <img src="./assets/images/hero11.png" alt="" class="hero-slide-bg-img" />
                   <div class="hero-slide-bg-overlay"></div>
                 </div>
 
@@ -276,7 +281,7 @@
                     <div class="hero-visual__floating-wrap">
                       <!-- Yuvarlak Stüdyo Çemberi: Çanta Resmi Tamamen Bu Çemberin İçinde Merkezlenir -->
                       <div class="hero-studio-arch">
-                        <img src="assets/images/products/tela-dikisli-hero-cutout.png" alt="Nova Pak Tela Dikişli Çanta" class="hero-visual__img hero-visual__img--arch-bag" />
+                        <img src="./assets/images/products/tela-dikisli-hero-cutout.png" alt="Nova Pak Tela Dikişli Çanta" class="hero-visual__img hero-visual__img--arch-bag" />
                       </div>
                       
                       <div class="hero-visual-floor-shadow" aria-hidden="true"></div>
@@ -298,37 +303,37 @@
                 </div>
               </div>
 
-              <!-- SLIDE 03: Hero 12 Geri Dönüşüm & Büküm Saplı Kraft Çanta -->
+              <!-- SLIDE 03: Hero 12 Geri Dönüşüm & Doğa Dostu Bez Çantalar -->
               <div class="hero-slide" data-slide-index="2">
                 <div class="hero-grid">
                   
                   <div class="hero-content">
                     <div class="hero-eyebrow">
                       <span class="hero-eyebrow__pulse" style="background: #2E6F40; box-shadow: 0 0 10px rgba(46,111,64,0.6);" aria-hidden="true"></span>
-                      <span class="hero-eyebrow__text">03 / DOĞAL KRAFT &bull; ÇEVREYE DUYARLI AMBALAJ ALTERNATİFLERİ</span>
+                      <span class="hero-eyebrow__text">03 / BEZ ÇANTA &bull; DOĞA DOSTU GERİ DÖNÜŞÜMLÜ AMBALAJ</span>
                     </div>
 
                     <h2 class="hero-title">
-                      <span class="hero-title__brand">Büküm Saplı</span> Kraft Çanta
+                      <span class="hero-title__brand">Doğa Dostu &amp; Dayanıklı</span> Bez Çantalar
                     </h2>
 
                     <p class="hero-description">
-                      Sürdürülebilir orman kaynaklarından saf selüloz lifleriyle, markanız için plastik yerine tercih edebileceğiniz doğa dostu ve zarif büküm saplı ambalaj alternatifleri.
+                      Kurumsal firmaların promosyon ve kurumsal prestij ihtiyaçları için ideal, uzun ömürlü kullanım sunan, %100 geri dönüştürülebilir çevreci kumaşlardan (kanvas ve hambez) üretilen özel baskılı bez çanta çözümleri.
                     </p>
 
                     <div class="hero-actions">
-                      <a href="#urunler" class="hero-btn-more">
-                        <span>Kraft Modelleri İncele</span>
+                      <a href="kategori.html?cat=hambez-canta" class="hero-btn-more">
+                        <span>Bez Çanta Modellerini İncele</span>
                       </a>
-                      <a href="https://wa.me/905305684416?text=Merhaba%20Nova%20Pak%2C%20b%C3%BCk%C3%BCm%20sapl%C4%B1%20kraft%20%C3%A7anta%20modelleri%20hakk%C4%B1nda%20fiyat%20ve%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="hero-btn-quote">
+                      <a href="https://wa.me/905305684416?text=Merhaba%20Nova%20Pak%2C%20do%C4%9Fa%20dostu%20bez%20%C3%A7anta%20modelleri%20hakk%C4%B1nda%20fiyat%20ve%20detayl%C4%B1%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="hero-btn-quote">
                         <span>Fiyat Teklifi Al &rarr;</span>
                       </a>
                     </div>
 
                     <div class="hero-specs">
-                      <span class="spec-pill">🌱 Çevreye Duyarlı</span>
-                      <span class="spec-pill">♻️ Yeniden Kullanılabilir</span>
-                      <span class="spec-pill">✨ Şık &amp; Doğal Görünüm</span>
+                      <span class="spec-pill">🌱 %100 Geri Dönüştürülebilir Kumaş</span>
+                      <span class="spec-pill">🛍️ Dayanıklı Omuz Askısı</span>
+                      <span class="spec-pill">🏷️ Özel Kurumsal Baskı</span>
                     </div>
                   </div>
 
@@ -352,20 +357,20 @@
 
                     <!-- Hero 12 Merkez Görseli ve Süzülme Animasyonu (Etiketler Sabit, Kendi Kendine Dönmez) -->
                     <div class="hero-visual__floating-wrap hero-visual__floating-wrap--hero12">
-                      <img src="assets/images/hero12-cutout.png" alt="Nova Pak Büküm Saplı Kraft Çanta" class="hero-visual__img hero-visual__img--hero12" />
+                      <img src="./assets/images/hero12-cutout.png" alt="Nova Pak Doğa Dostu Bez Çanta" class="hero-visual__img hero-visual__img--hero12" />
                       
                       <!-- 3D Taban Kontak Gölgesi -->
                       <div class="hero-visual__ground-shadow hero-visual__ground-shadow--hero12" aria-hidden="true"></div>
 
                       <div class="hero-stamp-badge hero-stamp-badge--green">
-                        <span>Doğal</span>
-                        <span>Kraft</span>
+                        <span>Bez</span>
+                        <span>Çanta</span>
                       </div>
 
                       <div class="hero-floating-tag">
-                        <span class="hero-floating-tag__badge" style="color: #2E6F40;">Geri Kazanım</span>
-                        <span class="hero-floating-tag__title">Büküm Saplı Kraft</span>
-                        <span class="hero-floating-tag__sub">Doğal Kağıt &bull; Zarif Tasarım</span>
+                        <span class="hero-floating-tag__badge" style="color: #2E6F40;">Ekolojik Üretim</span>
+                        <span class="hero-floating-tag__title">Doğa Dostu Bez Çanta</span>
+                        <span class="hero-floating-tag__sub">Uzun Ömürlü &bull; Çevreci Kullanım</span>
                       </div>
                     </div>
                   </div>
@@ -378,8 +383,8 @@
                 
                 <!-- Sadece Bu Slayta Özel Tam Arka Plan Fabrika İmalat Videosu -->
                 <div class="hero-slide-bg-video-wrap" aria-hidden="true">
-                  <video autoplay loop muted playsinline poster="assets/images/nova-pak-uretim-poster.jpg" class="hero-slide-bg-video">
-                    <source src="assets/videos/nova-pak-uretim.webm" type="video/webm">
+                  <video autoplay loop muted playsinline poster="./assets/images/nova-pak-uretim-poster.jpg" class="hero-slide-bg-video">
+                    <source src="./assets/videos/nova-pak-uretim.webm" type="video/webm">
                   </video>
                   <div class="hero-slide-bg-video-overlay"></div>
                 </div>
@@ -457,7 +462,7 @@
           <div class="hero-slider__dots" role="tablist" aria-label="Slayt Seçimi">
             <button type="button" class="hero-dot is-active" data-slide-to="0" aria-label="1. Slayt: Nova Pak Çanta Koleksiyonu" aria-selected="true"></button>
             <button type="button" class="hero-dot" data-slide-to="1" aria-label="2. Slayt: Tela Dikişli Çanta" aria-selected="false"></button>
-            <button type="button" class="hero-dot" data-slide-to="2" aria-label="3. Slayt: Büküm Saplı Kraft Çanta" aria-selected="false"></button>
+            <button type="button" class="hero-dot" data-slide-to="2" aria-label="3. Slayt: Doğa Dostu Bez Çantalar" aria-selected="false"></button>
             <button type="button" class="hero-dot" data-slide-to="3" aria-label="4. Slayt: Otomatik İmalat Parkuru" aria-selected="false"></button>
           </div>
 
@@ -574,7 +579,7 @@
             <div class="corp-series-card__media overflow-hidden">
               <span class="corp-series-card__badge">01</span>
               <span class="corp-series-card__tag">Nonwoven &amp; Dikişli</span>
-              <img src="assets/images/products/Claid-AI-26c17fc691144fb698aba62154f846ca.png" alt="Tela Dikişli Çanta" class="corp-series-card__img w-full h-full object-cover" />
+              <img src="./assets/images/products/Claid-AI-26c17fc691144fb698aba62154f846ca.png" alt="Tela Dikişli Çanta" class="corp-series-card__img w-full h-full object-cover" />
             </div>
             <div class="corp-series-card__body">
               <span class="corp-series-card__sub">Dayanıklı &amp; Ekonomik</span>
@@ -592,7 +597,7 @@
             <div class="corp-series-card__media overflow-hidden">
               <span class="corp-series-card__badge">02</span>
               <span class="corp-series-card__tag">Lüks Bristol</span>
-              <img src="assets/images/products/Claid-AI-3cdeb7f2d297441183da1131eb11523a.png" alt="Karton Çanta" class="corp-series-card__img w-full h-full object-cover" />
+              <img src="./assets/images/products/Claid-AI-3cdeb7f2d297441183da1131eb11523a.png" alt="Karton Çanta" class="corp-series-card__img w-full h-full object-cover" />
             </div>
             <div class="corp-series-card__body">
               <span class="corp-series-card__sub">Prestij &amp; Lüks Kutu</span>
@@ -610,7 +615,7 @@
             <div class="corp-series-card__media overflow-hidden">
               <span class="corp-series-card__badge">03</span>
               <span class="corp-series-card__tag">Doğa Dostu Kraft</span>
-              <img src="assets/images/products/Claid-AI-a6485ac929da448fa342ac7c4150323a.png" alt="Craft Çanta" class="corp-series-card__img w-full h-full object-cover" />
+              <img src="./assets/images/products/Claid-AI-a6485ac929da448fa342ac7c4150323a.png" alt="Craft Çanta" class="corp-series-card__img w-full h-full object-cover" />
             </div>
             <div class="corp-series-card__body">
               <span class="corp-series-card__sub">Doğal Kraft Dokusu</span>
@@ -628,7 +633,7 @@
             <div class="corp-series-card__media overflow-hidden">
               <span class="corp-series-card__badge">04</span>
               <span class="corp-series-card__tag">Doğal Pamuk</span>
-              <img src="assets/images/products/Claid-AI-06dbf37fb7c7428c81dced601a54021d.png" alt="Hambez Çanta" class="corp-series-card__img w-full h-full object-cover" />
+              <img src="./assets/images/products/Claid-AI-06dbf37fb7c7428c81dced601a54021d.png" alt="Hambez Çanta" class="corp-series-card__img w-full h-full object-cover" />
             </div>
             <div class="corp-series-card__body">
               <span class="corp-series-card__sub">Tekrar Kullanılır Kanvas</span>
@@ -699,7 +704,7 @@
           <div class="home-product-card overflow-hidden" data-cat="tela-dikisli">
             <div class="home-product-card__media overflow-hidden">
               <span class="home-product-card__cat">Tela Dikişli</span>
-              <img src="assets/images/products/Claid-AI-26c17fc691144fb698aba62154f846ca.png" alt="HKM Prestij Tela Dikişli Çanta" class="home-product-card__img w-full h-full object-cover" />
+              <img src="./assets/images/products/Claid-AI-26c17fc691144fb698aba62154f846ca.png" alt="HKM Prestij Tela Dikişli Çanta" class="home-product-card__img w-full h-full object-cover" />
             </div>
             <div class="home-product-card__body">
               <span class="product-sector-tag" style="width: max-content; margin-bottom: 8px;">Giyim Mağazacılığı</span>
@@ -723,7 +728,7 @@
           <div class="home-product-card overflow-hidden" data-cat="tela-dikisli">
             <div class="home-product-card__media overflow-hidden">
               <span class="home-product-card__cat">Tela Dikişli</span>
-              <img src="assets/images/products/Claid-AI-06dbf37fb7c7428c81dced601a54021d.png" alt="U1 Coffee Tela Dikişli Çanta" class="home-product-card__img w-full h-full object-cover" />
+              <img src="./assets/images/products/Claid-AI-06dbf37fb7c7428c81dced601a54021d.png" alt="U1 Coffee Tela Dikişli Çanta" class="home-product-card__img w-full h-full object-cover" />
             </div>
             <div class="home-product-card__body">
               <span class="product-sector-tag" style="width: max-content; margin-bottom: 8px;">Restaurant &amp; Cafe</span>
@@ -747,7 +752,7 @@
           <div class="home-product-card overflow-hidden" data-cat="tela-dikisli">
             <div class="home-product-card__media overflow-hidden">
               <span class="home-product-card__cat">Tela Dikişli</span>
-              <img src="assets/images/products/Claid-AI-a6485ac929da448fa342ac7c4150323a.png" alt="Obir Kuruyemiş Tela Çanta" class="home-product-card__img w-full h-full object-cover" />
+              <img src="./assets/images/products/Claid-AI-a6485ac929da448fa342ac7c4150323a.png" alt="Obir Kuruyemiş Tela Çanta" class="home-product-card__img w-full h-full object-cover" />
             </div>
             <div class="home-product-card__body">
               <span class="product-sector-tag" style="width: max-content; margin-bottom: 8px;">Kuruyemiş Sektörü</span>
@@ -771,7 +776,7 @@
           <div class="home-product-card overflow-hidden" data-cat="tela-dikisli">
             <div class="home-product-card__media overflow-hidden">
               <span class="home-product-card__cat">Tela Dikişli</span>
-              <img src="assets/images/products/Claid-AI-959fc157cb9d4b93a950816efff36855.png" alt="Anadolu Markt Tela Çanta" class="home-product-card__img w-full h-full object-cover" />
+              <img src="./assets/images/products/Claid-AI-959fc157cb9d4b93a950816efff36855.png" alt="Anadolu Markt Tela Çanta" class="home-product-card__img w-full h-full object-cover" />
             </div>
             <div class="home-product-card__body">
               <span class="product-sector-tag" style="width: max-content; margin-bottom: 8px;">Market Sektörü</span>
@@ -795,7 +800,7 @@
           <div class="home-product-card overflow-hidden" data-cat="tela-dikisli">
             <div class="home-product-card__media overflow-hidden">
               <span class="home-product-card__cat">Tela Dikişli</span>
-              <img src="assets/images/products/Claid-AI-61ff62f2ffdd4c8cb3287c6994e9d79c.png" alt="Sevinç Pastanesi Tela Çanta" class="home-product-card__img w-full h-full object-cover" />
+              <img src="./assets/images/products/Claid-AI-61ff62f2ffdd4c8cb3287c6994e9d79c.png" alt="Sevinç Pastanesi Tela Çanta" class="home-product-card__img w-full h-full object-cover" />
             </div>
             <div class="home-product-card__body">
               <span class="product-sector-tag" style="width: max-content; margin-bottom: 8px;">Pastane &amp; Fırın &amp; Tatlı</span>
@@ -819,7 +824,7 @@
           <div class="home-product-card overflow-hidden" data-cat="tela-dikisli">
             <div class="home-product-card__media overflow-hidden">
               <span class="home-product-card__cat">Tela Dikişli</span>
-              <img src="assets/images/products/Claid-AI-5c34b9b0440049f09723357d53436c0c.png" alt="Eczane Ekose Tela Çanta" class="home-product-card__img w-full h-full object-cover" />
+              <img src="./assets/images/products/Claid-AI-5c34b9b0440049f09723357d53436c0c.png" alt="Eczane Ekose Tela Çanta" class="home-product-card__img w-full h-full object-cover" />
             </div>
             <div class="home-product-card__body">
               <span class="product-sector-tag" style="width: max-content; margin-bottom: 8px;">Eczane Sektörü</span>
@@ -1063,7 +1068,7 @@
         <!-- 1. Marka & Logo & Kimlik -->
         <div class="footer-col footer-col--brand">
           <a href="index.html" class="footer-logo-link" aria-label="Nova Pak Anasayfa">
-            <img src="assets/images/nova-pak-logo-light.png" alt="Nova Pak Tek Kullanımlı Çanta İmalatı" class="footer-logo-img" />
+            <img src="./assets/images/nova-pak-logo-light.png" alt="Nova Pak Tek Kullanımlı Çanta İmalatı" class="footer-logo-img" />
           </a>
           <p class="footer-brand__desc">
             Tek kullanımlı ve çok kullanımlı bez çanta, karton çanta ve kraft ambalaj imalatında sektör lideri kurumsal çözüm ortağınız.
@@ -1159,8 +1164,8 @@
   </aside>
 
   <!-- JavaScript Dosyaları -->
-  <script src="js/products-data.js"></script>
-  <script src="js/main.js"></script>
+  <script src="./js/products-data.js"></script>
+  <script src="./js/main.js"></script>
 
 </body>
 </html>

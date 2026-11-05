@@ -1,0 +1,5 @@
+# Cloudflare Pages Redirects
+# Eğer Cloudflare Pages Root Directory = canta olarak ayarlanmışsa ve kullanıcı /canta/ ile girerse otomatik köke yönlendir:
+/canta/canta/*  /:splat  301
+/canta/*        /:splat  301
+/canta          /        301

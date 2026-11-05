@@ -359,4 +359,114 @@ document.addEventListener('DOMContentLoaded', () => {
     document.documentElement.lang = 'tr';
   } catch (e) {}
 
+  // 7. ÜRÜN RESMİ BÜYÜTEÇ (IMAGE MAGNIFIER / ZOOM) MODÜLÜ
+  function initProductImageMagnifier() {
+    // Dokunmatik ekranlarda ve mobilde (992px altı) büyüteci devre dışı bırak
+    const isTouchOrMobile =
+      window.matchMedia('(hover: none) or (pointer: coarse)').matches ||
+      window.innerWidth < 992;
+    if (isTouchOrMobile) return;
+
+    let lens = document.getElementById('productZoomLens');
+    if (!lens) {
+      lens = document.createElement('div');
+      lens.id = 'productZoomLens';
+      lens.className = 'product-zoom-lens';
+      lens.setAttribute('aria-hidden', 'true');
+      document.body.appendChild(lens);
+    }
+
+    const ZOOM_FACTOR = 2.4;
+    const LENS_SIZE = 210;
+    let currentMedia = null;
+    let currentImg = null;
+
+    const hideLens = () => {
+      lens.classList.remove('is-active');
+      currentMedia = null;
+      currentImg = null;
+    };
+
+    document.addEventListener('mouseover', (e) => {
+      if (window.innerWidth < 992) return;
+
+      const media = e.target.closest(
+        '.product-card__media, .home-product-card__media, .corp-series-card__media'
+      );
+      if (!media) return;
+
+      const img = media.querySelector('img');
+      if (!img) return;
+
+      const imgSrc = img.currentSrc || img.src;
+      if (!imgSrc) return;
+
+      currentMedia = media;
+      currentImg = img;
+
+      lens.style.backgroundImage = `url("${imgSrc}")`;
+      lens.classList.add('is-active');
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!currentMedia || !currentImg) return;
+
+      const rect = currentMedia.getBoundingClientRect();
+
+      // Fare görsel sınırlarından dışarı çıktıysa hemen kapat
+      if (
+        e.clientX < rect.left ||
+        e.clientX > rect.right ||
+        e.clientY < rect.top ||
+        e.clientY > rect.bottom
+      ) {
+        hideLens();
+        return;
+      }
+
+      // Oransal koordinatlar
+      const mouseX = e.clientX - rect.left;
+      const mouseY = e.clientY - rect.top;
+      const pctX = Math.max(0, Math.min(100, (mouseX / rect.width) * 100));
+      const pctY = Math.max(0, Math.min(100, (mouseY / rect.height) * 100));
+
+      // Büyüteç konumlandırması (imlecin yanında, ekran sınırlarına göre zekice kaydırılır)
+      let targetLeft = e.clientX + 25;
+      let targetTop = e.clientY - LENS_SIZE / 2;
+
+      // Sağ ekrandan taşma kontrolü (ekranın sağına sığmazsa imlecin soluna al)
+      if (targetLeft + LENS_SIZE + 20 > window.innerWidth) {
+        targetLeft = e.clientX - LENS_SIZE - 25;
+      }
+
+      // Üst ve alt ekran sınır kontrolleri
+      if (targetTop < 20) {
+        targetTop = 20;
+      } else if (targetTop + LENS_SIZE + 20 > window.innerHeight) {
+        targetTop = window.innerHeight - LENS_SIZE - 20;
+      }
+
+      lens.style.left = `${Math.round(targetLeft)}px`;
+      lens.style.top = `${Math.round(targetTop)}px`;
+
+      // Büyütülmüş görsel boyutu ve odak noktası
+      const bgW = rect.width * ZOOM_FACTOR;
+      const bgH = rect.height * ZOOM_FACTOR;
+      lens.style.backgroundSize = `${Math.round(bgW)}px ${Math.round(bgH)}px`;
+      lens.style.backgroundPosition = `${pctX.toFixed(2)}% ${pctY.toFixed(2)}%`;
+    });
+
+    document.addEventListener('mouseout', (e) => {
+      if (!currentMedia) return;
+      const related = e.relatedTarget;
+      if (!related || !currentMedia.contains(related)) {
+        hideLens();
+      }
+    });
+
+    window.addEventListener('scroll', hideLens, { passive: true });
+  }
+
+  initProductImageMagnifier();
+
 });
