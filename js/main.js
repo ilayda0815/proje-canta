@@ -34,18 +34,23 @@ document.addEventListener('DOMContentLoaded', () => {
       if (progress <= 0.005) {
         heroScrollStage.style.transform = 'translate3d(0, 0, 0) scale(1)';
         heroScrollStage.style.opacity = '1';
-        heroScrollStage.style.filter = 'blur(0px)';
+        heroScrollStage.style.filter = 'none';
         heroScrollStage.style.pointerEvents = 'auto';
       } else {
         // Kullanıcı aşağı indikçe Hero da aşağı doğru süzülerek eşlik eder ve şeffaflaşıp kaybolur
         const followY = scrollY * 0.46;
         const scaleVal = 1 - progress * 0.055;
         const opacityVal = Math.max(0, 1 - Math.pow(progress, 1.08) * 1.15);
-        const blurVal = (progress * 4.5).toFixed(2);
 
         heroScrollStage.style.transform = `translate3d(0, ${followY.toFixed(1)}px, 0) scale(${scaleVal.toFixed(4)})`;
         heroScrollStage.style.opacity = String(opacityVal.toFixed(3));
-        heroScrollStage.style.filter = `blur(${blurVal}px)`;
+        // Mobilde GPU repaints azaltmak için blur filtresini sadece masaüstünde çalıştır
+        if (window.innerWidth > 768) {
+          const blurVal = (progress * 4.5).toFixed(2);
+          heroScrollStage.style.filter = `blur(${blurVal}px)`;
+        } else {
+          heroScrollStage.style.filter = 'none';
+        }
         heroScrollStage.style.pointerEvents = opacityVal < 0.15 ? 'none' : 'auto';
       }
     }
@@ -136,13 +141,16 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Dokunmatik (Swipe) Kaydırma Desteği
+    // Dokunmatik (Swipe) Kaydırma Desteği - Dikey Scroll Çakışmasını Engelleyen Akıllı Algoritma
     let touchStartX = 0;
+    let touchStartY = 0;
     let touchEndX = 0;
+    let touchEndY = 0;
     slider.addEventListener(
       'touchstart',
       (e) => {
         touchStartX = e.changedTouches[0].screenX;
+        touchStartY = e.changedTouches[0].screenY;
       },
       { passive: true }
     );
@@ -150,9 +158,12 @@ document.addEventListener('DOMContentLoaded', () => {
       'touchend',
       (e) => {
         touchEndX = e.changedTouches[0].screenX;
-        const diff = touchStartX - touchEndX;
-        if (Math.abs(diff) > 45) {
-          if (diff > 0) {
+        touchEndY = e.changedTouches[0].screenY;
+        const diffX = touchStartX - touchEndX;
+        const diffY = touchStartY - touchEndY;
+        // Yalnızca yatay kaydırma dikey kaydırmadan belirgin şekilde fazlaysa slayt değiştir
+        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 40) {
+          if (diffX > 0) {
             goToSlide(currentSlide + 1);
           } else {
             goToSlide(currentSlide - 1);

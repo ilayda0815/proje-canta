@@ -15,6 +15,10 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-height) + 20px);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
@@ -23,9 +27,31 @@ body {
   color: var(--color-anthracite);
   line-height: 1.7;
   overflow-x: hidden;
+  overflow-x: clip;
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img, video, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+button, a, input, select, textarea {
+  touch-action: manipulation;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /* Doğal Krem (#F3EDE3) Üzerinde Nefes Alan, Çok Saydam Mimari Altın Oran Kılavuz Katmanı */
@@ -4287,20 +4313,23 @@ button {
 }
 
 
-/* 12. DUYARLI (RESPONSIVE) TASARIM
+/* 12. DUYARLI (RESPONSIVE) VE ÇAPRAZ CİHAZ (WEB UYUMLULUK) SİSTEMİ
    ========================================================================== */
 @media (max-width: 1200px) {
   .hero-section {
     min-height: 100vh;
+    min-height: 100svh;
+    min-height: 100dvh;
     height: auto;
     padding-top: calc(var(--header-height) + 36px);
     padding-bottom: 72px;
   }
   .hero-grid,
-  .hero-grid--reverse {
-    grid-template-columns: 1fr;
+  .hero-grid--reverse,
+  .hero-grid--mfg {
+    grid-template-columns: 1fr !important;
     text-align: left;
-    gap: 36px;
+    gap: 36px !important;
   }
   .hero-visual {
     margin-top: 10px;
@@ -4380,30 +4409,75 @@ button {
   }
 }
 
+@media (max-width: 1024px) {
+  .nav-list {
+    display: none !important;
+  }
+  .mobile-nav-toggle {
+    display: flex !important;
+    pointer-events: auto !important;
+  }
+  .site-header.is-scrolled {
+    background: rgba(243, 237, 227, 0.96) !important;
+    backdrop-filter: blur(14px) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
+    border-bottom: 1px solid rgba(165, 132, 101, 0.2) !important;
+    box-shadow: 0 4px 18px rgba(16, 45, 76, 0.08) !important;
+    pointer-events: auto !important;
+  }
+  .site-header.is-scrolled .brand-logo__text {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    pointer-events: auto !important;
+  }
+  .site-header.is-scrolled .brand-logo {
+    transform: none !important;
+  }
+  .header-nav-group {
+    pointer-events: auto !important;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
-    padding: 0 20px;
+    padding: 0 18px;
   }
-  .nav-list {
-    display: none;
+  /* iOS Safari Auto-Zoom Engelleme: Form elemanları en az 16px olmalıdır */
+  input, select, textarea, .toolbar-input, .toolbar-select {
+    font-size: 16px !important;
   }
   .hero-section {
     min-height: 100vh;
+    min-height: 100svh;
+    min-height: 100dvh;
     height: auto;
-    padding-top: calc(var(--header-height) + 24px);
-    padding-bottom: 64px;
+    padding-top: calc(var(--header-height) + 20px);
+    padding-bottom: 56px;
   }
   .hero-title {
-    font-size: 2.2rem;
+    font-size: clamp(1.85rem, 6.2vw, 2.35rem) !important;
+    line-height: 1.15 !important;
+    margin-bottom: 16px !important;
+    overflow-wrap: break-word !important;
+  }
+  .hero-description {
+    font-size: 0.92rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 28px !important;
   }
   .hero-metrics,
   .hero-eco-cards,
   .hero-variety-grid,
   .home-stats-grid,
-  .home-products-grid,
   .process-grid,
   .footer-top-grid {
     grid-template-columns: 1fr;
+  }
+  .products-grid,
+  .home-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
   .footer-bottom-bar {
     flex-direction: column;
@@ -4411,22 +4485,26 @@ button {
     gap: 14px;
   }
   .hero-nav-arrow {
-    width: 38px;
-    height: 38px;
+    width: 40px !important;
+    height: 40px !important;
+    background: rgba(243, 237, 227, 0.92) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(165, 132, 101, 0.35) !important;
+    z-index: 30 !important;
   }
   .hero-nav-arrow--prev {
-    left: 18px;
+    left: 8px !important;
   }
   .hero-nav-arrow--next {
-    right: 18px;
+    right: 8px !important;
   }
   .hero-dots {
-    bottom: 16px;
+    bottom: 14px;
     padding: 6px 14px;
     gap: 8px;
   }
   .corp-series-grid,
-  .products-grid,
   .pillars-grid,
   .ref-showcase-grid,
   .contact-info-grid,
@@ -4444,48 +4522,107 @@ button {
   .corner-dropdown__grid {
     grid-template-columns: 1fr;
   }
-  .whatsapp-float-wrap {
-    bottom: 20px;
-    right: 20px;
+  .whatsapp-float-wrap,
+  .whatsapp-floating-widget {
+    bottom: calc(18px + env(safe-area-inset-bottom, 0px)) !important;
+    right: calc(18px + env(safe-area-inset-right, 0px)) !important;
   }
   .whatsapp-popup {
-    width: calc(100vw - 40px);
+    width: calc(100vw - 36px);
   }
   .corp-catalog-banner {
-    padding: 44px 28px;
-    border-radius: 28px;
+    padding: 38px 22px;
+    border-radius: 24px;
   }
   .page-hero__box {
-    padding: 44px 28px;
-    border-radius: 28px;
+    padding: 38px 22px;
+    border-radius: 24px;
   }
   .corp-card,
   .corp-card:nth-child(1),
   .corp-card:nth-child(2),
   .corp-card:nth-child(3),
   .corp-card--accent {
-    padding: 36px 26px;
-    border-radius: 26px;
+    padding: 30px 22px;
+    border-radius: 22px;
   }
   .corp-cert-card {
-    padding: 36px 24px;
-    border-radius: 26px;
+    padding: 30px 20px;
+    border-radius: 22px;
   }
   .faq-item {
-    padding: 20px 28px;
+    padding: 18px 22px;
   }
   .faq-item[open] {
-    padding: 26px 28px 30px;
-    border-radius: 28px;
+    padding: 22px 22px 26px;
+    border-radius: 24px;
   }
   .corp-quick-nav {
-    gap: 10px;
-    margin-top: 24px;
+    gap: 8px;
+    margin-top: 20px;
   }
   .corp-quick-pill,
   .corp-quick-nav__link {
-    padding: 12px 20px;
-    font-size: 0.84rem;
+    padding: 10px 16px;
+    font-size: 0.82rem;
+  }
+  .hero-stamp-badge {
+    width: 72px !important;
+    height: 72px !important;
+    font-size: 0.65rem !important;
+    top: 2% !important;
+    right: 2% !important;
+  }
+  .hero-floating-tag {
+    bottom: 3% !important;
+    left: 3% !important;
+    padding: 6px 10px !important;
+    max-width: 145px !important;
+  }
+  .hero-floating-tag__title {
+    font-size: 0.68rem !important;
+  }
+  .hero-floating-tag__sub {
+    font-size: 0.6rem !important;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    padding: 0 16px;
+  }
+  .products-grid,
+  .home-products-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+  .hero-actions {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 12px !important;
+    margin-bottom: 32px !important;
+  }
+  .hero-btn-more,
+  .hero-btn-quote {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    padding: 14px 20px !important;
+  }
+  .home-cta-banner {
+    padding: 32px 18px !important;
+  }
+  .whatsapp-contact-hub {
+    padding: 32px 18px !important;
+  }
+  .whatsapp-float-btn {
+    padding: 10px 16px 10px 10px !important;
+    font-size: 0.82rem !important;
+  }
+  .whatsapp-float-btn__icon {
+    width: 32px !important;
+    height: 32px !important;
   }
 }
 
@@ -4571,7 +4708,7 @@ button {
 /* Orijinal Saf ve Net Tipografi */
 .hero-title {
   font-family: var(--font-heading) !important;
-  font-size: clamp(2.8rem, 4.8vw, 4.3rem) !important;
+  font-size: clamp(2.1rem, 4.8vw, 4.3rem) !important;
   font-weight: 800 !important;
   line-height: 1.08 !important;
   letter-spacing: -0.025em !important;
@@ -4579,6 +4716,7 @@ button {
   margin-bottom: 24px !important;
   text-shadow: none !important;
   transform: none !important;
+  overflow-wrap: break-word !important;
 }
 
 .hero-title__brand {
@@ -4607,8 +4745,8 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 480px;
-  height: 480px;
+  width: clamp(260px, 42vw, 480px);
+  height: clamp(260px, 42vw, 480px);
   border-radius: 50%;
   background: radial-gradient(circle, rgba(165, 132, 101, 0.18) 0%, rgba(226, 211, 193, 0.42) 55%, transparent 72%);
   pointer-events: none;
@@ -4626,8 +4764,10 @@ button {
 }
 
 .orbit-svg--outer {
-  width: 540px;
-  height: 540px;
+  width: clamp(270px, 46vw, 540px);
+  height: clamp(270px, 46vw, 540px);
+  max-width: 100%;
+  max-height: 100%;
   animation: orbitSpinClockwise 28s linear infinite;
 }
 
@@ -4712,8 +4852,8 @@ button {
 /* Çember Arka Plan Diski (Resim Birebir Bu Çemberin İçine Yerleştirilir) */
 .hero-studio-arch {
   position: relative !important;
-  width: clamp(340px, 36vw, 440px) !important;
-  height: clamp(340px, 36vw, 440px) !important;
+  width: clamp(260px, 36vw, 440px) !important;
+  height: clamp(260px, 36vw, 440px) !important;
   border-radius: 50% !important;
   overflow: hidden !important; /* Dışına hiçbir piksel taşamaz */
   background: radial-gradient(circle at 45% 40%, #FFFFFF 0%, #FAF4EB 35%, #EBDDCF 70%, rgba(226, 211, 193, 0.45) 90%, transparent 100%) !important;
@@ -4870,8 +5010,8 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: clamp(380px, 42vw, 500px);
-  height: clamp(380px, 42vw, 500px);
+  width: clamp(260px, 42vw, 500px);
+  height: clamp(260px, 42vw, 500px);
   border-radius: 50%;
   background: radial-gradient(circle, rgba(165, 132, 101, 0.24) 0%, rgba(59, 122, 66, 0.18) 45%, rgba(226, 211, 193, 0.38) 70%, transparent 86%);
   pointer-events: none;
@@ -4896,16 +5036,20 @@ button {
 }
 
 .orbit-svg--hero12-outer {
-  width: clamp(420px, 46vw, 540px);
-  height: clamp(420px, 46vw, 540px);
+  width: clamp(270px, 46vw, 540px);
+  height: clamp(270px, 46vw, 540px);
+  max-width: 100%;
+  max-height: 100%;
   animation: orbitSpinClockwise 36s linear infinite;
   will-change: transform;
 }
 
 .orbit-svg--hero12-inner {
   position: absolute;
-  width: clamp(320px, 36vw, 420px);
-  height: clamp(320px, 36vw, 420px);
+  width: clamp(220px, 36vw, 420px);
+  height: clamp(220px, 36vw, 420px);
+  max-width: 100%;
+  max-height: 100%;
   animation: orbitSpinCounter 24s linear infinite;
   will-change: transform;
 }
